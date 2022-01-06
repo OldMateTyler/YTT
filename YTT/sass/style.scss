@@ -25,7 +25,7 @@ $font-colour: #18a5bc;
   margin-left: -15px;
 }
 .title-text{
-  font-size: 225px;
+  font-size: 25px;
   text-align: center;
   vertical-align: center;
   font-family: $font-fam;
@@ -70,11 +70,11 @@ nav {
 }
 #classes-title {
   text-align: center;
+  color: white;
+  font-size: 75px;
 }
 .class-photo {
   padding-top: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 #contact-svg {
   width: 100%;
@@ -154,6 +154,9 @@ nav {
 }
 .card-body {
   text-align: center;
+}
+.card-img-top{
+  justify-content: center;
 }
 #testimonial {
   background-color: #1884a1;
