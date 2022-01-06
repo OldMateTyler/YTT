@@ -31,11 +31,26 @@ $font-colour: #18a5bc;
   margin-left: -15px;
 }
 .title-text{
-  font-size: 25px;
+  font-size: 225px;
   text-align: center;
   vertical-align: center;
   font-family: $font-fam;
   color: white;
+}
+.title-text-div{
+  position: absolute;
+  top: 150px;
+}
+#title-img{
+  position: relative;
+}
+#title-original{
+  position: relative;
+  object-fit: cover;
+}
+#shader{
+  position: absolute;
+  left: -23%;
 }
 .flip-box-front{
   width: 100%;
