@@ -5,6 +5,12 @@ $font-colour: #18a5bc;
   perspective: 1000px;
 }
 
+#progress-bar{
+  height: 8px;
+  background: linear-gradient(to right,#72c2ef,#18a5bc);
+  width: 100%;
+  border-radius: 10px;
+}
 .flip-box-inner {
   position: relative;
   width: 100%;
@@ -42,6 +48,8 @@ $font-colour: #18a5bc;
 .flip-box-back {
   color: black;
   text-align: center;
+  padding-left: 60px;
+  padding-right: 60px;
   transform: rotateY(180deg); 
   width: 100%;
   height: 100%;
@@ -52,7 +60,9 @@ $font-colour: #18a5bc;
     font-size: 20px;
   }
 }
-
+.navbar{
+  height: 150px;
+}
 .nav-item {
   color: black;
   font-family: $font-fam;
@@ -108,6 +118,7 @@ nav {
   }
   #about-title {
     color: $font-colour;
+    font-size: 75px;
   }
 }
 .contact-us-div {
@@ -140,6 +151,10 @@ nav {
 }
 .event-photo {
   margin-top: 24px;
+}
+#event-title{
+  font-size: 75px;
+  color: $font-colour;
 }
 .event-card {
   margin-left: 50px;
@@ -180,6 +195,9 @@ nav {
   .classes-div {
     padding-left: 10px;
     padding-right: 10px;
+  }
+  .nav-item{
+    font-size: 23px;
   }
 }
 @media screen and(max-width:1370px) {
