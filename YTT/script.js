@@ -46,15 +46,10 @@ window.addEventListener('resize', function(){
     var flip = document.getElementById("test").offsetHeight;
     $(".flip-box").css('height', flip + "px");
 
-    var titleheight = document.getElementById("title-img").offsetHeight;
-    $('.titles').css('height',titleheight + 'px');
 });
 window.onload = function(){
     var flip = document.getElementById("test").offsetHeight;
     $(".flip-box").css('height', flip + "px");
-
-    var titleheight = document.getElementById("title-img").offsetHeight;
-    $('.titles').css('height',titleheight + 'px');
 }
 
 const progressBar = document.querySelectorAll("#progress-bar");
