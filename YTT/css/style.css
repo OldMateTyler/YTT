@@ -1,3 +1,8 @@
+.contact-us-title {
+  text-align: center;
+  color: white;
+  font-size: 1200px !important; }
+
 .flip-box {
   perspective: 1000px; }
 
@@ -94,7 +99,11 @@ nav {
 #classes-title {
   text-align: center;
   color: white;
-  font-size: 75px; }
+  font-size: 75px;
+  text-shadow: 2px 3px 20px #212121; }
+
+.card {
+  border-radius: 20px !important; }
 
 .class-card-title {
   font-size: 2vw; }
@@ -103,7 +112,8 @@ nav {
   font-size: 1vw; }
 
 .find-out-more {
-  width: 100%; }
+  width: 100%;
+  border-color: #18a5bc !important; }
 
 .flip-button {
   position: absolute;
@@ -153,7 +163,9 @@ nav {
 
 .contact-us-title {
   text-align: center;
-  color: white; }
+  color: white;
+  font-size: 65px !important;
+  text-shadow: 2px 3px 20px #212121; }
 
 .btn-primary {
   background-color: #18a5bc !important;
@@ -161,10 +173,10 @@ nav {
 
 .contact-options {
   background-color: white;
-  border-radius: 5px;
+  border-radius: 25px;
   border: solid;
-  border-width: 1px;
-  font-size: 30px;
+  border-width: 0.25px;
+  font-size: 2vw;
   text-align: center; }
 
 .contact-options-1 {
@@ -236,6 +248,27 @@ nav {
 
   .nav-item {
     font-size: 23px; } }
+@media screen and (max-width: 1200px) {
+  .title-text {
+    font-size: 12vw !important; }
+
+  .sub-text {
+    font-size: 3vw !important; }
+
+  .sub-text-2 {
+    font-size: 1.8vw !important; } }
+@media screen and (max-width: 800px) {
+  .sub-text {
+    font-size: 4vw !important; }
+
+  .sub-text-2 {
+    font-size: 2.4vw !important; } }
+@media screen and (max-width: 536px) {
+  .title-text {
+    font-size: 18vw !important; }
+
+  .sub-text {
+    font-size: 5vw !important; } }
 @media screen and (max-width: 1070px) {
   #event-div {
     padding-left: 0px;
