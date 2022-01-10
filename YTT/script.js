@@ -45,11 +45,13 @@ returnElement3.onclick = function(){
 window.addEventListener('resize', function(){
     var flip = document.getElementById("test").offsetHeight;
     $(".flip-box").css('height', flip + "px");
+    $(".flip-box-back").css('height', flip + "px");
 
 });
 window.onload = function(){
     var flip = document.getElementById("test").offsetHeight;
     $(".flip-box").css('height', flip + "px");
+    $(".flip-box-back").css('height', flip + "px");
 }
 
 const progressBar = document.querySelectorAll("#progress-bar");
@@ -59,6 +61,6 @@ const animateProgressBar =() =>{
     let scrollDistance = section.getBoundingClientRect().top;
     let progressWidth = (scrollDistance / (section.getBoundingClientRect().height - document.documentElement.clientHeight)) * 100;
     let value = Math.floor(progressWidth)
-    $("#progress-bar").css("width", value + "%");
+    $("#progress-bar").css("width", value + 1 + "%");
 };
 window.addEventListener('scroll',animateProgressBar);
