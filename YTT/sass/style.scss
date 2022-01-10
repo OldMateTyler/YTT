@@ -85,12 +85,15 @@ html {
   }
 }
 .navbar {
-  height: 150px;
+  height: 12vh;
 }
 .nav-item {
   color: black;
   font-family: $font-fam;
   font-size: 25px;
+}
+.nav-item:hover{
+  color: $font-colour;
 }
 nav {
   background-color: white;
@@ -118,6 +121,11 @@ nav {
 .find-out-more{
   width: 100%;
   border-color: $font-colour !important;
+  font-size: 23px !important;
+}
+.find-out-more:hover{
+background-color:#10657c !important;
+border-color: #10657c !important;
 }
 .flip-button{
   position: absolute;
@@ -184,6 +192,13 @@ nav {
   border-width: 0.25px;
   font-size: 2vw;
   text-align: center;
+}
+.contact-options:hover{
+  background-color:#10657c!important;
+  color: white !important;
+  .contact-icon{
+    color: white !important;
+  }
 }
 .contact-options-1 {
   margin-left: 125px;
