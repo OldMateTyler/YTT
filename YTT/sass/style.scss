@@ -23,9 +23,11 @@ html {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
 }
 .flip-toggle {
   transform: rotateY(180deg);
+  -webkit-transform:rotateY(180deg);
 }
 .title-text {
   font-size: 8vw;
