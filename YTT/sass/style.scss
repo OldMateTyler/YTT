@@ -108,6 +108,7 @@ nav {
 .classes-div {
   font-family: $font-fam;
   background-color: #18a5bc;
+  text-align: center;
 }
 #classes-title {
   text-align: center;
@@ -123,6 +124,15 @@ nav {
 }
 .class-card-text{
   font-size: 1vw;
+}
+#timetable{
+  background-color: white !important;
+  color: #303030 !important;
+  border-color: white !important;
+}
+#timetable:hover{
+  background-color: #e2e2e2 !important;
+  color: black !important;
 }
 .find-out-more{
   width: 100%;
