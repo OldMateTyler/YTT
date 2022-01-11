@@ -1,10 +1,20 @@
 .class-page-text {
-  font-size: 1.75vw;
+  font-size: 1.25vw;
   line-height: 1;
-  padding-left: 5vw;
-  padding-right: 5vw;
   text-align: center;
   vertical-align: middle; }
+
+.class-page-photos {
+  border-radius: 15px; }
+
+.class-page-text-contrast {
+  color: white !important; }
+
+.class-page-img {
+  border-radius: 15px; }
+
+.contrast-div {
+  background: #18a5bc; }
 
 .contact-us-title {
   text-align: center;
@@ -121,12 +131,17 @@ nav {
   text-shadow: 2px 3px 20px #212121; }
 
 #class-page-div {
-  font-family: "Kollektif", sans-serif; }
+  font-family: "Kollektif", sans-serif;
+  padding-left: 0px !important;
+  padding-right: 0px !important; }
 
 .class-page-title {
   font-size: 60px;
   color: #18a5bc;
   text-align: center; }
+
+.class-page-title-contrast {
+  color: white !important; }
 
 #class-page-title-text {
   text-align: center;
