@@ -78,7 +78,7 @@ html {
   .flip-box-back .event-text {
     font-size: 1vw; }
   .flip-box-back .event-title-text {
-    font-size: 2vw; }
+    font-size: 1.48vw; }
 
 .navbar {
   height: 12vh; }
@@ -109,7 +109,7 @@ nav {
   border-radius: 20px !important; }
 
 .class-card-title {
-  font-size: 2vw; }
+  font-size: 1.48vw; }
 
 .class-card-text {
   font-size: 1vw; }
@@ -249,7 +249,10 @@ nav {
 @media screen and (max-width: 992px) {
   #about-paragraph {
     font-size: 3vw !important; } }
-@media screen and (max-width: 572px) {
+@media screen and (max-width: 675px) {
+  #about-paragraph {
+    font-size: 4vw !important; } }
+@media screen and (max-width: 575px) {
   #about-paragraph {
     font-size: 5vw !important; } }
 @media screen and (max-width: 700px) {
@@ -283,7 +286,13 @@ nav {
 
   .sub-text {
     font-size: 5vw !important; } }
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1199px) {
+  .class-card-title {
+    font-size: 3vw !important; }
+
+  .class-card-text {
+    font-size: 1.5vw !important; }
+
   #event-div {
     padding-left: 0px;
     padding-right: 0px; }
@@ -294,12 +303,6 @@ nav {
   .event-title-text {
     font-size: 2.4vw !important; }
 
-  .class-card-title {
-    font-size: 2.5vw !important; }
-
-  .class-card-text {
-    font-size: 1.25vw !important; }
-
   .card-text {
     font-size: 1.25vw; }
 
@@ -307,23 +310,23 @@ nav {
     font-size: 2.5vw; } }
 @media screen and (max-width: 767px) {
   .event-text {
-    font-size: 3vw !important; }
+    font-size: 2.5vw !important; }
 
   .event-title-text {
-    font-size: 6vw !important; }
+    font-size: 4.8vw !important; }
 
   .class-card-title {
-    font-size: 6vw !important; }
+    font-size: 4.8vw !important; }
 
   .class-card-text {
-    font-size: 3vw !important; }
+    font-size: 2.5vw !important; }
 
   .card-text {
-    font-size: 3vw; }
+    font-size: 2.5vw; }
 
   .card-front-title {
-    font-size: 6vw; } }
-@media screen and (max-width: 568px) {
+    font-size: 4.8vw; } }
+@media screen and (max-width: 575px) {
   #event-div {
     padding-left: 25px;
     padding-right: 25px; }
@@ -335,10 +338,16 @@ nav {
     font-size: 7.5vw !important; }
 
   .card-text {
-    font-size: 3.75vw; }
+    font-size: 3.75vw !important; }
 
   .card-front-title {
-    font-size: 7.5vw; } }
+    font-size: 7.5vw !important; }
+
+  .class-card-title {
+    font-size: 7.5vw !important; }
+
+  .class-card-text {
+    font-size: 3.75vw !important; } }
 @media screen and (max-width: 885px) {
   .contact-icon {
     font-size: 16px; } }
