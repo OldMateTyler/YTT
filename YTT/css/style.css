@@ -146,7 +146,7 @@ nav {
   width: 100%; }
 
 .contact-icon {
-  color: black; }
+  color: #303030 !important; }
 
 .fa {
   text-align: center; }
@@ -154,7 +154,7 @@ nav {
 .hamburger {
   width: 35px;
   height: 5px;
-  background-color: black;
+  background-color: #18a5bc;
   margin: 6px 0; }
 
 #about-text {
@@ -185,25 +185,15 @@ nav {
 
 .contact-options {
   background-color: white;
+  color: #303030;
   border-radius: 25px;
-  border: solid;
+  border: solid #303030;
   border-width: 0.25px;
   font-size: 2vw;
-  text-align: center; }
-
-.contact-options:hover {
-  background-color: #10657c !important;
-  color: white !important; }
-  .contact-options:hover .contact-icon {
-    color: white !important; }
-
-.contact-options-1 {
-  margin-left: 125px;
-  margin-right: 125px; }
-
-.contact-options-2 {
-  margin-left: 125px;
-  margin-right: 125px; }
+  text-align: center;
+  width: 16vw;
+  margin-left: 7.5vw;
+  margin-right: 7.5vw; }
 
 .event-photo {
   margin-top: 24px; }
@@ -252,13 +242,32 @@ nav {
 
 @media screen and (max-width: 992px) {
   #about-paragraph {
-    font-size: 3vw !important; } }
+    font-size: 3vw !important; }
+
+  .contact-options {
+    font-size: 2.5vw !important; } }
 @media screen and (max-width: 675px) {
+  .contact-options {
+    width: 20vw !important;
+    font-size: 3vw !important;
+    margin-left: 5vw !important;
+    margin-right: 5vw !important; }
+
   #about-paragraph {
     font-size: 4vw !important; } }
 @media screen and (max-width: 575px) {
   #about-paragraph {
-    font-size: 5vw !important; } }
+    font-size: 5vw !important; }
+
+  .contact-options {
+    width: 27vw !important;
+    font-size: 3.5vw !important;
+    margin-left: 2.5vw !important;
+    margin-right: 2.5vw !important; } }
+@media screen and (max-width: 475px) {
+  .contact-options {
+    width: 30vw !important;
+    font-size: 4.7vw !important; } }
 @media screen and (max-width: 700px) {
   #footer {
     font-size: 12px; } }
@@ -361,42 +370,7 @@ nav {
 
   .find-out-more {
     font-size: 6vw !important; } }
-@media screen and (max-width: 885px) {
-  .contact-icon {
-    font-size: 16px; } }
-@media screen and (max-width: 1802px) {
-  .contact-options-1 {
-    margin-left: 100px;
-    margin-right: 100px; }
-
-  .contact-options-2 {
-    margin-left: 100px;
-    margin-right: 100px; } }
-@media screen and (max-width: 992px) {
-  .contact-options-1 {
-    margin-left: 50px;
-    margin-right: 50px; }
-
-  .contact-options-2 {
-    margin-left: 50px;
-    margin-right: 50px; } }
-@media screen and (max-width: 800px) {
-  .contact-options-1 {
-    margin-left: 25px;
-    margin-right: 25px; }
-
-  .contact-options-2 {
-    margin-right: 25px;
-    margin-left: 25px; } }
 @media screen and (max-width: 572px) {
-  .contact-options-1 {
-    margin-left: 10px;
-    margin-right: 10px; }
-
-  .contact-options-2 {
-    margin-right: 10px;
-    margin-left: 10px; }
-
   .sub-text-2 {
     display: none; } }
 @media screen and (max-width: 713px) {
@@ -418,7 +392,6 @@ nav {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: black;
   background-color: rgba(0, 0, 0, 0.9);
   overflow-y: hidden;
   transition: 0.5s; }
