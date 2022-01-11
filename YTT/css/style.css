@@ -12,8 +12,7 @@ html {
 #progress-bar {
   height: 8px;
   background: linear-gradient(to right, #72c2ef, #18a5bc);
-  width: 100%;
-  border-radius: 10px; }
+  width: 100%; }
 
 .flip-box-inner {
   position: relative;
@@ -80,8 +79,13 @@ html {
   .flip-box-back .event-title-text {
     font-size: 1.48vw; }
 
-.navbar {
-  height: 12vh; }
+#YTT-nav {
+  height: 12vh;
+  min-height: 75px; }
+
+#nav-photo {
+  height: 100%;
+  vertical-align: middle; }
 
 .nav-item {
   color: black;
@@ -102,7 +106,7 @@ nav {
 #classes-title {
   text-align: center;
   color: white;
-  font-size: 75px;
+  font-size: 60px;
   text-shadow: 2px 3px 20px #212121; }
 
 .card {
@@ -117,7 +121,7 @@ nav {
 .find-out-more {
   width: 100%;
   border-color: #18a5bc !important;
-  font-size: 23px !important; }
+  font-size: 1.25vw !important; }
 
 .find-out-more:hover {
   background-color: #10657c !important;
@@ -163,7 +167,7 @@ nav {
     padding-right: 5vw; }
   #about-text #about-title {
     color: #18a5bc;
-    font-size: 75px; }
+    font-size: 60px; }
 
 .contact-us-div {
   background-color: #18a5bc;
@@ -172,7 +176,7 @@ nav {
 .contact-us-title {
   text-align: center;
   color: white;
-  font-size: 65px !important;
+  font-size: 60px !important;
   text-shadow: 2px 3px 20px #212121; }
 
 .btn-primary {
@@ -205,7 +209,7 @@ nav {
   margin-top: 24px; }
 
 #event-title {
-  font-size: 75px;
+  font-size: 60px;
   color: #18a5bc; }
 
 .event-card {
@@ -304,10 +308,13 @@ nav {
     font-size: 2.4vw !important; }
 
   .card-text {
-    font-size: 1.25vw; }
+    font-size: 1.25vw !important; }
 
   .card-front-title {
-    font-size: 2.5vw; } }
+    font-size: 2.5vw !important; }
+
+  .find-out-more {
+    font-size: 2vw !important; } }
 @media screen and (max-width: 767px) {
   .event-text {
     font-size: 2.5vw !important; }
@@ -325,7 +332,10 @@ nav {
     font-size: 2.5vw; }
 
   .card-front-title {
-    font-size: 4.8vw; } }
+    font-size: 4.8vw; }
+
+  .find-out-more {
+    font-size: 3.84vw !important; } }
 @media screen and (max-width: 575px) {
   #event-div {
     padding-left: 25px;
@@ -344,10 +354,13 @@ nav {
     font-size: 7.5vw !important; }
 
   .class-card-title {
-    font-size: 30vw !important; }
+    font-size: 7.5vw !important; }
 
   .class-card-text {
-    font-size: 3.75vw !important; } }
+    font-size: 3.75vw !important; }
+
+  .find-out-more {
+    font-size: 6vw !important; } }
 @media screen and (max-width: 885px) {
   .contact-icon {
     font-size: 16px; } }

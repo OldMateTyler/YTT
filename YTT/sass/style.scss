@@ -15,7 +15,6 @@ html {
   height: 8px;
   background: linear-gradient(to right, #72c2ef, #18a5bc);
   width: 100%;
-  border-radius: 10px;
 }
 .flip-box-inner {
   position: relative;
@@ -84,8 +83,13 @@ html {
     font-size: 1.48vw;
   }
 }
-.navbar {
+#YTT-nav {
   height: 12vh;
+  min-height: 75px;
+}
+#nav-photo{
+  height: 100%;
+  vertical-align: middle;
 }
 .nav-item {
   color: black;
@@ -106,7 +110,7 @@ nav {
 #classes-title {
   text-align: center;
   color: white;
-  font-size: 75px;
+  font-size: 60px;
   text-shadow: 2px 3px 20px #212121;
 }
 .card{
@@ -121,7 +125,7 @@ nav {
 .find-out-more{
   width: 100%;
   border-color: $font-colour !important;
-  font-size: 23px !important;
+  font-size: 1.25vw !important;
 }
 .find-out-more:hover{
 background-color:#10657c !important;
@@ -168,7 +172,7 @@ border-color: #10657c !important;
   }
   #about-title {
     color: $font-colour;
-    font-size: 75px;
+    font-size: 60px;
   }
 }
 .contact-us-div {
@@ -178,7 +182,7 @@ border-color: #10657c !important;
 .contact-us-title {
   text-align: center;
   color: white;
-  font-size: 65px !important;
+  font-size: 60px !important;
   text-shadow: 2px 3px 20px #212121;
 }
 .btn-primary {
@@ -212,7 +216,7 @@ border-color: #10657c !important;
   margin-top: 24px;
 }
 #event-title {
-  font-size: 75px;
+  font-size: 60px;
   color: $font-colour;
 }
 .event-card {
@@ -327,10 +331,13 @@ border-color: #10657c !important;
     font-size: 2.4vw !important;
   }
   .card-text{
-    font-size: 1.25vw;
+    font-size: 1.25vw !important;
   }
   .card-front-title{
-    font-size: 2.5vw;
+    font-size: 2.5vw !important;
+  }
+  .find-out-more{
+    font-size: 2vw !important;
   }
 }
 @media screen and(max-width:767px){
@@ -352,6 +359,9 @@ border-color: #10657c !important;
   .card-front-title{
     font-size: 4.8vw;
   }
+  .find-out-more{
+    font-size: 3.84vw !important;
+  }
 }
 @media screen and (max-width:575px){
     #event-div {
@@ -371,10 +381,13 @@ border-color: #10657c !important;
     font-size: 7.5vw !important;
   }
   .class-card-title{
-    font-size: 30vw !important;
+    font-size: 7.5vw !important;
   }
   .class-card-text{
     font-size: 3.75vw !important;
+  }
+  .find-out-more{
+    font-size: 6vw !important;
   }
 }
 @media screen and(max-width:885px) {
