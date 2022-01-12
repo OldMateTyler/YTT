@@ -50,6 +50,7 @@ html {
   -webkit-transition: transform 0.6s;
 }
 .flip-toggle {
+  will-change: transform;
   transform: rotateY(180deg);
   -webkit-transform:rotateY(180deg);
 }
