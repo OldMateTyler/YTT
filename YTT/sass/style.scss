@@ -1,8 +1,11 @@
 $font-fam: "Kollektif", sans-serif;
 $font-colour: #18a5bc;
+html, body{
+  overflow-x: hidden;
+}
 body{
   font-family: $font-fam;
-  overflow-x: hidden !important;
+  position: relative;
 }
 .class-page-text{
   font-size: 1.25vw;

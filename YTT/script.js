@@ -1,13 +1,13 @@
 function openNav(){
   document.getElementById("myNav").style.height = "100%";
-  document.getElementById("body").style.overflow = "hidden";
-  document.getElementById("myNav").style.overflow = "hidden";
+    $("body").css("overflow-y",'hidden');
+    $("html").css("overflow-y",'hidden');
 }
 
 function closeNav(){
   document.getElementById("myNav").style.height = "0%";
-  document.getElementById("body").style.overflow = "hidden";
-  document.getElementById("myNav").style.overflow = "hidden";
+  $("body").css("overflow-y",'auto');
+  $("html").css("overflow-y",'auto');
 }
 
 

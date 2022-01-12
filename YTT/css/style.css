@@ -1,6 +1,9 @@
+html, body {
+  overflow-x: hidden; }
+
 body {
   font-family: "Kollektif", sans-serif;
-  overflow-x: hidden !important; }
+  position: relative; }
 
 .class-page-text {
   font-size: 1.25vw;
