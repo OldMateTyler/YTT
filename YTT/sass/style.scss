@@ -2,6 +2,7 @@ $font-fam: "Kollektif", sans-serif;
 $font-colour: #18a5bc;
 body{
   font-family: $font-fam;
+  overflow-x: hidden !important;
 }
 .class-page-text{
   font-size: 1.25vw;
