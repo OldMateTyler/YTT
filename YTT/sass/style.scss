@@ -28,6 +28,7 @@ $font-colour: #18a5bc;
 }
 .flip-box {
   perspective: 1000px;
+  backface-visibility: hidden;
 }
 html {
   min-width: 320px;
