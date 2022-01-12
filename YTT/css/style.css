@@ -44,7 +44,9 @@ html {
   text-align: center;
   will-change: transform;
   -webkit-transform-style: preserve-3d;
-  -webkit-transition: transform 0.6s; }
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transform-style: preserve-3d; }
 
 .flip-toggle {
   -webkit-transform: rotateY(180deg);
