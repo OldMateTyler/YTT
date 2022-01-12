@@ -19,10 +19,6 @@ body {
 #class-carousel {
   font-family: "Kollektif", sans-serif; }
 
-.carousel-item {
-  -webkit-transition: webkit-transform 0.6s ease-in-out !important;
-  transition: transform 0.6s ease-in-out !important; }
-
 .class-page-text-contrast {
   color: white !important; }
 
