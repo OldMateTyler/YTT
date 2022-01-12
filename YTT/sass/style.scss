@@ -29,6 +29,7 @@ $font-colour: #18a5bc;
 .flip-box {
   perspective: 1000px;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 html {
   min-width: 320px;
@@ -44,15 +45,16 @@ html {
   height: auto;
   text-align: center;
   will-change: transform;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
   -webkit-transition: transform 0.6s;
+  transition: transform 0.6s preserve-3d;
+  transform-style: preserve-3d;
 }
 .flip-toggle {
   will-change: transform;
-  transform: rotateY(180deg);
   -webkit-transform:rotateY(180deg);
+  transform: rotateY(180deg);
+  
 }
 .title-text {
   font-size: 8vw;
