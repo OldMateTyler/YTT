@@ -9,6 +9,9 @@ $font-colour: #18a5bc;
 .class-page-photos{
   border-radius: 15px;
 }
+#class-carousel{
+  font-family: $font-fam;
+}
 .class-page-text-contrast{
   color: white !important;
 }
@@ -325,6 +328,14 @@ border-color: #10657c !important;
     margin-left: 2.5vw !important;
     margin-right: 2.5vw !important;
   }
+  #classes{
+    display: none;
+  }
+}
+@media screen and (min-width:576px) {
+  #class-carousel{
+    display: none;
+  }
 }
 @media screen and (max-width:475px){
   .contact-options{
@@ -456,9 +467,6 @@ border-color: #10657c !important;
   }
 }
 @media screen and (max-width: 713px) {
-  #demo {
-    display: none;
-  }
   #show-hamburger {
     display: block;
   }
