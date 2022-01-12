@@ -42,7 +42,6 @@ html {
   width: 100%;
   height: auto;
   text-align: center;
-  will-change: transform;
   transition: transform 0.6s;
   transform-style: preserve-3d; }
 
@@ -82,8 +81,8 @@ html {
   width: 100%;
   height: auto;
   position: absolute;
-  backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   min-width: auto;
   min-height: auto; }
 
