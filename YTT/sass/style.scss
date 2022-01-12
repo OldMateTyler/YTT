@@ -40,7 +40,6 @@ html {
 }
 .flip-box-inner {
   position: relative;
-  display: block;
   width: 100%;
   height: auto;
   text-align: center;
@@ -91,7 +90,6 @@ html {
   backface-visibility: hidden;
   min-width: auto;
   min-height: auto;
-  display: block;
 }
 .flip-box-back {
   color: black;
@@ -105,7 +103,6 @@ html {
   position: absolute;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  display: block;
   .event-text{
     font-size: 1vw;
   }
