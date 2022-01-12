@@ -43,9 +43,11 @@ html {
   width: 100%;
   height: auto;
   text-align: center;
+  will-change: transform;
   transition: transform 0.6s;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
+  -webkit-transition: transform 0.6s;
 }
 .flip-toggle {
   transform: rotateY(180deg);
