@@ -47,6 +47,7 @@ html {
   transition: transform 0.6s;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
+  -webkit-transition: transform 0.6s;
 }
 .flip-toggle {
   will-change: transform;
