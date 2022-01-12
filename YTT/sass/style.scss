@@ -28,7 +28,6 @@ $font-colour: #18a5bc;
 }
 .flip-box {
   perspective: 1000px;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 html {
@@ -41,14 +40,19 @@ html {
 }
 .flip-box-inner {
   position: relative;
+  display: block;
   width: 100%;
   height: auto;
   text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
+  will-change: transform;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: transform 0.6s;
+
 }
 .flip-toggle {
+  -webkit-transform:rotateY(180deg);
   transform: rotateY(180deg);
+  
 }
 .title-text {
   font-size: 8vw;
@@ -87,18 +91,21 @@ html {
   backface-visibility: hidden;
   min-width: auto;
   min-height: auto;
+  display: block;
 }
 .flip-box-back {
   color: black;
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
+  -webkit-transform:rotateY(180deg);
   transform: rotateY(180deg);
   width: 100%;
   height: 100%;
   position: absolute;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  display: block;
   .event-text{
     font-size: 1vw;
   }
@@ -316,7 +323,6 @@ border-color: #10657c !important;
   #about-paragraph{
     font-size:4vw !important;
   }
-
 }
 @media screen and (max-width:575px){
   #about-paragraph{
@@ -482,7 +488,6 @@ border-color: #10657c !important;
     display: none;
   }
 }
-
 .overlay {
   height: 0%;
   width: 100%;
@@ -494,7 +499,6 @@ border-color: #10657c !important;
   overflow-y: hidden;
   transition: 0.5s;
 }
-
 .overlay-content {
   position: relative;
   top: 25%;
@@ -502,7 +506,6 @@ border-color: #10657c !important;
   text-align: center;
   margin-top: 30px;
 }
-
 .overlay a {
   padding: 8px;
   text-decoration: none;
@@ -511,19 +514,16 @@ border-color: #10657c !important;
   display: block;
   transition: 0.3s;
 }
-
 .overlay a:hover,
 .overlay a:focus {
   color: #f1f1f1;
 }
-
 .overlay .closebtn {
   position: absolute;
   top: 100px;
   right: 20px;
   font-size: 60px;
 }
-
 @media screen and (max-height: 450px) {
   .overlay {
     overflow-y: auto;
