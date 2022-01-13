@@ -3,7 +3,8 @@
 <head>
     <title>Your Talent Team</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" />
+    <link href="//fonts.cdnfonts.com/css/kollektif" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
@@ -12,13 +13,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    
-</head>
 
-<body>
+</head>
+<body id='body'>
     <div class="wrapper container">
         <nav class="navbar navbar-expand-sm shadow-lg fixed-top" id="YTT-nav">
             <img src="imgs/white_logo1-.png" id="nav-photo" />
@@ -93,7 +93,7 @@
         <div class="overlay-content">
             <a href="#top" onclick="closeNav()">Home</a>
             <a href="#about-us" onclick="closeNav()">About Us</a>
-            <a href="#classes" onclick="closeNav()">Classes</a>
+            <a href="#class-carousel" onclick="closeNav()">Classes</a>
             <a href="#event-div" onclick="closeNav()">Events</a>
             <a href="#contact-us-div" onclick="closeNav()">Contact Us</a>
         </div>
@@ -116,7 +116,7 @@
                     fill="#18a5bc" />
             </svg>
         </div>
-        
+
         <div class="classes-div shadow-lg" id="classes">
             <h1 id="classes-title">Classes</h1>
 
@@ -127,7 +127,7 @@
                         <div class="card-body">
                             <p class="card-title class-card-title">Pre-Schoolers</p>
                             <p class="class-card-text">18 Months +</p>
-                            <a href="classes.html" class="btn btn-primary find-out-more shadow-lg">Find Out More</a>
+                            <a href="classes.html#Pre-schoolers-class-page" class="btn btn-primary find-out-more shadow-lg">Find Out More</a>
                         </div>
                     </div>
                 </div>
@@ -138,7 +138,7 @@
                         <div class="card-body">
                             <p class="card-title class-card-title">Classic Dancing</p>
                             <p class="class-card-text">All ages</p>
-                            <a href="classes.html" class="btn btn-primary find-out-more shadow-lg">Find Out More</a>
+                            <a href="classes.html#classic-dancing-class-page" class="btn btn-primary find-out-more shadow-lg">Find Out More</a>
                         </div>
                     </div>
                 </div>
@@ -149,7 +149,7 @@
                         <div class="card-body">
                             <p class="card-title class-card-title">Line Dancing</p>
                             <p class="class-card-text">All ages</p>
-                            <a href="classes.html" class="btn btn-primary find-out-more shadow-lg">Find Out More</a>
+                            <a href="classes.html#line-dancing-class-page" class="btn btn-primary find-out-more shadow-lg">Find Out More</a>
                         </div>
                     </div>
                 </div>
@@ -160,7 +160,7 @@
                         <div class="card-body">
                             <p class="card-title class-card-title">Boy Dancing</p>
                             <p class="class-card-text">All ages</p>
-                            <a href="classes.html" class="btn btn-primary find-out-more shadow-lg">Find Out More</a>
+                            <a href="classes.html#boy-dancing-class-page" class="btn btn-primary find-out-more shadow-lg">Find Out More</a>
                         </div>
                     </div>
                 </div>
@@ -171,7 +171,7 @@
                         <div class="card-body">
                             <p class="card-title class-card-title">Break Dancing</p>
                             <p class="class-card-text">All ages</p>
-                            <a href="classes.html" class="btn btn-primary find-out-more shadow-lg">Find Out More</a>
+                            <a href="classes.html#break-dancing-class-page" class="btn btn-primary find-out-more shadow-lg">Find Out More</a>
                         </div>
                     </div>
                 </div>
@@ -182,7 +182,7 @@
                         <div class="card-body">
                             <p class="card-title class-card-title">Adult Dancing</p>
                             <p class="class-card-text">All ages</p>
-                            <a href="classes.html" class="btn btn-primary find-out-more shadow-lg">Find Out More</a>
+                            <a href="classes.html#adult-dancing-class-page" class="btn btn-primary find-out-more shadow-lg">Find Out More</a>
                         </div>
                     </div>
                 </div>
@@ -194,68 +194,124 @@
 
             <br />
         </div>
-        <div class="container-fluid justify-content-center" id='class-carousel'style="background-color: #18a5bc;">
-            <h1 id="classes-title">Classes</h1>
-            <div id="myCarousel" class="carousel slide col-sm-2" data-interval='false'>
-                <!-- Carousel indicators -->
-                <ol class="carousel-indicators">
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
-                </ol>
-                
-                <!-- Wrapper for carousel items -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="class-photo">
-                            <div class="card shadow-lg">
-                                <img class="card-img-top" src="imgs/Classes/pre-schoolers.png" alt="Pre-schooler card" />
-                                <div class="card-body">
-                                    <p class="card-title class-card-title">Pre-Schoolers</p>
-                                    <p class="class-card-text">18 Months +</p>
-                                    <a href="classes.html" class="btn btn-primary find-out-more shadow-lg">Find Out More</a>
-                                    <br/><br/>
-                                </div>
+<div id='class-carousel' style='background-color: #18a5bc;'>
+    <h1 id="classes-title">Classes</h1>
+        <div id="carouselExampleControls" class="carousel slide max-auto" data-ride="carousel" data-interval='false' style="width: 80%;margin-left: auto;margin-right: auto;">
+            <ol class="carousel-indicators hidden">
+                <li data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleControls" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleControls" data-bs-slide-to="2"></li>
+                <li data-bs-target="#carouselExampleControls" data-bs-slide-to="3"></li>
+                <li data-bs-target="#carouselExampleControls" data-bs-slide-to="4"></li>
+                <li data-bs-target="#carouselExampleControls" data-bs-slide-to="5"></li>
+            </ol>
+
+            <div class="carousel-inner mx-auto">
+                <div class="carousel-item active">
+                    <div class="class-photo">
+                        <div class="card class-card">
+                            <img class="card-img-top" src="imgs/Classes/pre-schoolers.png"class="d-block w-100"
+                                alt="Pre-schooler card"/>
+                            <div class="card-body">
+                                <p class="card-title class-card-title">Pre-Schoolers</p>
+                                <p class="class-card-text">18 Months +</p>
+                                <a href="classes.htmlPre-schoolers-class-page" class="btn btn-primary find-out-more shadow-lg">Find Out
+                                    More</a>
+
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="class-photo">
-                            <div class="card shadow-lg">
-                                <img class="card-img-top" src="imgs/Classes/classic-dance.png" alt="Classic dance card" />
-                                <div class="card-body">
-                                    <p class="card-title class-card-title">Classic Dancing</p>
-                                    <p class="class-card-text">All ages</p>
-                                    <a href="classes.html" class="btn btn-primary find-out-more shadow-lg">Find Out More</a>
-                                    <br/><br/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="class-photo">
-                            <div class="card shadow-lg">
-                                <img class="card-img-top" src="imgs/Classes/pre-schoolers.png" alt="Line dance card" />
-                                <div class="card-body">
-                                    <p class="card-title class-card-title">Line Dancing</p>
-                                    <p class="class-card-text">All ages</p>
-                                    <a href="classes.html" class="btn btn-primary find-out-more shadow-lg">Find Out More</a>
-                                    <br/><br/>
-                                </div>
-                            </div>
-                        </div>
+                        <br /><br />
                     </div>
                 </div>
-        
-                <!-- Carousel controls -->
-                <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
+                <div class="carousel-item">
+                    <div class="class-photo">
+                        <div class="card class-card">
+                            <img class="card-img-top" src="imgs/Classes/classic-dance.png"class="d-block w-100"
+                                alt="Classic dance card"/>
+                            <div class="card-body">
+                                <p class="card-title class-card-title">Classic Dancing</p>
+                                <p class="class-card-text">All ages</p>
+                                <a href="classes.html#classic-dancing-class-page" class="btn btn-primary find-out-more shadow-lg">Find Out
+                                    More</a>
+
+                            </div>
+                        </div>
+                        <br /><br />
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="class-photo">
+                        <div class="card class-card">
+                            <img class="card-img-top" src="imgs/Classes/pre-schoolers.png" alt="Line dance card" class="d-block w-100"/>
+                            <div class="card-body">
+                                <p class="card-title class-card-title">Line Dancing</p>
+                                <p class="class-card-text">All ages</p>
+                                <a href="classes.html#line-dancing-class-page" class="btn btn-primary find-out-more shadow-lg">Find Out
+                                    More</a>
+
+                            </div>
+                        </div>
+                        <br /><br />
+                    </div>
+                </div>
+                <div class='carousel-item'>
+                    <div class="class-photo">
+                        <div class="card class-card">
+                            <img class="card-img-top" src="imgs/Classes/boy.png" alt="Boy Dancing" class="d-block w-100"/>
+                            <div class="card-body">
+                                <p class="card-title class-card-title">Boy Dancing</p>
+                                <p class="class-card-text">All ages</p>
+                                <a href="classes.html#boy-dancing-class-page" class="btn btn-primary find-out-more shadow-lg">Find Out
+                                    More</a>
+
+                            </div>
+                        </div>
+                        <br /><br />
+                    </div>
+                </div>
+                <div class='carousel-item'>
+                    <div class="class-photo">
+                        <div class="card class-card">
+                            <img class="card-img-top" src="imgs/Classes/classic-dance.png" alt="Break dancing card" class="d-block w-100"/>
+                            <div class="card-body">
+                                <p class="card-title class-card-title">Break Dancing</p>
+                                <p class="class-card-text">All ages</p>
+                                <a href="classes.html#break-dancing-class-page" class="btn btn-primary find-out-more shadow-lg">Find Out
+                                    More</a>
+
+                            </div>
+                        </div>
+                        <br /><br />
+                    </div>
+                </div>
+                <div class='carousel-item'>
+                    <div class="class-photo">
+                        <div class="card class-card">
+                            <img class="card-img-top" src="imgs/Classes/classic-dance.png"
+                                alt="Adult dancing card" class="d-block w-100"/>
+                            <div class="card-body">
+                                <p class="card-title class-card-title">Adult Dancing</p>
+                                <p class="class-card-text">All ages</p>
+                                <a href="classes.html#adult-dancing-class-page" class="btn btn-primary find-out-more shadow-lg">Find Out
+                                    More</a>
+                            </div>
+                        </div>
+                        <br /><br />
+                    </div>
+                </div>
+                <br /><br />
             </div>
-        </div>
+            <a class="carousel-control-prev hidden" href="#carouselExampleControls" role="button" data-slide="prev" style='margin-left:-40px;'>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next hidden" href="#carouselExampleControls" role="button" style='margin-right:-40px;'data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+          </div>
+</div>
+
 
 
         <div class="class-bottom-svg">

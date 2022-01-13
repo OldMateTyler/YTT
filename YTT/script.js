@@ -1,9 +1,23 @@
 function openNav(){
   document.getElementById("myNav").style.height = "100%";
+    $("body").css("overflow-y",'hidden');
+    $("html").css("overflow-y",'hidden');
+    $("body").css("pointer-events",'none');
+    $("#myNav").css("pointer-events",'auto');
+    $('.hidden').css('visibility','hidden');
 }
 
 function closeNav(){
   document.getElementById("myNav").style.height = "0%";
+  $("body").css("overflow-y",'auto');
+  $("html").css("overflow-y",'auto');
+  $("body").css("pointer-events",'auto');
+  setTimeout(displayCarousel, 500);
+
+  function displayCarousel(){
+    $('.hidden').css('visibility','initial');
+  }
+  
 }
 
 

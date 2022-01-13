@@ -1,5 +1,16 @@
 $font-fam: "Kollektif", sans-serif;
 $font-colour: #18a5bc;
+html, body{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 14vh;
+}
+body{
+  font-family: $font-fam !important;
+}
+body{
+  position: relative;
+}
 .class-page-text{
   font-size: 1.25vw;
   line-height: 1;
@@ -11,6 +22,10 @@ $font-colour: #18a5bc;
 }
 #class-carousel{
   font-family: $font-fam;
+}
+.carousel-item{
+  -webkit-transition:webkit-transform 0.6s ease!important;
+  transition: transform 0.6s ease !important;
 }
 .class-page-text-contrast{
   color: white !important;
@@ -28,6 +43,7 @@ $font-colour: #18a5bc;
 }
 .flip-box {
   perspective: 1000px;
+  backface-visibility: hidden;
 }
 html {
   min-width: 320px;
@@ -39,16 +55,21 @@ html {
 }
 .flip-box-inner {
   position: relative;
+  display: block;
   width: 100%;
   height: auto;
   text-align: center;
+  will-change: transform;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.6s;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
+
 }
 .flip-toggle {
-  transform: rotateY(180deg);
   -webkit-transform:rotateY(180deg);
+  transform: rotateY(180deg);
+  
 }
 .title-text {
   font-size: 8vw;
@@ -87,18 +108,21 @@ html {
   backface-visibility: hidden;
   min-width: auto;
   min-height: auto;
+  display: block;
 }
 .flip-box-back {
   color: black;
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
-  transform: rotateY(180deg);
+  -webkit-transform:rotateY(-180deg);
+  transform: rotateY(-180deg);
   width: 100%;
   height: 100%;
   position: absolute;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  display: block;
   .event-text{
     font-size: 1vw;
   }
@@ -316,7 +340,6 @@ border-color: #10657c !important;
   #about-paragraph{
     font-size:4vw !important;
   }
-
 }
 @media screen and (max-width:575px){
   #about-paragraph{
@@ -330,6 +353,9 @@ border-color: #10657c !important;
   }
   #classes{
     display: none;
+  }
+  #class-carousel{
+    display: block;
   }
 }
 @media screen and (min-width:576px) {
@@ -479,7 +505,6 @@ border-color: #10657c !important;
     display: none;
   }
 }
-
 .overlay {
   height: 0%;
   width: 100%;
@@ -491,7 +516,6 @@ border-color: #10657c !important;
   overflow-y: hidden;
   transition: 0.5s;
 }
-
 .overlay-content {
   position: relative;
   top: 25%;
@@ -499,7 +523,6 @@ border-color: #10657c !important;
   text-align: center;
   margin-top: 30px;
 }
-
 .overlay a {
   padding: 8px;
   text-decoration: none;
@@ -508,19 +531,16 @@ border-color: #10657c !important;
   display: block;
   transition: 0.3s;
 }
-
 .overlay a:hover,
 .overlay a:focus {
   color: #f1f1f1;
 }
-
 .overlay .closebtn {
   position: absolute;
   top: 100px;
   right: 20px;
   font-size: 60px;
 }
-
 @media screen and (max-height: 450px) {
   .overlay {
     overflow-y: auto;
