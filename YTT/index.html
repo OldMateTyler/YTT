@@ -21,7 +21,10 @@
 <body id='body'>
     <div class="wrapper container">
         <nav class="navbar navbar-expand-sm shadow-lg fixed-top" id="YTT-nav">
-            <img src="imgs/white_logo1-.png" id="nav-photo" />
+            <a id='nav-photo' href='index.html'>
+                <img src="imgs/white_logo1-.png" id="nav-photo" />
+            </a>
+            
             <ul class="navbar-nav ml-auto">
                 <div class="navbar">
                     <li class="active hide-icons hide">
@@ -215,9 +218,8 @@
                             <div class="card-body">
                                 <p class="card-title class-card-title">Pre-Schoolers</p>
                                 <p class="class-card-text">18 Months +</p>
-                                <a href="classes.htmlPre-schoolers-class-page" class="btn btn-primary find-out-more shadow-lg">Find Out
+                                <a href="classes.html#Pre-schoolers-class-page" class="btn btn-primary find-out-more shadow-lg">Find Out
                                     More</a>
-
                             </div>
                         </div>
                         <br /><br />
@@ -345,10 +347,6 @@
                                 alt="Holiday Clinics" />
                             <div class="card-body">
                                 <p class="card-front-title">Birthday Parties</p>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Dicta, pariatur?
-                                </p>
                                 <a class="btn btn-primary find-out-more shadow-lg" id="toggle-card-2">Learn More</a>
                             </div>
                         </div>
@@ -386,10 +384,6 @@
                                 alt="Holiday Clinics" />
                             <div class="card-body">
                                 <p class="card-front-title">Holiday Clinics</p>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Dicta, pariatur?
-                                </p>
                                 <a class="btn btn-primary find-out-more shadow-lg" id="toggle-card">Learn More</a>
                             </div>
                         </div>
@@ -427,10 +421,6 @@
                                 alt="Holiday Clinics" />
                             <div class="card-body">
                                 <p class="card-front-title">Studio Rental</p>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Dicta, pariatur?
-                                </p>
                                 <a class="btn btn-primary find-out-more shadow-lg" id="toggle-card-3">Learn More</a>
                             </div>
                         </div>
@@ -462,6 +452,141 @@
                 </div>
                 <br />
             </div>
+        </div>
+        <div id='class-carousel'>
+            <h1 id="event-title">Events</h1>
+                <div id="eventCarousel" class="carousel slide max-auto" data-ride="carousel" data-interval='false' style="width: 80%;margin-left: auto;margin-right: auto;">
+                    <ol class="carousel-indicators hidden">
+                        <li data-bs-target="#class-carousel" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#class-carousel" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#class-carousel" data-bs-slide-to="2"></li>
+                    </ol>
+        
+                    <div class="carousel-inner mx-auto">
+                        <div class="carousel-item active">
+                            <div class="card event-card shadow-lg flip-box">
+                                <div class="flip-box-inner" id="toggle-me-2">
+                                    <div class="flip-box-front" id="test">
+                                        <img class="card-img-bottom event-photo" src="imgs/Events/event2.png"
+                                            alt="Holiday Clinics" />
+                                        <div class="card-body">
+                                            <p class="card-front-title">Birthday Parties</p>
+                                            <a class="btn btn-primary find-out-more shadow-lg" id="toggle-card-2">Learn More</a>
+                                        </div>
+                                    </div>
+                                    <div class="flip-box-back">
+                                        <br />
+                                        <p class="event-title-text">Birthday Parties</p>
+                                        <p class="event-text">
+                                            The Birthday packages at YTT are offered to provide a simple
+                                            yet special day for your child and their friends
+                                        </p>
+                                        <p class="event-text">
+                                            Each party is uniquely planned by us, allowing you to offload
+                                            all of the planning stress
+                                        </p>
+                                        <p class="event-text">
+                                            Running for 2 hours, all of our packages include a safe party
+                                            venue, entertainment and a party host. If you would like to
+                                            extend on this, we have add-on's such as game supplies and
+                                            theme appropriate decorations.
+                                        </p>
+                                        <p class="event-text">
+                                            By purchasing one of our birthday packages, your child will
+                                            have the special day they deserve.
+                                        </p>
+            
+                                        <a class="btn btn-primary find-out-more flip-button shadow-lg" id="return-card-2">Return</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card event-card shadow-lg flip-box" id="testHeight">
+                                <div class="flip-box-inner" id="toggle-me">
+                                    <div class="flip-box-front">
+                                        <img class="card-img-bottom event-photo" src="imgs/Events/event1.png"
+                                            alt="Holiday Clinics" />
+                                        <div class="card-body">
+                                            <p class="card-front-title">Holiday Clinics</p>
+                                            <a class="btn btn-primary find-out-more shadow-lg" id="toggle-card">Learn More</a>
+                                        </div>
+                                    </div>
+                                    <div class="flip-box-back">
+                                        <br />
+                                        <p class="event-title-text">Holiday Clinics</p>
+                                        <p class="event-text">
+                                            Holiday clinics are solely organised to give children of the
+                                            Shoalhaven something to look forward to during their time off
+                                            school.
+                                        </p>
+                                        <p class="event-text">
+                                            These clinics are uniquely themed by staff at YTT and do no
+                                            require any dance experience.
+                                        </p>
+                                        <p class="event-text">
+                                            Running from 9am-3pm, the kids will be involved in countless
+                                            activities that will ensure a great day outside of the house.
+                                        </p>
+                                        <p class="event-text">
+                                            By signing your child up to one of these clinics, they will be
+                                            able to connect with several children their age and provide
+                                            you with a massive break.
+                                        </p>
+            
+                                        <a class="btn btn-primary find-out-more flip-button shadow-lg" id="return-card">Return</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card event-card shadow-lg flip-box">
+                                <div class="flip-box-inner" id="toggle-me-3">
+                                    <div class="flip-box-front">
+                                        <img class="card-img-bottom event-photo" src="imgs/Events/event3.png"
+                                            alt="Holiday Clinics" />
+                                        <div class="card-body">
+                                            <p class="card-front-title">Studio Rental</p>
+                                            <a class="btn btn-primary find-out-more shadow-lg" id="toggle-card-3">Learn More</a>
+                                        </div>
+                                    </div>
+                                    <div class="flip-box-back">
+                                        <br />
+                                        <p class="event-title-text">Studio Rental</p>
+                                        <p class="event-text">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Eveniet a, quasi obcaecati sapiente tempore labore!
+                                        </p>
+                                        <p class="event-text">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Aliquam perferendis tenetur modi quo, autem labore magnam
+                                            eaque quasi odio qui.
+                                        </p>
+                                        <p class="event-text">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
+                                            ipsam fugit accusamus a. Architecto, voluptatum?
+                                        </p>
+                                        <p class="event-text">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            Libero distinctio odit fuga, sit quidem magni id voluptatibus
+                                            vero sapiente nisi!.
+                                        </p>
+            
+                                        <a class="btn btn-primary find-out-more flip-button shadow-lg" id="return-card-3">Return</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev hidden" href="#class-carousel" role="button" data-slide="prev" style='margin-left:-40px;'>
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next hidden" href="#class-carousel" role="button" style='margin-right:-40px;'data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                  </div>
         </div>
         <br />
     </section>
