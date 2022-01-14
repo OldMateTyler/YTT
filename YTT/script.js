@@ -74,17 +74,4 @@ function openNav(){
       let progressWidth = (scrollDistance / (section.getBoundingClientRect().height - document.documentElement.clientHeight)) * 100;
       $("#progress-bar").css("width", progressWidth +"%");
   };
-  const links = document.querySelectorAll(".class-button");
-  clickHandler(links);
-  
-   function clickHandler(e) {
-    e.preventDefault();
-    const href = this.getAttribute("href");
-    const offsetTop = document.querySelector(href).offsetTop;
-    alert(href);
-  
-    scroll({
-      top: offsetTop,
-      behavior: "smooth"
-    });
-  }
+  window.addEventListener('scroll',animateProgressBar);
