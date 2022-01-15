@@ -332,7 +332,9 @@ nav {
     font-size: 4vw !important; } }
 @media screen and (max-width: 575px) {
   #about-paragraph {
-    font-size: 5vw !important; }
+    font-size: 5vw !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important; }
 
   .contact-options {
     width: 27vw !important;
