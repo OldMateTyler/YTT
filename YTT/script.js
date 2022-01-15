@@ -75,10 +75,9 @@ function openNav(){
       $("#progress-bar").css("width", progressWidth +"%");
   };
   window.addEventListener('scroll',animateProgressBar);
-
   $(document).ready(function(){
     // Add smooth scrolling to all links
-    $(".slow-scroll").on('click', function(event) {
+    $(".smooth-scroll").on('click', function(event) {
   
       // Make sure this.hash has a value before overriding default behavior
       if (this.hash !== "") {
