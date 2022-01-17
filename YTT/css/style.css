@@ -190,11 +190,20 @@ nav {
 #timetable {
   background-color: white !important;
   color: #303030 !important;
-  border-color: white !important; }
+  border-color: white !important;
+  display: block;
+  margin: 0 auto;
+  width: 200px !important;
+  bottom: -100px !important;
+  position: relative; }
 
 #timetable:hover {
   background-color: #e2e2e2 !important;
-  color: black !important; }
+  color: black !important;
+  -webkit-animation: pulse 1s infinite;
+  -webkit-transition: .3s ease-in-out;
+  animation: pulse 1s infinite;
+  transition: .3s ease-in-out; }
 
 .find-out-more {
   width: 100%;
