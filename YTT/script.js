@@ -137,3 +137,31 @@ function openNav(){
       $("#progress-bar").css("width", progressWidth +"%");
   };
   window.addEventListener('scroll',animateProgressBar);
+  var win = $(window);
+  
+  var allMods = $(".module");
+  
+  allMods.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("already-visible"); 
+    } 
+  });
+  
+  win.scroll(function(event) {
+    
+    allMods.each(function(i, el) {
+      var el = $(el);
+      if (el.visible(true)) {
+        el.addClass("come-in"); 
+      } 
+    });
+    
+  });
+  $(document).ready(function(){
+      var titleText = $(".title-entrance");
+        titleText.each(function(i,el){
+            var el = $(el);
+            el.addClass('entrance-animation');
+        })
+  })

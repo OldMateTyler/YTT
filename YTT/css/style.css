@@ -272,8 +272,62 @@ nav {
   text-align: center;
   width: 16vw;
   margin-left: 7.5vw;
-  margin-right: 7.5vw; }
+  margin-right: 7.5vw;
+  -webkit-transition: .3s;
+  transition: .3s; }
 
+.contact-options:hover {
+  -webkit-animation: pulse 1s infinite;
+  -webkit-transition: .3s ease-in-out;
+  animation: pulse 1s infinite;
+  transition: .3s ease-in-out; }
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  70% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+.nav-link {
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
+.nav-link:hover {
+  -webkit-animation: pulse 1s infinite;
+  -webkit-transition: .3s ease-in-out;
+  animation: pulse 1s infinite;
+  transition: .3s ease-in-out; }
+
+.come-in {
+  -webkit-transform: translateY(150px);
+  -webkit-animation: come-in 0.8s ease forwards;
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards; }
+
+.come-in:nth-child(odd) {
+  -webkit-animation-duration: 0.6s;
+  animation-duration: 0.6s; }
+
+.already-visible {
+  -webkit-transform: translateY(0);
+  -webkit-animation: none;
+  transform: translateY(0);
+  animation: none; }
+
+.entrance-animation {
+  -webkit-transform: translateY(150px);
+  -webkit-animation: come-in 0.8s ease forwards;
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards; }
+
+@keyframes come-in {
+  to {
+    transform: translateY(0);
+    -webkit-transform: translateY(0); } }
 .event-photo {
   margin-top: 24px; }
 
@@ -360,7 +414,7 @@ nav {
   background-color: #18a5bc !important; }
 
 .event-carousel-indicator li {
-  background-color: #c7f1f8 !important; }
+  background-color: #82e0ef !important; }
 
 .event-prev {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(24,165,188)' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important; }
