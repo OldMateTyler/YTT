@@ -88,25 +88,44 @@ function openNav(){
   
   
   window.addEventListener('resize', function(){
-      var flip = document.getElementById("test").offsetHeight;
+      var flip = document.getElementById("event-card-1").offsetHeight;
       $(".flip-box").css('height', flip + "px");
       $(".flip-box-back").css('height', flip + "px");
 
-      var flip = document.getElementById("test-2").offsetHeight;
-      $(".flip-box-2").css('height', flip + "px");
-      $(".flip-box-back-2").css('height', flip + "px");
+      var flip1 = document.getElementById("event-card-2").offsetHeight;
+      $(".flip-box").css('height', flip1 + "px");
+      $(".flip-box-back").css('height', flip1 + "px");
 
-      
+      var flip2 = document.getElementById("event-card-3").offsetHeight;
+      $(".flip-box").css('height', flip2 + "px");
+      $(".flip-box-back").css('height', flip2 + "px");
+
+      var flip3 = document.getElementById("event-card-car-1").offsetHeight;
+      var flip4 = document.getElementById("event-card-car-2").offsetHeight;
+      var flip5 = document.getElementById("event-card-car-3").offsetHeight;
   
+      $(".flip-box-2").css('height', Math.max(flip3,flip4,flip5) + "px");
+      $(".flip-box-back-2").css('height', Math.max(flip3,flip4,flip5) + "px");
   });
   window.onload = function(){
-      var flip = document.getElementById("test").offsetHeight;
-      $(".flip-box").css('height', flip + "px");
-      $(".flip-box-back").css('height', flip + "px");
+    var flip = document.getElementById("event-card-1").offsetHeight;
+    $(".flip-box").css('height', flip + "px");
+    $(".flip-box-back").css('height', flip + "px");
 
-      var flip = document.getElementById("test-2").offsetHeight;
-      $(".flip-box-2").css('height', flip + "px");
-      $(".flip-box-back-2").css('height', flip + "px");
+    var flip1 = document.getElementById("event-card-2").offsetHeight;
+    $(".flip-box").css('height', flip1 + "px");
+    $(".flip-box-back").css('height', flip1 + "px");
+
+    var flip2 = document.getElementById("event-card-3").offsetHeight;
+    $(".flip-box").css('height', flip2 + "px");
+    $(".flip-box-back").css('height', flip2 + "px");
+
+    var flip3 = document.getElementById("event-card-car-1").offsetHeight;
+    var flip4 = document.getElementById("event-card-car-2").offsetHeight;
+    var flip5 = document.getElementById("event-card-car-3").offsetHeight;
+
+    $(".flip-box-2").css('height', Math.max(flip3,flip4,flip5) + "px");
+    $(".flip-box-back-2").css('height', Math.max(flip3,flip4,flip5) + "px");
   };
   
   const progressBar = document.querySelectorAll("#progress-bar");
