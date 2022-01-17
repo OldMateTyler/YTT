@@ -16,9 +16,13 @@ body{
   line-height: 1;
   text-align: center;
   vertical-align: middle;
+  height: 100%;
 }
 .class-page-photos{
   border-radius: 15px;
+  max-width:100%;
+  max-height:100%;
+  object-fit:cover;
 }
 #class-carousel{
   font-family: $font-fam;
@@ -167,9 +171,10 @@ nav {
   padding-right: 0px!important;
 }
 .class-page-title{
-  font-size: 60px;
+  font-size: 3vw;
   color: #18a5bc;
   text-align: center;
+  vertical-align: middle;
 }
 .class-page-title-contrast{
   color: white !important;
@@ -244,6 +249,7 @@ border-color: #10657c !important;
     line-height: 1;
     padding-left: 5vw;
     padding-right: 5vw;
+    width: 100%;
   }
   #about-title {
     color: $font-colour;
@@ -382,11 +388,23 @@ border-color: #10657c !important;
   #class-carousel{
     display: none;
   }
+
 }
 @media screen and (max-width:475px){
   .contact-options{
     width: 30vw !important;
     font-size: 4.7vw !important;
+  }
+}
+@media screen and (max-width:575px){
+  .class-page-text{
+    font-size:3vw;
+  }
+  .class-page-title{
+    font-size:8vw;
+  }
+  .marg-top{
+    margin-top:15px;
   }
 }
 @media screen and (max-width: 700px) {
