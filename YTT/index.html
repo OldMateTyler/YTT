@@ -302,11 +302,11 @@
                 </div>
                 <br /><br />
             </div>
-            <a class="carousel-control-prev hidden" href="#carouselExampleControls" role="button" data-slide="prev" style='margin-left:-40px;'>
+            <a class="carousel-control-prev hidden" href="#carouselExampleControls" role="button" data-slide="prev" style='margin-left:-12vw;'>
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
               </a>
-              <a class="carousel-control-next hidden" href="#carouselExampleControls" role="button" style='margin-right:-40px;'data-slide="next">
+              <a class="carousel-control-next hidden" href="#carouselExampleControls" role="button" style='margin-right:-12vw;'data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
               </a>
@@ -455,15 +455,15 @@
         <div id='class-carousel'>
             <h1 id="event-title">Events</h1>
                 <div id="eventCarousel" class="carousel slide max-auto" data-ride="carousel" data-interval='false' style="width: 80%;margin-left: auto;margin-right: auto;">
-                    <ol class="carousel-indicators hidden">
+                    <ol class="carousel-indicators event-carousel-indicator  hidden">
                         <li data-bs-target="#class-carousel" data-bs-slide-to="0" class="active"></li>
                         <li data-bs-target="#class-carousel" data-bs-slide-to="1"></li>
                         <li data-bs-target="#class-carousel" data-bs-slide-to="2"></li>
                     </ol>
         
-                    <div class="carousel-inner mx-auto shadow-md">
-                        <div class="carousel-item active ">
-                            <div class="card event-card flip-box flip-box-2">
+                    <div class="carousel-inner mx-auto" style='overflow:visible;'>
+                        <div class="carousel-item active" style='overflow:visible;'>
+                            <div class="card event-card flip-box flip-box-2 shadow-lg">
                                 <div class="flip-box-inner" id="toggle-me-2">
                                     <div class="flip-box-front" id="event-card-car-1">
                                         <img class="card-img-bottom event-photo" src="imgs/Events/event2.png"  style='margin-top: 5%;width: 90%;border-radius: 20px;' 
@@ -502,7 +502,7 @@
                             <br/><br/>
                         </div>
                         <div class="carousel-item">
-                            <div class="card event-card flip-box flip-box-2" id="testHeight2">
+                            <div class="card event-card flip-box flip-box-2 shadow-lg" id="testHeight2">
                                 <div class="flip-box-inner" id="toggle-me">
                                     <div class="flip-box-front" id="event-card-car-2">
                                         <img class="card-img-bottom event-photo" src="imgs/Events/event1.png"
@@ -541,7 +541,7 @@
                             <br/><br/>
                         </div>
                         <div class="carousel-item">
-                            <div class="card event-card flip-box flip-box-2" >
+                            <div class="card event-card flip-box flip-box-2 shadow-lg" >
                                 <div class="flip-box-inner" id="toggle-me-3">
                                     <div class="flip-box-front" id="event-card-car-3">
                                         <img class="card-img-bottom event-photo" src="imgs/Events/event3.png"
@@ -580,12 +580,12 @@
                             <br/><br/>
                         </div>
                     </div>
-                    <a class="carousel-control-prev hidden" href="#eventCarousel" role="button" data-slide="prev" style='margin-left:-40px;'>
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <a class="carousel-control-prev hidden" href="#eventCarousel" role="button" data-slide="prev" style='margin-left:-10vw;'>
+                        <span class="carousel-control-prev-icon event-prev" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                       </a>
-                      <a class="carousel-control-next hidden" href="#eventCarousel" role="button" style='margin-right:-40px;'data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <a class="carousel-control-next hidden" href="#eventCarousel" role="button" style='margin-right: -10vw;'data-slide="next">
+                        <span class="carousel-control-next-icon event-next" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                       </a>
                   </div>
