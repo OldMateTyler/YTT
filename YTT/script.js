@@ -53,35 +53,35 @@ function openNav(){
       className.classList.toggle('flip-toggle');
   };
 
-  var flip1 = document.getElementById("toggle-card-c");
-  flip1.onclick = function(){
+  var flip1c = document.getElementById("toggle-card-c");
+  flip1c.onclick = function(){
       var className = document.getElementById("toggle-me-c");
       className.classList.toggle('flip-toggle');
   };
-  var returnElement1 = document.getElementById("return-card-c");
-  returnElement1.onclick = function(){
+  var returnElement1c = document.getElementById("return-card-c");
+  returnElement1c.onclick = function(){
       var className = document.getElementById("toggle-me-c");
       className.classList.toggle('flip-toggle');
   };
   
-  var flip2 = document.getElementById("toggle-card-2-c");
-  flip2.onclick = function(){
+  var flip2c = document.getElementById("toggle-card-2-c");
+  flip2c.onclick = function(){
       var className = document.getElementById("toggle-me-2-c");
       className.classList.toggle('flip-toggle');
   };
-  var returnElement2 = document.getElementById("return-card-2-c");
-  returnElement2.onclick = function(){
+  var returnElement2c = document.getElementById("return-card-2-c");
+  returnElement2c.onclick = function(){
       var className = document.getElementById("toggle-me-2-c");
       className.classList.toggle('flip-toggle');
   };
   
-  var flip3 = document.getElementById("toggle-card-3-c");
-  flip3.onclick = function(){
+  var flip3c = document.getElementById("toggle-card-3-c");
+  flip3c.onclick = function(){
       var className = document.getElementById("toggle-me-3-c");
       className.classList.toggle('flip-toggle');
   };
-  var returnElement3 = document.getElementById("return-card-3-c");
-  returnElement3.onclick = function(){
+  var returnElement3c = document.getElementById("return-card-3-c");
+  returnElement3c.onclick = function(){
       var className = document.getElementById("toggle-me-3-c");
       className.classList.toggle('flip-toggle');
   };
@@ -121,9 +121,11 @@ function openNav(){
     $(".flip-box-back").css('height', flip2 + "px");
 
     var flip3 = document.getElementById("event-card-car-1").offsetHeight;
+    var flip4 = document.getElementById("event-card-car-2").offsetHeight;
+    var flip5 = document.getElementById("event-card-car-3").offsetHeight;
 
-    $(".flip-box-2").css('height', flip3 + "px");
-    $(".flip-box-back-2").css('height', flip3 + "px");
+    $(".flip-box-2").css('height', Math.max(flip3,flip4,flip5) + "px");
+    $(".flip-box-back-2").css('height', Math.max(flip3,flip4,flip5) + "px");
   };
   
   const progressBar = document.querySelectorAll("#progress-bar");
