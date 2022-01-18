@@ -1,6 +1,7 @@
 html, body {
   scroll-behavior: smooth;
-  scroll-padding-top: 14vh; }
+  scroll-padding-top: 14vh;
+  overscroll-behavior-y: none; }
 
 body {
   font-family: "Kollektif", sans-serif !important; }

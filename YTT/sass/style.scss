@@ -3,6 +3,7 @@ $font-colour: #18a5bc;
 html, body{
   scroll-behavior: smooth;
   scroll-padding-top: 14vh;
+  overscroll-behavior-y: none;
 }
 body{
   font-family: $font-fam !important;
