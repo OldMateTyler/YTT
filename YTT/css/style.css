@@ -1,6 +1,8 @@
 html, body {
   scroll-behavior: smooth;
-  scroll-padding-top: 14vh; }
+  scroll-padding-top: 14vh;
+  min-height: -webkit-fill-available;
+  max-width: -webkit-fill-available; }
 
 body {
   font-family: "Kollektif", sans-serif !important; }

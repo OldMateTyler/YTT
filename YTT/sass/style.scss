@@ -3,6 +3,8 @@ $font-colour: #18a5bc;
 html, body{
   scroll-behavior: smooth;
   scroll-padding-top: 14vh;
+  min-height: -webkit-fill-available;
+  max-width: -webkit-fill-available;
 }
 body{
   font-family: $font-fam !important;
