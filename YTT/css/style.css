@@ -1,26 +1,23 @@
 html, body {
   scroll-behavior: smooth;
-  scroll-padding-top: 14vh;
-  min-height: -webkit-fill-available;
-  max-width: -webkit-fill-available; }
+  scroll-padding-top: 14vh; }
 
 body {
   font-family: "Kollektif", sans-serif !important; }
 
 body {
-  position: relative; }
+  position: relative;
+  min-height: 100vh;
+  min-height: -webkit-fill-available; }
 
 #event-card-car-1 {
-  position: absolute !important;
-  overflow: hidden; }
+  position: absolute !important; }
 
 #event-card-car-2 {
-  position: absolute !important;
-  overflow: hidden; }
+  position: absolute !important; }
 
 #event-card-car-3 {
-  position: absolute !important;
-  overflow: hidden; }
+  position: absolute !important; }
 
 .class-page-text {
   font-size: 1.25vw;
@@ -143,8 +140,7 @@ html {
 
 #YTT-nav {
   height: 12vh;
-  min-height: 75px;
-  max-width: 100%; }
+  min-height: 75px; }
 
 #nav-photo {
   height: 100%;
@@ -577,7 +573,7 @@ nav {
     display: none; } }
 .overlay {
   height: 0%;
-  max-width: 100%;
+  width: 100%;
   position: fixed;
   z-index: 1;
   top: 0;
