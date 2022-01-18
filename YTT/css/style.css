@@ -11,13 +11,13 @@ body {
   position: relative; }
 
 #event-card-car-1 {
-  position: relative !important; }
+  position: absolute !important; }
 
 #event-card-car-2 {
-  position: relative !important; }
+  position: absolute !important; }
 
 #event-card-car-3 {
-  position: relative !important; }
+  position: absolute !important; }
 
 .class-page-text {
   font-size: 1.25vw;
