@@ -19,6 +19,15 @@ body {
 #event-card-car-3 {
   position: absolute !important; }
 
+#event-card-car-1 {
+  position: relative !important; }
+
+#event-card-car-2 {
+  position: relative !important; }
+
+#event-card-car-3 {
+  position: relative !important; }
+
 .class-page-text {
   font-size: 1.25vw;
   line-height: 1;
@@ -140,7 +149,8 @@ html {
 
 #YTT-nav {
   height: 12vh;
-  min-height: 75px; }
+  min-height: 75px;
+  max-width: 100%; }
 
 #nav-photo {
   height: 100%;
@@ -573,7 +583,7 @@ nav {
     display: none; } }
 .overlay {
   height: 0%;
-  width: 100%;
+  max-width: 100%;
   position: fixed;
   z-index: 1;
   top: 0;
