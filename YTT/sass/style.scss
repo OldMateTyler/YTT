@@ -3,7 +3,6 @@ $font-colour: #18a5bc;
 html, body{
   scroll-behavior: smooth;
   scroll-padding-top: 14vh;
-  overscroll-behavior-y: none;
 }
 body{
   font-family: $font-fam !important;
@@ -12,16 +11,13 @@ body{
   position: relative;
 }
 #event-card-car-1{
-  position:absolute !important;
+  position: relative !important;
 }
 #event-card-car-2{
-  position:absolute !important;
+  position: relative !important;
 }
 #event-card-car-3{
-  position:absolute !important;
-}
-#event-carousel{
-  position:relative;
+  position: relative !important;
 }
 .class-page-text{
   font-size: 1.25vw;
@@ -125,9 +121,6 @@ html {
   min-width: auto;
   min-height: auto;
   display: block;
-}
-#event-card-car-1{
-  position:relative !important;
 }
 .flip-box-back {
   color: black;
@@ -388,7 +381,6 @@ border-color: #10657c !important;
 }
 .card-body {
   text-align: center;
-  position:relative;
 }
 .card-text{
   font-size: 1vw;
@@ -471,9 +463,6 @@ border-color: #10657c !important;
 @media screen and (min-width:576px) {
   #class-carousel{
     display: none;
-  }
-  #event-carousel{
-    display:none;
   }
 
 }
