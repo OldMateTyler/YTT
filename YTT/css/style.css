@@ -112,6 +112,9 @@ html {
   min-height: auto;
   display: block; }
 
+#event-card-car-1 {
+  position: relative !important; }
+
 .flip-box-back {
   color: black;
   text-align: center;
@@ -436,6 +439,9 @@ nav {
 
 @media screen and (min-width: 576px) {
   #class-carousel {
+    display: none; }
+
+  #event-carousel {
     display: none; } }
 @media screen and (max-width: 475px) {
   .contact-options {
