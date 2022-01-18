@@ -360,7 +360,8 @@ nav {
   padding-right: 100px; }
 
 .card-body {
-  text-align: center; }
+  text-align: center;
+  position: relative; }
 
 .card-text {
   font-size: 1vw; }
