@@ -1,6 +1,7 @@
 $font-fam: "Kollektif", sans-serif;
 $font-colour: #18a5bc;
 html, body{
+  overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 14vh;
 }
@@ -57,7 +58,7 @@ html {
   width: 100%;
 }
 .flip-box-inner {
-  position: relative;
+  position: fixed;
   display: block;
   width: 100%;
   height: auto;
@@ -106,7 +107,7 @@ html {
 .flip-box-front {
   width: 100%;
   height: auto;
-  position: relative;
+  position: absolute;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   min-width: auto;
