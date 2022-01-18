@@ -8,7 +8,7 @@ body {
 body {
   position: relative; }
 
-#event-card-car-1, #event-card-car-2, #event-card-car-3 {
+#event-card-car-1 {
   position: absolute !important; }
 
 #event-card-car-2 {
