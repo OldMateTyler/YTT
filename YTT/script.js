@@ -121,11 +121,9 @@ function openNav(){
     $(".flip-box-back").css('height', flip2 + "px");
 
     var flip3 = document.getElementById("event-card-car-1").offsetHeight;
-    var flip4 = document.getElementById("event-card-car-2").offsetHeight;
-    var flip5 = document.getElementById("event-card-car-3").offsetHeight;
 
-    $(".flip-box-2").css('height', Math.max(flip3,flip4,flip5) + "px");
-    $(".flip-box-back-2").css('height', Math.max(flip3,flip4,flip5) + "px");
+    $(".flip-box-2").css('height', flip3 + "px");
+    $(".flip-box-back-2").css('height', flip3 + "px");
   };
   
   const progressBar = document.querySelectorAll("#progress-bar");
