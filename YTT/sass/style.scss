@@ -67,6 +67,8 @@ html {
   -webkit-transition: -webkit-transform 0.6s;
   transition: transform 0.6s;
   transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 
 }
 .flip-toggle {
