@@ -107,7 +107,7 @@ html {
 .flip-box-front {
   width: 100%;
   height: auto;
-  position: absolute;
+  position: relative;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   min-width: auto;
