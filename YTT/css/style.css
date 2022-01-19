@@ -5,12 +5,6 @@ html, body {
 body {
   font-family: "Kollektif", sans-serif !important; }
 
-#event-carousel::-webkit-scrollbar {
-  display: none; }
-
-#event-carousel {
-  -ms-overflow-style: none; }
-
 body {
   position: relative;
   min-height: 100vh;
@@ -78,7 +72,6 @@ html {
   position: relative;
   display: block;
   width: 100%;
-  height: auto;
   text-align: center;
   will-change: transform;
   -webkit-transform-style: preserve-3d;
@@ -121,12 +114,9 @@ html {
 
 .flip-box-front {
   width: 100%;
-  height: auto;
   position: absolute;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  min-width: auto;
-  min-height: auto;
   display: block; }
 
 .flip-box-back {
@@ -137,7 +127,6 @@ html {
   -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
   width: 100%;
-  height: 100%;
   position: absolute;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
