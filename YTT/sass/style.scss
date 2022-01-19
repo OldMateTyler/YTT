@@ -7,6 +7,14 @@ html, body{
 body{
   font-family: $font-fam !important;
 }
+#event-carousel::-webkit-scrollbar {
+  display: none;
+}
+#event-carousel {
+  // ...
+  // Hide scrollbar in IE.
+  -ms-overflow-style: none;
+}
 body{
   position: relative;
   min-height: 100vh;

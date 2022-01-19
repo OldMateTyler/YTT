@@ -5,6 +5,12 @@ html, body {
 body {
   font-family: "Kollektif", sans-serif !important; }
 
+#event-carousel::-webkit-scrollbar {
+  display: none; }
+
+#event-carousel {
+  -ms-overflow-style: none; }
+
 body {
   position: relative;
   min-height: 100vh;
