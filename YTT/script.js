@@ -85,8 +85,6 @@ function openNav(){
       var className = document.getElementById("toggle-me-3-c");
       className.classList.toggle('flip-toggle');
   };
-  
-alert('hello');
   window.onload = function(){
     var flip = document.getElementById("event-card-1").offsetHeight;
     $(".flip-box").css('height', flip + "px");
@@ -129,7 +127,6 @@ alert('hello');
 })();
   
 $(window).on('hresize', function () {
-  alert('horiz');
   var flip = document.getElementById("event-card-1").offsetHeight;
   $(".flip-box").css('height', flip + "px");
   $(".flip-box-back").css('height', flip + "px");
