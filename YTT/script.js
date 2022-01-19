@@ -86,27 +86,7 @@ function openNav(){
       className.classList.toggle('flip-toggle');
   };
   
-  
-  window.addEventListener('resize', function(){
-      var flip = document.getElementById("event-card-1").offsetHeight;
-      $(".flip-box").css('height', flip + "px");
-      $(".flip-box-back").css('height', flip + "px");
 
-      var flip1 = document.getElementById("event-card-2").offsetHeight;
-      $(".flip-box").css('height', flip1 + "px");
-      $(".flip-box-back").css('height', flip1 + "px");
-
-      var flip2 = document.getElementById("event-card-3").offsetHeight;
-      $(".flip-box").css('height', flip2 + "px");
-      $(".flip-box-back").css('height', flip2 + "px");
-
-      var flip3 = document.getElementById("event-card-car-1").offsetHeight;
-      var flip4 = document.getElementById("event-card-car-2").offsetHeight;
-      var flip5 = document.getElementById("event-card-car-3").offsetHeight;
-  
-      $(".flip-box-2").css('height', Math.max(flip3,flip4,flip5) + "px");
-      $(".flip-box-back-2").css('height', Math.max(flip3,flip4,flip5) + "px");
-  });
   window.onload = function(){
     var flip = document.getElementById("event-card-1").offsetHeight;
     $(".flip-box").css('height', flip + "px");
@@ -126,8 +106,49 @@ function openNav(){
 
     $(".flip-box-2").css('height', Math.max(flip3,flip4,flip5) + "px");
     $(".flip-box-back-2").css('height', Math.max(flip3,flip4,flip5) + "px");
-  };
+  }; 
+
+  (function () {
+    var win = jQuery(window),
+        prev_width = win.width(),
+        prev_height = win.height();
+    win.on('resize', function () {
+        var width = win.width(),
+            height = win.height();
+
+        if (width !== prev_width) {
+            win.trigger('hresize');
+        }
+        if (height !== prev_height) {
+            win.trigger('vresize');
+        }
+
+        prev_width = width;
+        prev_height = height;
+    });
+})();
   
+$(window).on('hresize', function () {
+  alert('horiz');
+  var flip = document.getElementById("event-card-1").offsetHeight;
+  $(".flip-box").css('height', flip + "px");
+  $(".flip-box-back").css('height', flip + "px");
+
+  var flip1 = document.getElementById("event-card-2").offsetHeight;
+  $(".flip-box").css('height', flip1 + "px");
+  $(".flip-box-back").css('height', flip1 + "px");
+
+  var flip2 = document.getElementById("event-card-3").offsetHeight;
+  $(".flip-box").css('height', flip2 + "px");
+  $(".flip-box-back").css('height', flip2 + "px");
+
+  var flip3 = document.getElementById("event-card-car-1").offsetHeight;
+  var flip4 = document.getElementById("event-card-car-2").offsetHeight;
+  var flip5 = document.getElementById("event-card-car-3").offsetHeight;
+
+  $(".flip-box-2").css('height', Math.max(flip3,flip4,flip5) + "px");
+  $(".flip-box-back-2").css('height', Math.max(flip3,flip4,flip5) + "px");
+});
   const progressBar = document.querySelectorAll("#progress-bar");
   const section = document.querySelector("section");
   
