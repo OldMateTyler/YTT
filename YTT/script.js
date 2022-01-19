@@ -86,7 +86,7 @@ function openNav(){
       className.classList.toggle('flip-toggle');
   };
   
-
+alert('hello');
   window.onload = function(){
     var flip = document.getElementById("event-card-1").offsetHeight;
     $(".flip-box").css('height', flip + "px");
