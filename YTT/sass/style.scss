@@ -3,6 +3,7 @@ $font-colour: #18a5bc;
 html, body{
   scroll-behavior: smooth;
   scroll-padding-top: 14vh;
+  overflow-x:hidden;
 }
 body{
   font-family: $font-fam !important;
@@ -332,10 +333,8 @@ border-color: #10657c !important;
   transition: .3s ease-in-out;
 }
 .come-in {
-  -webkit-transform:translateY(150px);
-  -webkit-animation: come-in 0.8s ease forwards;
-  transform: translateY(150px);
-  animation: come-in 0.8s ease forwards;
+  -webkit-animation: come-in 1.5s ease;
+  animation: come-in 1.5s ease;
 }
 .come-in:nth-child(odd) {
   -webkit-animation-duration: 0.6s;
@@ -348,16 +347,16 @@ border-color: #10657c !important;
   animation: none;
 }
 .entrance-animation{
-  -webkit-transform:translateY(150px);
-  -webkit-animation: come-in 0.8s ease forwards;
-  transform: translateY(150px);
-  animation: come-in 0.8s ease forwards;
+  -webkit-animation: come-in 1.5s ease;
+  animation: come-in 1.5s ease;
 }
 @keyframes come-in {
-  to {
-     transform: translateY(0);
-     -webkit-transform: translateY(0);
-     }
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
 }
 .event-photo {
   margin-top: 24px;
@@ -486,6 +485,10 @@ border-color: #10657c !important;
   }
   .marg-top{
     margin-top:15px;
+  }
+  .event-card {
+    margin-left: 0vw !important;
+    margin-right: 0vw !important;
   }
 }
 @media screen and (max-width: 700px) {

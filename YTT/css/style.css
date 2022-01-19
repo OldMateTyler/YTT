@@ -1,6 +1,7 @@
 html, body {
   scroll-behavior: smooth;
-  scroll-padding-top: 14vh; }
+  scroll-padding-top: 14vh;
+  overflow-x: hidden; }
 
 body {
   font-family: "Kollektif", sans-serif !important; }
@@ -320,10 +321,8 @@ nav {
   transition: .3s ease-in-out; }
 
 .come-in {
-  -webkit-transform: translateY(150px);
-  -webkit-animation: come-in 0.8s ease forwards;
-  transform: translateY(150px);
-  animation: come-in 0.8s ease forwards; }
+  -webkit-animation: come-in 1.5s ease;
+  animation: come-in 1.5s ease; }
 
 .come-in:nth-child(odd) {
   -webkit-animation-duration: 0.6s;
@@ -336,15 +335,14 @@ nav {
   animation: none; }
 
 .entrance-animation {
-  -webkit-transform: translateY(150px);
-  -webkit-animation: come-in 0.8s ease forwards;
-  transform: translateY(150px);
-  animation: come-in 0.8s ease forwards; }
+  -webkit-animation: come-in 1.5s ease;
+  animation: come-in 1.5s ease; }
 
 @keyframes come-in {
-  to {
-    transform: translateY(0);
-    -webkit-transform: translateY(0); } }
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 .event-photo {
   margin-top: 24px; }
 
@@ -460,7 +458,11 @@ nav {
     font-size: 8vw; }
 
   .marg-top {
-    margin-top: 15px; } }
+    margin-top: 15px; }
+
+  .event-card {
+    margin-left: 0vw !important;
+    margin-right: 0vw !important; } }
 @media screen and (max-width: 700px) {
   #footer {
     font-size: 12px; } }
