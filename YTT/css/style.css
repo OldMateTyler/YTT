@@ -6,6 +6,9 @@ html, body {
 body {
   font-family: "Kollektif", sans-serif !important; }
 
+.card-body {
+  text-align: center; }
+
 body {
   position: relative;
   min-height: 100vh;
@@ -105,8 +108,10 @@ html {
 
 #title-div {
   background: linear-gradient(to top, rgba(114, 194, 239, 0.8), rgba(24, 165, 188, 0.8)), url("title3.jpeg");
-  background-size: cover;
+  background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100%;
   max-width: 100%;
   display: flex;
@@ -325,8 +330,8 @@ nav {
   animation: come-in 1.5s ease; }
 
 .come-in:nth-child(odd) {
-  -webkit-animation-duration: 0.6s;
-  animation-duration: 0.6s; }
+  -webkit-animation-duration: 1.3s;
+  animation-duration: 1.3s; }
 
 .already-visible {
   -webkit-transform: translateY(0);
@@ -363,9 +368,6 @@ nav {
   padding-left: 100px;
   padding-right: 100px; }
 
-.card-body {
-  text-align: center; }
-
 .card-text {
   font-size: 1vw; }
 
@@ -378,15 +380,37 @@ nav {
   border-radius: 20px; }
 
 #testimonial {
-  background-color: #1884a1;
+  background-color: #18a5bc;
   font-family: "Kollektif", sans-serif;
-  color: white; }
+  color: white;
+  height: auto;
+  width: auto; }
+
+#test-background {
+  background: linear-gradient(to top, rgba(114, 194, 239, 0.8), rgba(24, 165, 188, 0.8)), url("/imgs/carousel/1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh; }
+
+.test-carousel-text {
+  text-align: center;
+  font-size: 1.5vw;
+  padding-left: 15vw;
+  padding-right: 15vw; }
 
 #testimonial-text {
   text-align: center; }
 
+.carousel-item > .test-carousel-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
 #footer {
-  background-color: #10657c;
+  background-color: #1884a1;
   color: white;
   font-size: 20px; }
 
@@ -420,14 +444,17 @@ nav {
   #classes {
     display: none; }
 
-  #event-div {
+  #event-div-wo-car {
     display: none; }
 
   #class-carousel {
     display: block; }
 
   #event-carousel {
-    display: block; } }
+    display: block; }
+
+  #test-background {
+    height: 60vh !important; } }
 .event-carousel-indicator .active {
   background-color: #18a5bc !important; }
 
