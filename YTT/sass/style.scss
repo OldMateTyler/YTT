@@ -11,6 +11,9 @@ body{
 .card-body{
   text-align: center;
 }
+.form-invalid{
+  background-color:red !important;
+}
 body{
   position: relative;
   min-height: 100vh;
