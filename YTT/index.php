@@ -67,7 +67,7 @@
         }
         function validate(e){
             if(document.getElementById("Fullname").value != ""){
-
+                if(document.getElementById("Fullname").value != "")
             }
             else{
                 e.preventDefault();
