@@ -55,7 +55,7 @@
             <div class="title-text-div">
                 <p class="title-text title-entrance">Your Talent Team</p>
                 <h1 class="sub-text title-entrance">Performance Academy</h1>
-                <a href='imgs/timetable.PNG' target='_blank' class="btn shadow-lg title-entrance" id="timetable">View Our Timetable</a>
+                <a href='#enrol-div' class="btn shadow-lg title-entrance" id='enrol-btn' style='border:solid 1px #18a5bc !important'>Enrol Now!</a>
             </div>
         </div>
         <br /><br /><br /><br />
@@ -114,7 +114,7 @@
                     fill="#18a5bc" />
             </svg>
         </div>
-
+        <div class='class-div'>
         <div class="classes-div shadow-lg " id="classes">
             <h1 id="classes-title" class='module'>Classes</h1>
 
@@ -196,8 +196,11 @@
                     </div>
                 </div>
             </div>
-            <br />
-            <br />
+            <br/>
+            <a href='imgs/timetable.PNG' target='_blank' class="btn shadow-lg module" id="timetable">View
+                Our Timetable</a>
+                <br/>
+            </div>
         </div>
         <div id='class-carousel' style='background-color: #18a5bc;'>
             <h1 id="classes-title" class='module'>Classes</h1>
@@ -327,9 +330,12 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
+            <br/>
+                <a href='imgs/timetable.PNG' target='_blank' class="btn shadow-lg module" id="timetable">View
+                Our Timetable</a>
+                <br/>
+            </div>
         </div>
-
-
 
         <div class="class-bottom-svg">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="visual"
@@ -364,6 +370,7 @@
                                 <div class="card-body">
                                     <p class="card-front-title">Birthday</p>
                                     <p class="card-front-title">Parties</p>
+                                    <p class='card-front-title-text'>A special event thoughtfully planned for your little one.</p>
                                     <a class="btn btn-primary find-out-more shadow-lg" id="toggle-card-2-c">Learn
                                         More</a>
                                     <br />
@@ -405,6 +412,7 @@
                                 <div class="card-body">
                                     <p class="card-front-title">Holiday</p>
                                     <p class="card-front-title">Clinics</p>
+                                    <p class='card-front-title-text'>Family Friendly day out filled with hours of fun for all ages.</p>
                                     <a class="btn btn-primary find-out-more shadow-lg" id="toggle-card-c">Learn More</a>
                                 </div>
                             </div>
@@ -444,6 +452,7 @@
                                 <div class="card-body">
                                     <p class="card-front-title">Studio</p>
                                     <p class="card-front-title">Rental</p>
+                                    <p class='card-front-title-text'>In need of space for dance practice, a party, or a meeting?</p>
                                     <a class="btn btn-primary find-out-more shadow-lg" id="toggle-card-3-c">Learn
                                         More</a>
                                 </div>
@@ -499,6 +508,7 @@
                                             alt="Holiday Clinics" />
                                         <div class="card-body">
                                             <p class="card-front-title">Birthday Parties</p>
+                                            <p class='card-front-title-text'>A special event thoughtfully planned for your little one.</p>
                                             <a class="btn btn-primary find-out-more shadow-lg" id="toggle-card-2">Learn
                                                 More</a>
                                         </div>
@@ -541,6 +551,7 @@
                                             style='margin-top: 5%;width: 90%;border-radius: 20px;' />
                                         <div class="card-body">
                                             <p class="card-front-title">Holiday Clinics</p>
+                                            <p class='card-front-title-text'>Family Friendly day out filled with hours of fun for all ages.</p>
                                             <a class="btn btn-primary find-out-more shadow-lg" id="toggle-card">Learn
                                                 More</a>
                                         </div>
@@ -583,6 +594,7 @@
                                             style='margin-top: 5%;width: 90%;border-radius: 20px;' />
                                         <div class="card-body">
                                             <p class="card-front-title">Studio Rental</p>
+                                            <p class='card-front-title-text'>In need of space for dance practice, a party, or a meeting?</p>
                                             <a class="btn btn-primary find-out-more shadow-lg" id="toggle-card-3">Learn
                                                 More</a>
                                         </div>
@@ -631,7 +643,8 @@
             </div>
             <br />
             <div class='container'>
-                <span style='font-size:30px;'>What is included?</span></span><a href='#more-info' data-toggle='collapse' style='font-size:30px;color:black !important;'>&#43;</a>
+                <span style='font-size:30px;'>What is included?</span></span><a href='#more-info' data-toggle='collapse'
+                    style='font-size:30px;color:black !important;'>&#43;</a>
                 <div id='more-info' class='collapse'>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -713,6 +726,65 @@
             </svg>
         </div>
 
+    </section>
+    <section>
+        <br/><br/>
+        <div class='justify-content-center container' id='enrol-div'>
+        <h1 id="enrol-title" class='module'>Enrol Now!</h1>
+        <form action="https://formspree.io/f/xbjwdpde" method="post">
+                <div class='mb-3 row justify-content-center'>
+                    <label for='fname' class='col-form-label col-sm-4' id='fname'>Full Name:</label>
+                    <div class='col-sm-6 col-lg-4'>
+                        <input type='text' class='form-control' name='fullName' id='Fullname' placeholder="Enter Full Name">
+                    </div>
+                </div>
+
+                <div class='mb-3 row justify-content-center'>
+                    <label for='dob' class='col-form-label col-sm-4' name='DOB' id='dateOfBirth'>Date of Birth:</label>
+                    <div class='col-sm-6 col-lg-4'>
+                        <input type='date' class='form-control' id='dob' name='DOB'>
+                    </div>
+                </div>
+
+                <div class='mb-3 row justify-content-center'>
+                    <label for='classes' class='col-form-label col-sm-4' id='class'>Select Class:</label>
+                    <div class='col-sm-6 col-lg-4'>
+                        <select id='Class' name='Class' class='form-control'>
+                            <option value='classic'>Classic</option>
+                            <option value='Pre-Schooler'>Pre-Schoolers</option>
+                            <option value='Line'>Line</option>
+                            <option value='Boy'>Boy</option>
+                            <option value='Break'>Break</option>
+                            <option value='Adult'>Adult</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class='mb-3 row justify-content-center'>
+                    <label for='phoneNum' class='col-form-label col-sm-4' id='phNum'>Phone Number:</label>
+                    <div class='col-sm-6 col-lg-4'>
+                        <input type='tel' id='phoneNum' class='form-control' name='PhoneNumber' pattern='[0-9]{4} [0-9]{3} [0-9]{3}' placeholder='0000 000 000'>
+                    </div>
+                </div>
+
+                <div class='mb-3 row justify-content-center'>
+                    <label for='email' class='col-form-label col-sm-4' id='mail'>Email:</label>
+                    <div class='col-sm-6 col-lg-4'>
+                        <input type='email' id='email' name='Email' class='form-control' placeholder="Enter Email">
+                    </div>
+                </div>
+
+                <div class='mb-3 row justify-content-center'>
+                    <label for='introduceYourself' class='col-form-label col-sm-4' id='intro'>Introduce Yourself:</label>
+                    <div class='col-sm-6 col-lg-4'>
+                        <textarea class='form-control' id='introduceYourself' name='IntroduceYourself' rows='4'></textarea>
+                    </div>
+                </div>
+                <div class='mb-3 row justify-content-center'>
+                    <button type='submit' class='btn btn-primary'>Enrol Now!</button>
+                </div>
+        </form>
+        </div>
     </section>
 
     <section>

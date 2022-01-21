@@ -37,7 +37,8 @@ body {
   object-fit: cover; }
 
 #class-carousel {
-  font-family: "Kollektif", sans-serif; }
+  font-family: "Kollektif", sans-serif;
+  text-align: center; }
 
 #event-carousel {
   position: relative; }
@@ -202,14 +203,30 @@ nav {
   font-size: 1vw; }
 
 #timetable {
-  background-color: white !important;
+  background-color: white;
   color: #303030 !important;
   border-color: white !important;
-  display: block;
-  margin: 0 auto;
   width: 200px !important;
-  bottom: -100px !important;
-  position: relative; }
+  justify-content: center;
+  animation: none;
+  -webkit-animation: none; }
+
+#enrol-btn {
+  background-color: white;
+  color: #303030;
+  width: 150px;
+  margin: 0 auto;
+  display: block;
+  animation: none;
+  -webkit-animation: none; }
+
+#enrol-btn:hover {
+  background-color: #e2e2e2 !important;
+  color: black !important;
+  -webkit-animation: pulse 1s infinite;
+  -webkit-transition: .3s ease-in-out;
+  animation: pulse 1s infinite;
+  transition: .3s ease-in-out; }
 
 #timetable:hover {
   background-color: #e2e2e2 !important;
@@ -374,6 +391,9 @@ nav {
 .card-front-title {
   font-size: 2vw; }
 
+.card-front-title-text {
+  font-size: 1vw; }
+
 .card-img-top {
   justify-content: center;
   padding: 10px 10px 10px 10px;
@@ -401,6 +421,11 @@ nav {
   padding-right: 15vw; }
 
 #testimonial-text {
+  text-align: center; }
+
+#enrol-title {
+  font-size: 60px;
+  color: #18a5bc;
   text-align: center; }
 
 .carousel-item > .test-carousel-text {
@@ -548,7 +573,10 @@ nav {
     font-size: 2.5vw !important; }
 
   .find-out-more {
-    font-size: 2vw !important; } }
+    font-size: 2vw !important; }
+
+  .card-front-title-text {
+    font-size: 1.25vw !important; } }
 @media screen and (max-width: 767px) {
   .event-text {
     font-size: 2.5vw !important; }
@@ -568,6 +596,9 @@ nav {
   .card-front-title {
     font-size: 4.8vw; }
 
+  .card-front-title-text {
+    font-size: 2.4vw !important; }
+
   .find-out-more {
     font-size: 3.84vw !important; } }
 @media screen and (max-width: 575px) {
@@ -586,6 +617,9 @@ nav {
 
   .card-front-title {
     font-size: 7.5vw !important; }
+
+  .card-front-title-text {
+    font-size: 3.75vw !important; }
 
   .class-card-title {
     font-size: 7.5vw !important; }
