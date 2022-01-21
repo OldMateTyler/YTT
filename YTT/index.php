@@ -48,6 +48,7 @@
 <head>
     <title>Your Talent Team</title>
     <link rel='icon' type='image/x-icon' href='imgs/white logo.png'>
+
     <link rel="stylesheet" href="css/style.css" />
     <link href="//fonts.cdnfonts.com/css/kollektif" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -789,7 +790,11 @@
         <br/><br/>
         <div class='justify-content-center container' id='enrol-div'>
         <h1 id="enrol-title" class='module'>Enrol Now!</h1>
+<<<<<<< HEAD
         <form action="index.php" method="POST" onsubmit='validate(event)'>
+=======
+        <form action="index.php" method="POST">
+>>>>>>> ded93a7d9a101f7894567fc229bf74edc5c0eb5f
                 <div class='mb-3 row justify-content-center'>
                     <label for='fname' class='col-form-label col-sm-4' id='fname'>Full Name:</label>
                     <div class='col-sm-6 col-lg-4'>
