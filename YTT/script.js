@@ -1,3 +1,81 @@
+
+if ( window.history.replaceState ) {
+  window.history.replaceState( null, null, window.location.href );
+}
+function validate(e){
+  if(document.getElementById("Fullname").value == ""){
+    $("#Fullname").removeClass("shadow-lg");
+    $("#Fullname").addClass("form-invalid");
+  }
+  else{
+    $("#Fullname").addClass("shadow-lg");
+    $("#Fullname").removeClass("form-invalid");
+  }
+  if(document.getElementById("dob").value == ""){
+    $("#dob").removeClass("shadow-lg");
+    $("#dob").addClass("form-invalid");
+  }
+  else{
+    $("#dob").addClass("shadow-lg");
+    $("#dob").removeClass("form-invalid");
+  }
+  if(document.getElementById("Class").value == ""){
+    $("#Class").removeClass("shadow-lg");
+    $("#Class").addClass("form-invalid");
+  }
+  else{
+    $("#Class").addClass("shadow-lg");
+    $("#Class").removeClass("form-invalid");
+  }
+  if(document.getElementById("phoneNum").value == ""){
+    $("#phoneNum").removeClass("shadow-lg");
+    $("#phoneNum").addClass("form-invalid");
+  }
+  else{
+    $("#phoneNum").addClass("shadow-lg");
+    $("#phoneNum").removeClass("form-invalid");
+  }
+  if(document.getElementById("email").value == ""){
+    $("#email").removeClass("shadow-lg");
+    $("#email").addClass("form-invalid");
+  }
+  else{
+    $("#email").addClass("shadow-lg");
+    $("#email").removeClass("form-invalid");
+  }
+  if(document.getElementById("introduceYourself").value == ""){
+      $("#introduceYourself").removeClass("shadow-lg");
+      $("#introduceYourself").addClass("form-invalid");
+  }
+  else{
+    $("#introduceYourself").addClass("shadow-lg");
+    $("#introduceYourself").removeClass("form-invalid");
+  }
+  if(document.getElementById("Fullname").value != "" && document.getElementById("dob").value != "" && document.getElementById("Class").value != "" && document.getElementById("phoneNum").value != "" && document.getElementById("email").value != "" && document.getElementById("introduceYourself").value != ""){
+    e.preventDefault();
+    var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+    myModal.show();
+    var formData = $("#form1").serialize();
+    document.getElementById("Fullname").value = "";
+    document.getElementById("dob").value = "";
+    document.getElementById("Class").value = "";
+    document.getElementById("phoneNum").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("introduceYourself").value = "";
+    
+    $.ajax({
+      url:"index.php",
+      method: "POST",
+      data:formData,
+      error:function(){
+        alert("unable to send data to php")
+      }
+    })
+  }
+  else{
+    e.preventDefault();
+  }
+}
 function openNav(){
     document.getElementById("myNav").style.height = "100%";
       $("body").css("overflow-y",'hidden');
@@ -19,7 +97,6 @@ function openNav(){
     
   }
 
-  
   var flip1 = document.getElementById("toggle-card");
   flip1.onclick = function(){
       var className = document.getElementById("toggle-me");
@@ -155,6 +232,9 @@ $(window).on('hresize', function () {
       $("#progress-bar").css("width", progressWidth +"%");
   };
   window.addEventListener('scroll',animateProgressBar);
+  $(document).ready(function(){
+    animateProgressBar();
+  })
   var win = $(window);
   
   var allMods = $(".module");
