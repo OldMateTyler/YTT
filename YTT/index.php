@@ -1,15 +1,53 @@
 <?php
-echo "<pre>";
+                    if(isset($_POST['fullName']) && $_POST['fullName'] != ''){
+                        if(isset($_POST['DOB']) && $_POST['DOB'] != ''){
+                            if(isset($_POST['PhoneNumber']) && $_POST['PhoneNumber'] != ''){
+                                if(isset($_POST['Email']) && $_POST['Email'] != '' && filter_var($_POST['Email'], FILTER_VALIDATE_EMAIL)){
+                                    if(isset($_POST['IntroduceYourself']) && $_POST['IntroduceYourself'] != ''){
+                                        $fullName = $_POST['fullName'];
+                                        $dob = $_POST['DOB'];
+                                        $class = $_POST['Class'];
+                                        $ph = $_POST['PhoneNumber'];
+                                        $email = $_POST['Email'];
+                                        $intro = $_POST['IntroduceYourself'];
 
-print_r($_POST);
+                                        $to = 'tyler.simmonds254@gmail.com';
+                                        $subject = 'YTT Enrol';
 
-echo "</pre>";
-?>
+                                        $body = '';
+                                        $body .= "Full Name: ".$fullName."\r\n";
+                                        $body .= "Date of Birth: ".$dob."\r\n";
+                                        $body .= "Class: ".$class."\r\n";
+                                        $body .= "Phone Number: ".$ph."\r\n";
+                                        $body .= "Email: ".$email."\r\n";
+                                        $body .= "Introduce Yourself: ".$intro."\r\n";
+                                        
 
+                                        $headers = "MIME-Version: 1.0" . "\r\n";
+                                        $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+                                        $headers .= 'From: <tyler.simmondsYTT@gmail.com>' . "\r\n";
+                                        $message = nl2br($body);
+                                        if(mail($to,$subject,$message,$headers)){
+                                            echo "Message Accepted";
+                                            $message_sent = true;
+                                        }
+                                        else{
+                                            echo "ERROR";
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
+            ?>
 <html lang="en">
 
 <head>
     <title>Your Talent Team</title>
+    <link rel='icon' type='image/x-icon' href='imgs/white logo.png'>
     <link rel="stylesheet" href="css/style.css" />
     <link href="//fonts.cdnfonts.com/css/kollektif" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -18,17 +56,13 @@ echo "</pre>";
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src='jquery.visible.js'></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-
 </head>
-
 <body id='body'>
     <nav class="navbar navbar-expand-sm shadow-lg fixed-top" id="YTT-nav">
-        <a id='nav-photo' href='index.html'>
+        <a id='nav-photo' href='index.php'>
             <img src="imgs/white_logo1-.png" id="nav-photo" />
         </a>
 
@@ -47,6 +81,9 @@ echo "</pre>";
                     <a class="nav-link nav-item" href="#event-div">Events</a>
                 </li>
                 <li class="hide-icons hide">
+                    <a class="nav-link nav-item" href="#enrol-div">Enrol</a>
+                </li>
+                <li class="hide-icons hide">
                     <a class="nav-link nav-item" href="#contact-us-div">Contact Us</a>
                 </li>
                 <li id="show-hamburger" class="navbar-brand" style="cursor: pointer" onclick="openNav()">
@@ -61,7 +98,7 @@ echo "</pre>";
     <section>
         <div id="title-div" class="container shadow-lg">
             <div class="title-text-div">
-                <p class="title-text title-entrance">Your Talent Team</p>
+                <span class="title-text title-entrance">Your Talent Team</span>
                 <h1 class="sub-text title-entrance">Performance Academy</h1>
                 <a href='#enrol-div' class="btn shadow-lg title-entrance" id='enrol-btn' style='border:solid 1px #18a5bc !important'>Enrol Now!</a>
             </div>
@@ -101,6 +138,7 @@ echo "</pre>";
             <a href="#about-us" onclick="closeNav()">About Us</a>
             <a href="#class-carousel" onclick="closeNav()">Classes</a>
             <a href="#event-div" onclick="closeNav()">Events</a>
+            <a href="#enrol-div" onclick="closeNav()">Enrol</a>
             <a href="#contact-us-div" onclick="closeNav()">Contact Us</a>
         </div>
     </div>
@@ -370,14 +408,13 @@ echo "</pre>";
             <div id='event-div-wo-car'>
                 <h1 id="event-title" class='module'>Events</h1>
                 <div class="row mx-auto justify-content-center container-fluid d-flex">
-                    <div class="card col-md-3 col-xs-8 col-sm-8 event-card shadow-lg flip-box module">
+                    <div class="card col-md-3 col-xs-8 col-sm-8 event-card shadow-lg flip-box module" style='margin-top:10px'>
                         <div class="flip-box-inner" id="toggle-me-2-c">
                             <div class="flip-box-front" id="event-card-1">
-                                <img class="card-img-bottom event-photo" src="imgs/Events/event2.png"
+                                <img class="card-img-bottom event-photo" src="imgs/Events/event1.png"
                                     alt="Holiday Clinics" />
                                 <div class="card-body">
-                                    <p class="card-front-title">Birthday</p>
-                                    <p class="card-front-title">Parties</p>
+                                    <span class="card-front-title">Birthday Parties</span>
                                     <p class='card-front-title-text'>A special event thoughtfully planned for your little one.</p>
                                     <a class="btn btn-primary find-out-more shadow-lg" id="toggle-card-2-c">Learn
                                         More</a>
@@ -412,14 +449,13 @@ echo "</pre>";
                         </div>
                     </div>
                     <br />
-                    <div class="card col-md-3 col-xs-8 col-sm-8 event-card shadow-lg flip-box module" id="testHeight">
+                    <div class="card col-md-3 col-xs-8 col-sm-8 event-card shadow-lg flip-box module" style='margin-top:10px'>
                         <div class="flip-box-inner" id="toggle-me-c">
                             <div class="flip-box-front" id="event-card-2">
-                                <img class="card-img-bottom event-photo" src="imgs/Events/event1.png"
+                                <img class="card-img-bottom event-photo" src="imgs/Events/event2.png"
                                     alt="Holiday Clinics" />
                                 <div class="card-body">
-                                    <p class="card-front-title">Holiday</p>
-                                    <p class="card-front-title">Clinics</p>
+                                    <span class="card-front-title">Holiday Clinics</span>
                                     <p class='card-front-title-text'>Family Friendly day out filled with hours of fun for all ages.</p>
                                     <a class="btn btn-primary find-out-more shadow-lg" id="toggle-card-c">Learn More</a>
                                 </div>
@@ -452,14 +488,13 @@ echo "</pre>";
                         </div>
                     </div>
                     <br />
-                    <div class="card col-md-3 col-xs-8 col-sm-8 event-card shadow-lg flip-box module">
+                    <div class="card col-md-3 col-xs-8 col-sm-8 event-card shadow-lg flip-box module" style='margin-top:10px'>
                         <div class="flip-box-inner" id="toggle-me-3-c">
                             <div class="flip-box-front" id="event-card-3">
                                 <img class="card-img-bottom event-photo" src="imgs/Events/event3.png"
                                     alt="Holiday Clinics" />
                                 <div class="card-body">
-                                    <p class="card-front-title">Studio</p>
-                                    <p class="card-front-title">Rental</p>
+                                    <span class="card-front-title">Studio Rental</span>
                                     <p class='card-front-title-text'>In need of space for dance practice, a party, or a meeting?</p>
                                     <a class="btn btn-primary find-out-more shadow-lg" id="toggle-card-3-c">Learn
                                         More</a>
@@ -511,7 +546,7 @@ echo "</pre>";
                             <div class="card event-card flip-box flip-box-2 shadow-lg">
                                 <div class="flip-box-inner" id="toggle-me-2">
                                     <div class="flip-box-front" id="event-card-car-1">
-                                        <img class="card-img-bottom event-photo" src="imgs/Events/event2.png"
+                                        <img class="card-img-bottom event-photo" src="imgs/Events/event1.png"
                                             style='margin-top: 5%;width: 90%;border-radius: 20px;'
                                             alt="Holiday Clinics" />
                                         <div class="card-body">
@@ -554,7 +589,7 @@ echo "</pre>";
                             <div class="card event-card flip-box flip-box-2 shadow-lg" id="testHeight2">
                                 <div class="flip-box-inner" id="toggle-me">
                                     <div class="flip-box-front" id="event-card-car-2">
-                                        <img class="card-img-bottom event-photo" src="imgs/Events/event1.png"
+                                        <img class="card-img-bottom event-photo" src="imgs/Events/event2.png"
                                             alt="Holiday Clinics"
                                             style='margin-top: 5%;width: 90%;border-radius: 20px;' />
                                         <div class="card-body">
@@ -739,25 +774,26 @@ echo "</pre>";
         <br/><br/>
         <div class='justify-content-center container' id='enrol-div'>
         <h1 id="enrol-title" class='module'>Enrol Now!</h1>
-        <form action="index.php" method="POST">
+        <form method="POST" id='form1'>
                 <div class='mb-3 row justify-content-center'>
                     <label for='fname' class='col-form-label col-sm-4' id='fname'>Full Name:</label>
                     <div class='col-sm-6 col-lg-4'>
-                        <input type='text' class='form-control' name='fullName' id='Fullname' placeholder="Enter Full Name">
+                        <input type='text' class='form-control shadow-lg' name='fullName' id='Fullname' placeholder="Enter Full Name">
                     </div>
                 </div>
 
                 <div class='mb-3 row justify-content-center'>
                     <label for='dob' class='col-form-label col-sm-4' name='DOB' id='dateOfBirth'>Date of Birth:</label>
                     <div class='col-sm-6 col-lg-4'>
-                        <input type='date' class='form-control' id='dob' name='DOB'>
+                        <input type='date' class='form-control shadow-lg' id='dob' name='DOB'>
                     </div>
                 </div>
 
                 <div class='mb-3 row justify-content-center'>
                     <label for='classes' class='col-form-label col-sm-4' id='class'>Select Class:</label>
                     <div class='col-sm-6 col-lg-4'>
-                        <select id='Class' name='Class' class='form-control'>
+                        <select id='Class' name='Class' class='form-control shadow-lg'>
+                            <option hidden selected value=''> -- select an option -- </option>
                             <option value='classic'>Classic</option>
                             <option value='Pre-Schooler'>Pre-Schoolers</option>
                             <option value='Line'>Line</option>
@@ -771,30 +807,47 @@ echo "</pre>";
                 <div class='mb-3 row justify-content-center'>
                     <label for='phoneNum' class='col-form-label col-sm-4' id='phNum'>Phone Number:</label>
                     <div class='col-sm-6 col-lg-4'>
-                        <input type='tel' id='phoneNum' class='form-control' name='PhoneNumber' pattern='[0-9]{4} [0-9]{3} [0-9]{3}' placeholder='0000 000 000'>
+                        <input type='tel' id='phoneNum' class='form-control shadow-lg' name='PhoneNumber' pattern='[0-9]{4} [0-9]{3} [0-9]{3}' placeholder='0000 000 000'>
                     </div>
                 </div>
 
                 <div class='mb-3 row justify-content-center'>
                     <label for='email' class='col-form-label col-sm-4' id='mail'>Email:</label>
                     <div class='col-sm-6 col-lg-4'>
-                        <input type='email' id='email' name='Email' class='form-control' placeholder="Enter Email">
+                        <input type='email' id='email' name='Email' class='form-control shadow-lg' placeholder="Enter Email">
                     </div>
                 </div>
 
                 <div class='mb-3 row justify-content-center'>
                     <label for='introduceYourself' class='col-form-label col-sm-4' id='intro'>Introduce Yourself:</label>
-                    <div class='col-sm-6 col-lg-4'>
-                        <textarea class='form-control' id='introduceYourself' name='IntroduceYourself' rows='4'></textarea>
+                    <div class='col-sm-6 col-lg-4' id='yourself-div'>
+                        <textarea class='form-control shadow-lg' id='introduceYourself' name='IntroduceYourself' placeholder="Introduce yourself in 100 words..." rows='4'></textarea>
                     </div>
                 </div>
                 <div class='mb-3 row justify-content-center'>
-                    <button type='submit' class='btn btn-primary'>Enrol Now!</button>
+                    <div class='col-sm-4'></div>
+                    <div class='col-sm-6 col-lg-4'>
+                        <button type='button' onclick='validate(event)' class='btn btn-primary' style='margin:0 auto;display:block;'>Enrol Now!</button>
+                    </div>
+                    
                 </div>
         </form>
+        <div class='modal fade' id='myModal'>
+            <div class='modal-dialog modal-dialog-centered'>
+                <div class='modal-content'>
+                    <div class='modal-header'>
+                        <h2 class='modal-title' style="text-align:center;">Thank you for Enrolling at YTT!</h2>
+                    </div>
+                    <div class='modal-body' style='text-align:center;'>
+                        Please note this is not an official enrollment, our staff at YTT will be in contact with you within the following days. For urgent enquires please contact us on 0434 437 071
+                        <br/>
+                        <button type='button' class='btn btn-primary' data-bs-dismiss='modal'>Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-
     <section>
         <div id="contact-svg">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="visual"

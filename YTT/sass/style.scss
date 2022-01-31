@@ -11,6 +11,12 @@ body{
 .card-body{
   text-align: center;
 }
+.form-invalid{
+  box-shadow: 0 1rem 3rem rgba(255, 0, 0, 0.75)!important;
+}
+option{
+  color:#495057 !important;
+}
 body{
   position: relative;
   min-height: 100vh;
@@ -97,13 +103,7 @@ html {
 .sub-text {
   text-align: center;
   color: white;
-  font-size: 2vw;
-  text-shadow: 2px 3px 20px #212121;
-}
-.sub-text-2 {
-  text-align: center;
-  color: white;
-  font-size: 1.2vw;
+  font-size: 3vw;
   text-shadow: 2px 3px 20px #212121;
 }
 #title-div {
@@ -137,6 +137,8 @@ html {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   display: block;
+  padding:0.4rem !important;
+  padding-bottom: 1.5rem !important;
   .event-text{
     font-size: 1vw;
   }
@@ -155,7 +157,7 @@ html {
 .nav-item {
   color: black;
   font-family: $font-fam;
-  font-size: 25px;
+  font-size: 21.4px;
 }
 .nav-item:hover{
   color: $font-colour;
@@ -201,7 +203,7 @@ nav {
   font-size: 1.48vw;
 }
 .class-card-text{
-  font-size: 1vw;
+  font-size: 0.95vw;
 }
 #timetable{
   background-color: white;
@@ -228,6 +230,10 @@ nav {
   -webkit-transition:.3s ease-in-out;
   animation: pulse 1s infinite;
   transition: .3s ease-in-out; 
+}
+#enrol-div{
+  padding-left:50px;
+  padding-right: 50px;
 }
 #timetable:hover{
   background-color: #e2e2e2 !important;
@@ -290,7 +296,6 @@ border-color: #10657c !important;
 }
 .btn-primary {
   background-color: $font-colour !important;
-  border-color: $font-colour;
 }
 @keyframes pulse {
   0% {
@@ -352,24 +357,26 @@ border-color: #10657c !important;
 }
 .event-card {
   margin-top: 20px;
-  margin-left: 2vw;
-  margin-right: 2vw;
   margin-top: 0.2vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 #event-div {
   font-family: $font-fam;
   text-align: center;
-  padding-left: 100px;
-  padding-right: 100px;
 }
 .card-text{
   font-size: 1vw;
 }
 .card-front-title{
-  font-size: 2vw;
+  font-size: 1.6vw;
 }
 .card-front-title-text{
   font-size:1vw;
+}
+.card-body{
+  padding:0.4rem !important;
+  padding-bottom: 1.5rem !important;
 }
 .card-img-top {
   justify-content: center;
@@ -499,27 +506,18 @@ border-color: #10657c !important;
     padding-left: 10px;
     padding-right: 10px;
   }
-  .nav-item {
-    font-size: 23px;
-  }
 }
 @media screen and (max-width:1200px) {
     .title-text{
       font-size: 12vw !important;
     }
     .sub-text{
-      font-size: 3vw !important;
-    }
-    .sub-text-2{
-      font-size: 1.8vw !important;
+      font-size: 4.5vw !important;
     }
 }
 @media screen and (max-width:800px) {
   .sub-text{
-    font-size: 4vw !important;
-  }
-  .sub-text-2{
-    font-size: 2.4vw !important;
+    font-size: 5.5vw !important;
   }
 }
 @media screen and (max-width:536px) {
@@ -527,12 +525,18 @@ border-color: #10657c !important;
     font-size: 18vw !important;
   }
   .sub-text{
-    font-size: 5vw !important;
+    font-size: 6.75vw !important;
   }
 }
 @media screen and (max-width:1199px){
-    .class-card-title{
+  .class-card-title{
     font-size: 3vw !important;
+  }
+  .card-text{
+    font-size: 1.25vw !important;
+  }
+  .card-front-title{
+    font-size: 2.5vw !important;
   }
   .class-card-text{
     font-size: 1.5vw !important;
@@ -547,12 +551,10 @@ border-color: #10657c !important;
   .event-title-text{
     font-size: 2.4vw !important;
   }
-  .card-text{
-    font-size: 1.25vw !important;
+  .test-carousel-text{
+    font-size: 2.4vw !important;
   }
-  .card-front-title{
-    font-size: 2.5vw !important;
-  }
+
   .find-out-more{
     font-size: 2vw !important;
   }
@@ -567,6 +569,12 @@ border-color: #10657c !important;
   .event-title-text{
     font-size: 4.8vw !important;
   }
+  .test-carousel-text{
+    font-size: 3vw !important;
+    padding-left: 5vw;
+    padding-right:5vw;
+
+  }
   .class-card-title{
     font-size: 4.8vw !important;
   }
@@ -574,10 +582,10 @@ border-color: #10657c !important;
     font-size: 2.5vw !important;
   }
   .card-text{
-    font-size: 2.5vw;
+    font-size: 2.5vw !important;
   }
   .card-front-title{
-    font-size: 4.8vw;
+    font-size: 4.8vw !important;
   }
   .card-front-title-text{
     font-size:2.4vw !important;
@@ -596,6 +604,11 @@ border-color: #10657c !important;
   }
   .event-title-text{
     font-size: 7.5vw !important;
+  }
+  .test-carousel-text{
+    font-size: 3.4vw !important;
+    padding-left: 0;
+    padding-right: 0;
   }
   .card-text{
     font-size: 3.75vw !important;
@@ -616,9 +629,9 @@ border-color: #10657c !important;
     font-size: 6vw !important;
   }
 }
-@media screen and(max-width:572px) {
-  .sub-text-2 {
-    display: none;
+@media screen and(max-width:450px){
+  .test-carousel-text{
+    font-size: 3.6vw !important;
   }
 }
 @media screen and (max-width: 713px) {
