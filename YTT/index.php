@@ -809,39 +809,7 @@ echo "</pre>";
         </div>
     </section>
     <section>
-        <div class="contact-us-div" id="contact-us-div">
-            <h1 class="contact-us-title">Contact Us!</h1>
-            <div class="contacts">
-                <br />
-                <div class="justify-content-center d-flex">
-                    <div class="contact-options shadow-lg">
-                        <i class="fa fa-phone"></i><a class="contact-icon" href='tel:0434437071'> Phone</a>
-                    </div>
-                    <div class="contact-options shadow-lg">
-                        <i class="fa fa-envelope"></i><a class="contact-icon" href='mailto:missstephperry@gmail.com'>
-                            Email</a>
-                    </div>
-                    <div class="contact-options shadow-lg">
-                        <i class="fa fa-location-arrow"></i><a class="contact-icon" target='_blank'
-                            href='https://www.google.com/maps/place/Your+Talent+Team/@-34.8664687,150.6017053,17z/data=!3m1!4b1!4m5!3m4!1s0x6b137fc17771ea7d:0xbd3fed8c67dd6c7!8m2!3d-34.8664686!4d150.6038946'>
-                            Location</a>
-                    </div>
-                </div>
-                <br />
-                <div class='justify-content-center d-flex'>
-                    <div class='contact-options shadow-lg'>
-                        <a class='contact-icon' target='_blank' href='https://www.facebook.com/yourtalentteam'><i
-                                class='fa fa-facebook-square'></i>Facebook</a>
-                    </div>
-                    <div class='contact-options shadow-lg'>
-                        <a class='contact-icon' target='_blank' href='https://www.instagram.com/your.talent.team/'><i
-                                class='fa fa-instagram'></i>Instagram</a>
-                    </div>
-                </div>
-
-                <br />
-            </div>
-        </div>
+    
     </section>
 
     <section>

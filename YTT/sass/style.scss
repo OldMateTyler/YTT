@@ -58,11 +58,6 @@ body{
 .contrast-div{
   background: #18a5bc;
 }
-.contact-us-title {
-  text-align: center;
-  color: white;
-  font-size: 1200px !important;
-}
 .flip-box {
   perspective: 1000px;
   backface-visibility: hidden;
@@ -269,9 +264,6 @@ border-color: #10657c !important;
 #class-bottom-svg {
   width: 100%;
 }
-.contact-icon {
-  color: #303030 !important;
-}
 .fa {
   text-align: center;
 }
@@ -296,39 +288,9 @@ border-color: #10657c !important;
     font-size: 60px;
   }
 }
-.contact-us-div {
-  background-color: $font-colour;
-  font-family: $font-fam;
-}
-.contact-us-title {
-  text-align: center;
-  color: white;
-  font-size: 60px !important;
-  text-shadow: 2px 3px 20px #212121;
-}
 .btn-primary {
   background-color: $font-colour !important;
   border-color: $font-colour;
-}
-.contact-options {
-  background-color: white;
-  color: #303030;
-  border-radius: 25px;
-  border: solid #303030;
-  border-width: 0.25px;
-  font-size: 2vw;
-  text-align: center;
-  width: 16vw;
-  margin-left: 7.5vw;
-  margin-right: 7.5vw;
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-.contact-options:hover {
-  -webkit-animation:pulse 1s infinite ;
-  -webkit-transition:.3s ease-in-out;
-  animation: pulse 1s infinite;
-  transition: .3s ease-in-out; 
 }
 @keyframes pulse {
   0% {
@@ -458,9 +420,6 @@ border-color: #10657c !important;
   #about-paragraph{
     font-size: 3vw !important;
   }
-  .contact-options{
-    font-size: 2.5vw !important;
-  }
 }
 @media screen and (max-width:820px){
     #test-background, #title-div{
@@ -468,12 +427,6 @@ border-color: #10657c !important;
   }
 }
 @media screen and (max-width:675px){
-  .contact-options{
-    width: 20vw !important;
-    font-size: 3vw !important;
-    margin-left: 5vw !important;
-    margin-right: 5vw !important;
-  }
   #about-paragraph{
     font-size:4vw !important;
 
@@ -484,12 +437,6 @@ border-color: #10657c !important;
     font-size:5vw !important;
     padding-left: 0px !important;
     padding-right: 0px !important;
-  }
-  .contact-options{
-    width: 27vw !important;
-    font-size: 3.5vw !important;
-    margin-left: 2.5vw !important;
-    margin-right: 2.5vw !important;
   }
   #classes{
     display: none;
@@ -525,12 +472,6 @@ border-color: #10657c !important;
   }
   #event-carousel{
     display:none;
-  }
-}
-@media screen and (max-width:475px){
-  .contact-options{
-    width: 30vw !important;
-    font-size: 4.7vw !important;
   }
 }
 @media screen and (max-width:575px){
