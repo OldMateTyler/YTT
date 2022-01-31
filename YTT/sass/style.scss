@@ -11,6 +11,20 @@ body{
 .card-body{
   text-align: center;
 }
+.fa{
+  padding:20px;
+  font-size:30px;
+  width:50px;
+  text-align: center;
+  text-decoration:none;
+  background-color: white;
+}
+.fa:hover{
+  opacity:0.75;
+}
+.fa-facebook{
+  color: #3b5998;
+}
 .form-invalid{
   box-shadow: 0 1rem 3rem rgba(255, 0, 0, 0.75)!important;
 }
