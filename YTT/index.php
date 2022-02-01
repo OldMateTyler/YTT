@@ -36,7 +36,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
 
 <head>
     <title>Your Talent Team</title>
-    <link rel='icon' type='image/x-icon' href='imgs/white logo.png'>
+    <link rel='icon' type='image/x-icon' href='imgs/image.png'>
     <link rel="stylesheet" href="css/style.css" />
     <link href="//fonts.cdnfonts.com/css/kollektif" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -85,9 +85,9 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
     <section>
         <div id="title-div" class="container shadow-lg">
             <div class="title-text-div">
-                <span class="title-text title-entrance">Your Talent Team</span>
+                <div class="title-text title-entrance">Your Talent Team</div>
                 <h1 class="sub-text title-entrance">Performance Academy</h1>
-                <a href='#enrol-div' class="btn shadow-lg title-entrance" id='enrol-btn' style='border:solid 1px #18a5bc !important'>Enrol Now!</a>
+                <a href='#enrol-div' class="btn shadow-lg title-entrance" id='enrol-btn' style='border: 1px solid transparent;'>Enrol Now!</a>
             </div>
         </div>
         <br /><br /><br /><br />
@@ -138,205 +138,87 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
             </svg>
         </div>
         <div class='class-div'>
-            <div class="classes-div shadow-lg " id="classes">
+            <div class="classes-div shadow-lg ">
                 <h1 id="classes-title" class='module'>Classes</h1>
-
-                <div class="row mx-auto justify-content-center container-fluid d-flex">
-                    <div class="col-sm-6 col-xs-4 col-md-4 col-lg-4 col-xl-2 class-photo module">
-                        <div class="card shadow-lg">
-                            <img class="card-img-top" src="imgs/Classes/classic-dance-clear.png" alt="Classic dance card" />
-                            <div class="card-body">
-                                <p class="card-title class-card-title">Classic Dancing</p>
-                                <p class="class-card-text">Ballet/Jazz/Hip Hop/Tap/Contemporary</p>
-                                <a href="classes.html#classic-dancing-class-page" class="btn btn-primary find-out-more shadow-lg">Find Out More</a>
+                <br />
+                <div class='container-fluid'>
+                    <div class='row align-self-center'>
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#ballet-dancing-class-page'>
+                            <img src="imgs/email/IMG-3759.jpg" class='class-img' />
+                            <div>
+                                Ballet
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-xs-4 col-md-4 col-lg-4 col-xl-2 class-photo module">
-                        <div class="card shadow-lg">
-                            <img class="card-img-top" src="imgs/Classes/pre-schoolers-clear.png" alt="Pre-schooler card" />
-                            <div class="card-body">
-                                <p class="card-title class-card-title">Pre-Schoolers</p>
-                                <p class="class-card-text">18 Months +</p>
-                                <br />
-                                <a href="classes.html#Pre-schoolers-class-page" class="btn btn-primary find-out-more shadow-lg">Find Out More</a>
+                        </a>
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#jazz-dancing-class-page'>
+                            <img src="imgs/email/IMG-3769.jpg" class='class-img' />
+                            <div>
+                                Jazz
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-xs-4 col-md-4 col-lg-4 col-xl-2 class-photo module">
-                        <div class="card shadow-lg">
-                            <img class="card-img-top" src="imgs/Classes/pre-schoolers-clear.png" alt="Line dance card" />
-                            <div class="card-body">
-                                <p class="card-title class-card-title">Line Dancing</p>
-                                <p class="class-card-text">All ages</p>
-                                <br />
-                                <a href="classes.html#line-dancing-class-page" class="btn btn-primary find-out-more shadow-lg ">Find Out More</a>
+                        </a>
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#contemporary-dancing-class-page'>
+                            <img src="imgs/email/IMG-3779.jpg" class='class-img' />
+                            <div>
+                                Contemporary
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-xs-4 col-md-4 col-lg-4 col-xl-2 class-photo module">
-                        <div class="card shadow-lg class-card">
-                            <img class="card-img-top" src="imgs/Classes/boy-clear.png" alt="Boy Dancing" />
-                            <div class="card-body">
-                                <p class="card-title class-card-title">Boy Dancing</p>
-                                <p class="class-card-text">All ages</p>
-                                <br />
-                                <a href="classes.html#boy-dancing-class-page" class="btn btn-primary find-out-more shadow-lg ">Find Out More</a>
+                        </a>
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#hiphop-dancing-class-page'>
+                            <img src="imgs/email/IMG-3786.jpg" class='class-img' />
+                            <div>
+                                Hip-Hop
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-xs-4 col-md-4 col-lg-4 col-xl-2 class-photo module">
-                        <div class="card shadow-lg">
-                            <img class="card-img-top" src="imgs/Classes/boy-clear.png" alt="Break dancing card" />
-                            <div class="card-body">
-                                <p class="card-title class-card-title">Break Dancing</p>
-                                <p class="class-card-text">All ages</p>
-                                <br />
-                                <a href="classes.html#break-dancing-class-page" class="btn btn-primary find-out-more shadow-lg">Find Out More</a>
+                        </a>
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#lyrical-dancing-class-page'>
+                            <img src="imgs/email/IMG-3782.jpg" class='class-img' />
+                            <div>
+                                Lyrical
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-xs-4 col-md-4 col-lg-4 col-xl-2 class-photo module">
-                        <div class="card shadow-lg">
-                            <img class="card-img-top" src="imgs/Classes/classic-dance-clear.png" alt="Adult dancing card" />
-                            <div class="card-body">
-                                <p class="card-title class-card-title">Adult Dancing</p>
-                                <p class="class-card-text">All ages</p>
-                                <br />
-                                <a href="classes.html#adult-dancing-class-page" class="btn btn-primary find-out-more shadow-lg">Find Out More</a>
+                        </a>
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#acro-dancing-class-page'>
+                            <img src="imgs/email/IMG-3771.jpg" class='class-img' />
+                            <div>
+                                Acro
                             </div>
-                        </div>
+                        </a>
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#line-dancing-class-page'>
+                            <img src="imgs/email/IMG-3761.jpg" class='class-img' />
+                            <div>
+                                Line
+                            </div>
+                        </a>
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#tap-dancing-class-page'>
+                            <img src="imgs/email/IMG-3777.jpg" class='class-img' />
+                            <div>
+                                Tap
+                            </div>
+                        </a>
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#break-dancing-class-page'>
+                            <img src="imgs/email/IMG-3773.jpg" class='class-img' />
+                            <div>
+                                Break
+                            </div>
+                        </a>
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#Pre-schoolers-class-page'>
+                            <img src="imgs/email/IMG-3751.jpg" class='class-img' />
+                            <div>
+                                Toddlers
+                            </div>
+                        </a>
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#adult-dancing-class-page'>
+                            <img src="imgs/email/IMG-3783.jpg" class='class-img' />
+                            <div>
+                                Adult
+                            </div>
+                        </a>
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#boy-dancing-class-page'>
+                            <img src="imgs/email/IMG-3774.jpg" class='class-img' />
+                            <div>
+                                Boy
+                            </div>
+                        </a>
                     </div>
                 </div>
-                <br />
-                <a href='imgs/timetable.PNG' target='_blank' class="btn shadow-lg module" id="timetable">View
-                    Our Timetable</a>
-                <br />
+
             </div>
-        </div>
-        <div id='class-carousel' style='background-color: #18a5bc;'>
-            <h1 id="classes-title" class='module'>Classes</h1>
-            <div id="carouselExampleControls" class="carousel slide max-auto" data-ride="carousel" data-interval='false' style="width: 80%;margin-left: auto;margin-right: auto;">
-                <ol class="carousel-indicators hidden">
-                    <li data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active"></li>
-                    <li data-bs-target="#carouselExampleControls" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#carouselExampleControls" data-bs-slide-to="2"></li>
-                    <li data-bs-target="#carouselExampleControls" data-bs-slide-to="3"></li>
-                    <li data-bs-target="#carouselExampleControls" data-bs-slide-to="4"></li>
-                    <li data-bs-target="#carouselExampleControls" data-bs-slide-to="5"></li>
-                </ol>
-
-                <div class="carousel-inner mx-auto" style='overflow:visible;'>
-                    <div class="carousel-item active">
-                        <div class="class-photo module">
-                            <div class="card class-card shadow-lg">
-                                <img class="card-img-top" src="imgs/Classes/classic-dance-clear.png" class="d-block w-100" alt="Classic dance card" />
-                                <div class="card-body">
-                                    <p class="card-title class-card-title">Classic Dancing</p>
-                                    <p class="class-card-text">Ballet/Jazz/Hip Hop/Tap/Contemporary</p>
-                                    <a href="classes.html#classic-dancing-class-page" class="btn btn-primary find-out-more shadow-lg ">Find Out
-                                        More</a>
-
-                                </div>
-                            </div>
-                            <br /><br />
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="class-photo module">
-                            <div class="card class-card shadow-lg">
-                                <img class="card-img-top" src="imgs/Classes/pre-schoolers-clear.png" alt="Pre-schooler card" />
-                                <div class="card-body">
-                                    <p class="card-title class-card-title">Pre-Schoolers</p>
-                                    <p class="class-card-text">18 Months +</p>
-                                    <a href="classes.html#Pre-schoolers-class-page" class="btn btn-primary find-out-more shadow-lg">Find Out
-                                        More</a>
-                                </div>
-                            </div>
-                            <br /><br />
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="class-photo module">
-                            <div class="card class-card shadow-lg">
-                                <img class="card-img-top" src="imgs/Classes/pre-schoolers-clear.png" alt="Line dance card" class="d-block w-100" />
-                                <div class="card-body">
-                                    <p class="card-title class-card-title">Line Dancing</p>
-                                    <p class="class-card-text">All ages</p>
-                                    <a href="classes.html#line-dancing-class-page" class="btn btn-primary find-out-more shadow-lg ">Find Out
-                                        More</a>
-
-                                </div>
-                            </div>
-                            <br /><br />
-                        </div>
-                    </div>
-                    <div class='carousel-item'>
-                        <div class="class-photo module">
-                            <div class="card class-card shadow-lg">
-                                <img class="card-img-top" src="imgs/Classes/boy-clear.png" alt="Boy Dancing" class="d-block w-100" />
-                                <div class="card-body">
-                                    <p class="card-title class-card-title">Boy Dancing</p>
-                                    <p class="class-card-text">All ages</p>
-                                    <a href="classes.html#boy-dancing-class-page" class="btn btn-primary find-out-more shadow-lg">Find Out
-                                        More</a>
-
-                                </div>
-                            </div>
-                            <br /><br />
-                        </div>
-                    </div>
-                    <div class='carousel-item'>
-                        <div class="class-photo module">
-                            <div class="card class-card shadow-lg">
-                                <img class="card-img-top" src="imgs/Classes/classic-dance-clear.png" alt="Break dancing card" class="d-block w-100" />
-                                <div class="card-body">
-                                    <p class="card-title class-card-title">Break Dancing</p>
-                                    <p class="class-card-text">All ages</p>
-                                    <a href="classes.html#break-dancing-class-page" class="btn btn-primary find-out-more shadow-lg">Find Out
-                                        More</a>
-
-                                </div>
-                            </div>
-                            <br /><br />
-                        </div>
-                    </div>
-                    <div class='carousel-item'>
-                        <div class="class-photo module">
-                            <div class="card class-card shadow-lg">
-                                <img class="card-img-top" src="imgs/Classes/classic-dance-clear.png" alt="Adult dancing card" class="d-block w-100" />
-                                <div class="card-body">
-                                    <p class="card-title class-card-title">Adult Dancing</p>
-                                    <p class="class-card-text">All ages</p>
-                                    <a href="classes.html#adult-dancing-class-page" class="btn btn-primary find-out-more shadow-lg">Find Out
-                                        More</a>
-                                </div>
-                            </div>
-                            <br /><br />
-                        </div>
-                    </div>
-                    <br /><br />
-                </div>
-                <a class="carousel-control-prev hidden" href="#carouselExampleControls" role="button" data-slide="prev" style='margin-left:-12vw;'>
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next hidden" href="#carouselExampleControls" role="button" style='margin-right:-12vw;' data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-            <br />
-            <a href='imgs/timetable.PNG' target='_blank' class="btn shadow-lg module" id="timetable">View
-                Our Timetable</a>
-            <br />
-        </div>
         </div>
 
         <div class="class-bottom-svg">
@@ -721,7 +603,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                 <div class='mb-3 row justify-content-center'>
                     <div class='col-sm-4'></div>
                     <div class='col-sm-6 col-lg-4'>
-                        <button type='button' onclick='validate(event)' class='btn btn-primary' style='margin:0 auto;display:block;'>Submit</button>
+                        <button type='button'style='border: 1px solid transparent;margin:0 auto;display:block;' onclick='validate(event)' class='btn btn-primary' >Submit</button>
                     </div>
 
                 </div>
@@ -735,7 +617,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                         <div class='modal-body' style='text-align:center;'>
                             Our staff at YTT will be in contact with you within the following days. For urgent enquires please contact us on 0434 437 071
                             <br />
-                            <button type='button' class='btn btn-primary' data-bs-dismiss='modal'>Close</button>
+                            <button type='button' style='border: 1px solid transparent;' class='btn btn-primary' data-bs-dismiss='modal'>Close</button>
                         </div>
                     </div>
                 </div>
