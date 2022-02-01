@@ -787,6 +787,9 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                     </ul>
                 </div>
             </div>
+            <div>
+                <img src='imgs/voucher.png' height='150px'>
+</div>
             <br />
         </div>
     </section>
