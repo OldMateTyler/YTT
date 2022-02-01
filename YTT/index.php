@@ -1,33 +1,33 @@
 <?php
 if (isset($_POST['name']) && $_POST['name'] != '') {
-    if(isset($_POST['subject']) && $_POST['subject'] != '')
-            if (isset($_POST['Email']) && $_POST['Email'] != '' && filter_var($_POST['Email'], FILTER_VALIDATE_EMAIL)) {
-                if (isset($_POST['message']) && $_POST['message'] != '') {
-                    $fullName = $_POST['name'];
-                    $email = $_POST['Email'];
-                    $intro = $_POST['message'];
-                    $sub = $_POST['subject'];
+    if (isset($_POST['subject']) && $_POST['subject'] != '')
+        if (isset($_POST['Email']) && $_POST['Email'] != '' && filter_var($_POST['Email'], FILTER_VALIDATE_EMAIL)) {
+            if (isset($_POST['message']) && $_POST['message'] != '') {
+                $fullName = $_POST['name'];
+                $email = $_POST['Email'];
+                $intro = $_POST['message'];
+                $sub = $_POST['subject'];
 
-                    $to = 'tyler.simmonds254@gmail.com';
-                    $subject = 'Contact-Form';
+                $to = 'tyler.simmonds254@gmail.com';
+                $subject = 'Contact-Form';
 
-                    $body = '';
-                    $body .= "Name: " . $fullName . "\r\n";
-                    $body .= "Email: " . $email . "\r\n";
-                    $body .= "Subject: " . $sub . "\r\n";
-                    $body .= "Message: " . $intro . "\r\n";
+                $body = '';
+                $body .= "Name: " . $fullName . "\r\n";
+                $body .= "Email: " . $email . "\r\n";
+                $body .= "Subject: " . $sub . "\r\n";
+                $body .= "Message: " . $intro . "\r\n";
 
 
-                    $headers = "MIME-Version: 1.0" . "\r\n";
-                    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+                $headers = "MIME-Version: 1.0" . "\r\n";
+                $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
-                    $headers .= 'From: <tyler.simmondsYTT@gmail.com>' . "\r\n";
-                    $message = nl2br($body);
-                    if (mail($to, $subject, $message, $headers)) {
-                        $message_sent = true;
-                    }
+                $headers .= 'From: <tyler.simmondsYTT@gmail.com>' . "\r\n";
+                $message = nl2br($body);
+                if (mail($to, $subject, $message, $headers)) {
+                    $message_sent = true;
                 }
             }
+        }
 }
 
 
@@ -691,7 +691,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
         <br /><br />
         <div class='justify-content-center container' id='contact-us-div'>
             <h1 id="enrol-title" class='module'>Contact Us!</h1>
-            <form method="POST" id='form1'>
+            <form method="POST" id='form1' class='module'>
                 <div class='mb-3 row justify-content-center'>
                     <label for='fname' class='col-form-label col-sm-4' id='fname'>Name:</label>
                     <div class='col-sm-6 col-lg-4'>
@@ -752,44 +752,47 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
     </section>
     <section>
         <div id='socials-div' class='container-fluid justify-content-center'>
-            <br/>
-            <img src='imgs/white logo.png' id='footer-logo'/>
-            <br/>
-            <span class='icon'>
-                <a href='https://www.facebook.com/yourtalentteam' target='_blank' class='fa fa-facebook'></a>
-            </span>
-            <span id='insta-back' class='icon'>
-                <a href='https://www.instagram.com/your.talent.team/' target='_blank' class='fa fa-instagram' id='insta'></a>
-            </span>
-            <span class='icon'>
-                <a href='tel:0434437071' target='_blank' class='fa fa-phone'></a>
-            </span>
-            <span class='icon'>
-                <a href='https://www.google.com/maps/place/Your+Talent+Team/@-34.8664687,150.6017053,17z/data=!3m1!4b1!4m5!3m4!1s0x6b137fc17771ea7d:0xbd3fed8c67dd6c7!8m2!3d-34.8664686!4d150.6038946' target='_blank' class='fa fa-map-marker'></a>
-            </span>
-            <span class='icon'>
-                <a href='mailto:missstephperry@gmail.com' class='fa fa-envelope'></a>
-            </span>
-            <div style='color:white'>
+            <div class='module'>
+                <br />
+                <img src='imgs/white logo.png' id='footer-logo' />
+                <br />
+                <span class='icon'>
+                    <a href='https://www.facebook.com/yourtalentteam' target='_blank' class='fa fa-facebook'></a>
+                </span>
+                <span id='insta-back' class='icon'>
+                    <a href='https://www.instagram.com/your.talent.team/' target='_blank' class='fa fa-instagram' id='insta'></a>
+                </span>
+                <span class='icon'>
+                    <a href='tel:0434437071' target='_blank' class='fa fa-phone'></a>
+                </span>
+                <span class='icon'>
+                    <a href='https://www.google.com/maps/place/Your+Talent+Team/@-34.8664687,150.6017053,17z/data=!3m1!4b1!4m5!3m4!1s0x6b137fc17771ea7d:0xbd3fed8c67dd6c7!8m2!3d-34.8664686!4d150.6038946' target='_blank' class='fa fa-map-marker'></a>
+                </span>
+                <span class='icon'>
+                    <a href='mailto:missstephperry@gmail.com' class='fa fa-envelope'></a>
+                </span>
+                <div style='color:white'>
+                    <div>
+                        <ul class='list'>
+                            <li>Phone Number:0434 437 071</li>
+                            <li>Email: MissStephPerry@gmail.com</li>
+                            <li>Location: 3 Hawthron Ave Nowra, NSW, Australia</li>
+                            <br />
+                            <li>Trading Hours</li>
+                            <li>Monday:15:30-20:30</li>
+                            <li>Tuesday:15:30-20:30</li>
+                            <li>Wednesday:15:30-20:30</li>
+                            <li>Thursday:15:30-20:30</li>
+                            <li>Friday:15:30-19:00</li>
+                            <li>Weekends:CLOSED</li>
+                        </ul>
+                    </div>
+                </div>
                 <div>
-                    <ul class='list'>
-                        <li>Phone Number:0434 437 071</li>
-                        <li>Email: MissStephPerry@gmail.com</li>
-                        <li>Location: 3 Hawthron Ave Nowra, NSW, Australia</li>
-                        <br/>
-                        <li>Trading Hours</li>
-                        <li>Monday:15:30-20:30</li>
-                        <li>Tuesday:15:30-20:30</li>
-                        <li>Wednesday:15:30-20:30</li>
-                        <li>Thursday:15:30-20:30</li>
-                        <li>Friday:15:30-19:00</li>
-                        <li>Weekends:CLOSED</li>
-                    </ul>
+                    <img src='imgs/vouch.png' height='150px'>
                 </div>
             </div>
-            <div>
-                <img src='imgs/voucher.png' height='150px'>
-</div>
+
             <br />
         </div>
     </section>
