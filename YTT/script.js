@@ -3,37 +3,13 @@ if ( window.history.replaceState ) {
   window.history.replaceState( null, null, window.location.href );
 }
 function validate(e){
-  if(document.getElementById("Fullname").value == ""){
-    $("#Fullname").removeClass("shadow-lg");
-    $("#Fullname").addClass("form-invalid");
+  if(document.getElementById("name").value == ""){
+    $("#name").removeClass("shadow-lg");
+    $("#name").addClass("form-invalid");
   }
   else{
-    $("#Fullname").addClass("shadow-lg");
-    $("#Fullname").removeClass("form-invalid");
-  }
-  if(document.getElementById("dob").value == ""){
-    $("#dob").removeClass("shadow-lg");
-    $("#dob").addClass("form-invalid");
-  }
-  else{
-    $("#dob").addClass("shadow-lg");
-    $("#dob").removeClass("form-invalid");
-  }
-  if(document.getElementById("Class").value == ""){
-    $("#Class").removeClass("shadow-lg");
-    $("#Class").addClass("form-invalid");
-  }
-  else{
-    $("#Class").addClass("shadow-lg");
-    $("#Class").removeClass("form-invalid");
-  }
-  if(document.getElementById("phoneNum").value == ""){
-    $("#phoneNum").removeClass("shadow-lg");
-    $("#phoneNum").addClass("form-invalid");
-  }
-  else{
-    $("#phoneNum").addClass("shadow-lg");
-    $("#phoneNum").removeClass("form-invalid");
+    $("#name").addClass("shadow-lg");
+    $("#name").removeClass("form-invalid");
   }
   if(document.getElementById("email").value == ""){
     $("#email").removeClass("shadow-lg");
@@ -43,25 +19,31 @@ function validate(e){
     $("#email").addClass("shadow-lg");
     $("#email").removeClass("form-invalid");
   }
-  if(document.getElementById("introduceYourself").value == ""){
-      $("#introduceYourself").removeClass("shadow-lg");
-      $("#introduceYourself").addClass("form-invalid");
+  if(document.getElementById("message").value == ""){
+      $("#message").removeClass("shadow-lg");
+      $("#message").addClass("form-invalid");
   }
   else{
-    $("#introduceYourself").addClass("shadow-lg");
-    $("#introduceYourself").removeClass("form-invalid");
+    $("#message").addClass("shadow-lg");
+    $("#message").removeClass("form-invalid");
   }
-  if(document.getElementById("Fullname").value != "" && document.getElementById("dob").value != "" && document.getElementById("Class").value != "" && document.getElementById("phoneNum").value != "" && document.getElementById("email").value != "" && document.getElementById("introduceYourself").value != ""){
+  if(document.getElementById("subject").value == ""){
+    $("#subject").removeClass("shadow-lg");
+    $("#subject").addClass("form-invalid");
+}
+else{
+  $("#subject").addClass("shadow-lg");
+  $("#subject").removeClass("form-invalid");
+}
+  if(document.getElementById("name").value != "" && document.getElementById("email").value != "" && document.getElementById("message").value != "" && document.getElementById("subject").value != ""){
     e.preventDefault();
     var myModal = new bootstrap.Modal(document.getElementById('myModal'));
     myModal.show();
     var formData = $("#form1").serialize();
-    document.getElementById("Fullname").value = "";
-    document.getElementById("dob").value = "";
-    document.getElementById("Class").value = "";
-    document.getElementById("phoneNum").value = "";
+    document.getElementById("name").value = "";
     document.getElementById("email").value = "";
-    document.getElementById("introduceYourself").value = "";
+    document.getElementById("subject").value = "";
+    document.getElementById("message").value = "";
     
     $.ajax({
       url:"index.php",

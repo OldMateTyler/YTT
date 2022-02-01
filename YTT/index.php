@@ -1,26 +1,21 @@
 <?php
-if (isset($_POST['fullName']) && $_POST['fullName'] != '') {
-    if (isset($_POST['DOB']) && $_POST['DOB'] != '') {
-        if (isset($_POST['PhoneNumber']) && $_POST['PhoneNumber'] != '') {
+if (isset($_POST['name']) && $_POST['name'] != '') {
+    if(isset($_POST['subject']) && $_POST['subject'] != '')
             if (isset($_POST['Email']) && $_POST['Email'] != '' && filter_var($_POST['Email'], FILTER_VALIDATE_EMAIL)) {
-                if (isset($_POST['IntroduceYourself']) && $_POST['IntroduceYourself'] != '') {
-                    $fullName = $_POST['fullName'];
-                    $dob = $_POST['DOB'];
-                    $class = $_POST['Class'];
-                    $ph = $_POST['PhoneNumber'];
+                if (isset($_POST['message']) && $_POST['message'] != '') {
+                    $fullName = $_POST['name'];
                     $email = $_POST['Email'];
-                    $intro = $_POST['IntroduceYourself'];
+                    $intro = $_POST['message'];
+                    $sub = $_POST['subject'];
 
                     $to = 'tyler.simmonds254@gmail.com';
-                    $subject = 'YTT Enrol';
+                    $subject = 'Contact-Form';
 
                     $body = '';
-                    $body .= "Full Name: " . $fullName . "\r\n";
-                    $body .= "Date of Birth: " . $dob . "\r\n";
-                    $body .= "Class: " . $class . "\r\n";
-                    $body .= "Phone Number: " . $ph . "\r\n";
+                    $body .= "Name: " . $fullName . "\r\n";
                     $body .= "Email: " . $email . "\r\n";
-                    $body .= "Introduce Yourself: " . $intro . "\r\n";
+                    $body .= "Subject: " . $sub . "\r\n";
+                    $body .= "Message: " . $intro . "\r\n";
 
 
                     $headers = "MIME-Version: 1.0" . "\r\n";
@@ -29,15 +24,10 @@ if (isset($_POST['fullName']) && $_POST['fullName'] != '') {
                     $headers .= 'From: <tyler.simmondsYTT@gmail.com>' . "\r\n";
                     $message = nl2br($body);
                     if (mail($to, $subject, $message, $headers)) {
-                        echo "Message Accepted";
                         $message_sent = true;
-                    } else {
-                        echo "ERROR";
                     }
                 }
             }
-        }
-    }
 }
 
 
@@ -79,9 +69,6 @@ if (isset($_POST['fullName']) && $_POST['fullName'] != '') {
                 </li>
                 <li class="hide-icons hide">
                     <a class="nav-link nav-item" href="#event-div">Events</a>
-                </li>
-                <li class="hide-icons hide">
-                    <a class="nav-link nav-item" href="#enrol-div">Enrol</a>
                 </li>
                 <li class="hide-icons hide">
                     <a class="nav-link nav-item" href="#contact-us-div">Contact Us</a>
@@ -138,7 +125,6 @@ if (isset($_POST['fullName']) && $_POST['fullName'] != '') {
             <a href="#about-us" onclick="closeNav()">About Us</a>
             <a href="#class-carousel" onclick="closeNav()">Classes</a>
             <a href="#event-div" onclick="closeNav()">Events</a>
-            <a href="#enrol-div" onclick="closeNav()">Enrol</a>
             <a href="#contact-us-div" onclick="closeNav()">Contact Us</a>
         </div>
     </div>
@@ -703,42 +689,13 @@ if (isset($_POST['fullName']) && $_POST['fullName'] != '') {
     </section>
     <section>
         <br /><br />
-        <div class='justify-content-center container' id='enrol-div'>
-            <h1 id="enrol-title" class='module'>Enrol Now!</h1>
+        <div class='justify-content-center container' id='contact-us-div'>
+            <h1 id="enrol-title" class='module'>Contact Us!</h1>
             <form method="POST" id='form1'>
                 <div class='mb-3 row justify-content-center'>
-                    <label for='fname' class='col-form-label col-sm-4' id='fname'>Full Name:</label>
+                    <label for='fname' class='col-form-label col-sm-4' id='fname'>Name:</label>
                     <div class='col-sm-6 col-lg-4'>
-                        <input type='text' class='form-control shadow-lg' name='fullName' id='Fullname' placeholder="Enter Full Name">
-                    </div>
-                </div>
-
-                <div class='mb-3 row justify-content-center'>
-                    <label for='dob' class='col-form-label col-sm-4' name='DOB' id='dateOfBirth'>Date of Birth:</label>
-                    <div class='col-sm-6 col-lg-4'>
-                        <input type='date' class='form-control shadow-lg' id='dob' name='DOB'>
-                    </div>
-                </div>
-
-                <div class='mb-3 row justify-content-center'>
-                    <label for='classes' class='col-form-label col-sm-4' id='class'>Select Class:</label>
-                    <div class='col-sm-6 col-lg-4'>
-                        <select id='Class' name='Class' class='form-control shadow-lg'>
-                            <option hidden selected value=''> -- select an option -- </option>
-                            <option value='classic'>Classic</option>
-                            <option value='Pre-Schooler'>Pre-Schoolers</option>
-                            <option value='Line'>Line</option>
-                            <option value='Boy'>Boy</option>
-                            <option value='Break'>Break</option>
-                            <option value='Adult'>Adult</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class='mb-3 row justify-content-center'>
-                    <label for='phoneNum' class='col-form-label col-sm-4' id='phNum'>Phone Number:</label>
-                    <div class='col-sm-6 col-lg-4'>
-                        <input type='tel' id='phoneNum' class='form-control shadow-lg' name='PhoneNumber' pattern='[0-9]{4} [0-9]{3} [0-9]{3}' placeholder='0000 000 000'>
+                        <input type='text' class='form-control shadow-lg' name='name' id='name' placeholder="Enter Full Name">
                     </div>
                 </div>
 
@@ -750,15 +707,21 @@ if (isset($_POST['fullName']) && $_POST['fullName'] != '') {
                 </div>
 
                 <div class='mb-3 row justify-content-center'>
-                    <label for='introduceYourself' class='col-form-label col-sm-4' id='intro'>Introduce Yourself:</label>
+                    <label for='subject' class='col-form-label col-sm-4' id='sub'>Subject</label>
+                    <div class='col-sm-6 col-lg-4'>
+                        <input type='text' class='form-control shadow-lg' name='subject' id='subject' placeholder="Enter Subject">
+                    </div>
+                </div>
+                <div class='mb-3 row justify-content-center'>
+                    <label for='message' class='col-form-label col-sm-4' id='body'>Body:</label>
                     <div class='col-sm-6 col-lg-4' id='yourself-div'>
-                        <textarea class='form-control shadow-lg' id='introduceYourself' name='IntroduceYourself' placeholder="Introduce yourself in 100 words..." rows='4'></textarea>
+                        <textarea class='form-control shadow-lg' id='message' name='message' placeholder="Type your message here..." rows='4'></textarea>
                     </div>
                 </div>
                 <div class='mb-3 row justify-content-center'>
                     <div class='col-sm-4'></div>
                     <div class='col-sm-6 col-lg-4'>
-                        <button type='button' onclick='validate(event)' class='btn btn-primary' style='margin:0 auto;display:block;'>Enrol Now!</button>
+                        <button type='button' onclick='validate(event)' class='btn btn-primary' style='margin:0 auto;display:block;'>Submit</button>
                     </div>
 
                 </div>
@@ -767,10 +730,10 @@ if (isset($_POST['fullName']) && $_POST['fullName'] != '') {
                 <div class='modal-dialog modal-dialog-centered'>
                     <div class='modal-content'>
                         <div class='modal-header'>
-                            <h2 class='modal-title' style="text-align:center;">Thank you for Enrolling at YTT!</h2>
+                            <h2 class='modal-title' style="text-align:center;">Thank you for contacting us!</h2>
                         </div>
                         <div class='modal-body' style='text-align:center;'>
-                            Please note this is not an official enrollment, our staff at YTT will be in contact with you within the following days. For urgent enquires please contact us on 0434 437 071
+                            Our staff at YTT will be in contact with you within the following days. For urgent enquires please contact us on 0434 437 071
                             <br />
                             <button type='button' class='btn btn-primary' data-bs-dismiss='modal'>Close</button>
                         </div>
@@ -788,14 +751,45 @@ if (isset($_POST['fullName']) && $_POST['fullName'] != '') {
         </div>
     </section>
     <section>
-
-    </section>
-    <div>
         <div id='socials-div' class='container-fluid justify-content-center'>
-            <a href='#' class='fa fa-facebook'></a>
-            <a href='#' class='fa fa-twitter'></a>
+            <br/>
+            <img src='imgs/white logo.png' id='footer-logo'/>
+            <br/>
+            <span class='icon'>
+                <a href='https://www.facebook.com/yourtalentteam' target='_blank' class='fa fa-facebook'></a>
+            </span>
+            <span id='insta-back' class='icon'>
+                <a href='https://www.instagram.com/your.talent.team/' target='_blank' class='fa fa-instagram' id='insta'></a>
+            </span>
+            <span class='icon'>
+                <a href='tel:0434437071' target='_blank' class='fa fa-phone'></a>
+            </span>
+            <span class='icon'>
+                <a href='https://www.google.com/maps/place/Your+Talent+Team/@-34.8664687,150.6017053,17z/data=!3m1!4b1!4m5!3m4!1s0x6b137fc17771ea7d:0xbd3fed8c67dd6c7!8m2!3d-34.8664686!4d150.6038946' target='_blank' class='fa fa-map-marker'></a>
+            </span>
+            <span class='icon'>
+                <a href='mailto:missstephperry@gmail.com' class='fa fa-envelope'></a>
+            </span>
+            <div style='color:white'>
+                <div>
+                    <ul class='list'>
+                        <li>Phone Number:0434 437 071</li>
+                        <li>Email: MissStephPerry@gmail.com</li>
+                        <li>Location: 3 Hawthron Ave Nowra, NSW, Australia</li>
+                        <br/>
+                        <li>Trading Hours</li>
+                        <li>Monday:15:30-20:30</li>
+                        <li>Tuesday:15:30-20:30</li>
+                        <li>Wednesday:15:30-20:30</li>
+                        <li>Thursday:15:30-20:30</li>
+                        <li>Friday:15:30-19:00</li>
+                        <li>Weekends:CLOSED</li>
+                    </ul>
+                </div>
+            </div>
+            <br />
         </div>
-    </div>
+    </section>
     <section>
         <div id="footer" class="justify-content-center d-flex">
             <p>© 2021 YourSite.com - All Rights Reserved.</p>

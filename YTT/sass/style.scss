@@ -11,19 +11,51 @@ body{
 .card-body{
   text-align: center;
 }
+#socials-div{
+  background-color:$font-colour;
+  text-align:center;
+}
 .fa{
-  padding:20px;
-  font-size:30px;
-  width:50px;
+  padding:10px;
+  width:50px !important;
+  font-size:30px !important;
   text-align: center;
-  text-decoration:none;
+  text-decoration:none !important;
   background-color: white;
+  border-radius:50%;
+  color:$font-colour;
+}
+.icon{
+  margin:1vw;
 }
 .fa:hover{
   opacity:0.75;
 }
 .fa-facebook{
   color: #3b5998;
+}
+#insta-back{
+  font-size:30px;
+  text-align: center;
+  text-decoration:none !important;
+  background-color: white;
+  border-radius:50%;
+  display:inline-block;
+}
+#insta {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+.list{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+#footer-logo{
+  height: 150px;
+  border-radius: 50%;
 }
 .form-invalid{
   box-shadow: 0 1rem 3rem rgba(255, 0, 0, 0.75)!important;
@@ -435,7 +467,7 @@ border-color: #10657c !important;
 #footer {
   background-color: #1884a1;
   color: white;
-  font-size: 20px;
+
 }
 @media screen and (max-width:992px) {
   #about-paragraph{
