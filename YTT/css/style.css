@@ -98,6 +98,9 @@ html, body {
   -webkit-transition: webkit-transform 0.6s ease !important;
   transition: transform 0.6s ease !important; }
 
+#form1 {
+  padding: 20px; }
+
 .class-page-text-contrast {
   color: white !important; }
 
@@ -190,7 +193,7 @@ html, body {
 .nav-item {
   color: black;
   font-family: "Kollektif", sans-serif;
-  font-size: 21.4px; }
+  font-size: 25px; }
 
 .nav-item:hover {
   color: #18a5bc; }
@@ -624,7 +627,7 @@ nav {
   height: 0%;
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.9);
