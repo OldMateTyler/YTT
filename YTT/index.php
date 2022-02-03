@@ -636,7 +636,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
         <div id='socials-div' class='container-fluid justify-content-center'>
             <div class='module'>
                 <br />
-                <img src='imgs/white-logo.png' id='footer-logo' />
+                <img src='imgs/white-logo.PNG' id='footer-logo' />
                 <br />
                 <span class='icon'>
                     <a href='https://www.facebook.com/yourtalentteam' target='_blank' class='fa fa-facebook'></a>
