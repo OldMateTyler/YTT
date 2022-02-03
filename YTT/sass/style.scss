@@ -4,12 +4,8 @@ html, body{
   scroll-behavior: smooth;
   scroll-padding-top: 14vh;
   overflow-x:hidden;
-}
-body{
   font-family: $font-fam !important;
-}
-.card-body{
-  text-align: center;
+  min-width: 320px;
 }
 #socials-div{
   background-color:$font-colour;
@@ -61,23 +57,6 @@ body{
 .form-invalid{
   box-shadow: 0 1rem 3rem rgba(255, 0, 0, 0.75)!important;
 }
-option{
-  color:#495057 !important;
-}
-body{
-  position: relative;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
-}
-#event-card-car-1{
-  position: absolute !important;
-}
-#event-card-car-2{
-  position: absolute !important;
-}
-#event-card-car-3{
-  position: absolute !important;
-}
 .fa-angle-down{
   color:black !important;
   background:none;
@@ -118,13 +97,6 @@ body{
   max-width:100%;
   object-fit:cover;
 }
-#class-carousel{
-  font-family: $font-fam;
-  text-align: center;
-}
-#event-carousel{
-  position: relative;
-}
 .carousel-item{
   -webkit-transition:webkit-transform 0.6s ease!important;
   transition: transform 0.6s ease !important;
@@ -132,18 +104,12 @@ body{
 .class-page-text-contrast{
   color: white !important;
 }
-.class-page-img{
-  border-radius: 15px;
-}
 .contrast-div{
   background: #18a5bc;
 }
 .flip-box {
   perspective: 1000px;
   backface-visibility: hidden;
-}
-html {
-  min-width: 320px;
 }
 #progress-bar {
   height: 8px;
@@ -305,10 +271,6 @@ nav {
   animation: pulse 1s infinite;
   transition: .3s ease-in-out; 
 }
-#enrol-div{
-  padding-left:50px;
-  padding-right: 50px;
-}
 #timetable:hover{
   background-color: #e2e2e2 !important;
   color: black !important;
@@ -334,15 +296,6 @@ border-color: #10657c !important;
 }
 .class-photo {
   padding-top: 20px;
-}
-#contact-svg {
-  width: 100%;
-}
-#svg-class {
-  width: 100%;
-}
-#class-bottom-svg {
-  width: 100%;
 }
 .fa {
   text-align: center;
