@@ -1,4 +1,5 @@
-$font-fam: "Kollektif", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+$font-fam: "Mulish", sans-serif;
 $font-colour: #18a5bc;
 html, body{
   scroll-behavior: smooth;
@@ -91,7 +92,6 @@ html, body{
 }
 .class-page-photos{
   border-radius: 15px;
-  height: 100% !important;
   width: 100% !important;
   max-height: 75vh;
   max-width:100%;
@@ -137,7 +137,7 @@ html, body{
   
 }
 .title-text {
-  font-size: 8vw;
+  font-size: 6vw;
   font-family: $font-fam;
   color: white;
   text-align: center;
@@ -146,8 +146,14 @@ html, body{
 .sub-text {
   text-align: center;
   color: white;
-  font-size: 3vw;
+  font-size: 2vw;
   text-shadow: 2px 3px 20px #212121;
+}
+.title-text-div{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 #title-div {
   background: linear-gradient(to top, rgba(114, 194, 239, 0.8), rgba(24, 165, 188, 0.8)), url("title3.jpeg");
@@ -157,9 +163,7 @@ html, body{
   background-size: cover;
   height: 100%;
   max-width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: table;
 }
 .flip-box-front {
   width: 100%;
@@ -216,9 +220,10 @@ nav {
 }
 #classes-title {
   text-align: center;
-  color: white;
+  color: white !important;
   font-size: 60px;
   text-shadow: 2px 3px 20px #212121;
+  text-decoration: none;
 }
 #class-page-div{
   font-family: $font-fam;
@@ -261,10 +266,10 @@ nav {
   background-color: white;
   color: #303030;
   width: 150px;
-  margin: 0 auto;
-  display:block;
   animation:none;
   -webkit-animation: none;
+  display: block;
+  margin: 0 auto;
 }
 #enrol-btn:hover{
   background-color: #e2e2e2 !important;
@@ -474,9 +479,6 @@ border-color: #10657c !important;
     font-size:5vw !important;
     padding-left: 0px !important;
     padding-right: 0px !important;
-  }
-  #classes{
-    display: none;
   }
   #event-div-wo-car{
     display: none;

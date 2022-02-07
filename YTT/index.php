@@ -32,6 +32,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
 
 
 ?>
+
 <html lang="en">
 
 <head>
@@ -85,9 +86,9 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
     <section>
         <div id="title-div" class="container shadow-lg">
             <div class="title-text-div">
-                <div class="title-text title-entrance">Your Talent Team</div>
-                <h1 class="sub-text title-entrance">Performance Academy</h1>
-                <a href='#enrol-div' class="btn shadow-lg title-entrance" id='enrol-btn' style='border: 1px solid transparent;'>Enrol Now!</a>
+                <div class="title-text title-entrance">YOUR TALENT TEAM</div>
+                <h1 class="sub-text title-entrance">PERFORMANCE ACADEMY</h1>
+                <a href='#enrol-div' class="btn shadow-lg title-entrance" id='enrol-btn' style='border: 1px solid transparent;'>ENROL NOW!</a>
             </div>
         </div>
         <br /><br /><br /><br />
@@ -123,7 +124,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
         <div class="overlay-content">
             <a href="#top" onclick="closeNav()">Home</a>
             <a href="#about-us" onclick="closeNav()">About Us</a>
-            <a href="#class-carousel" onclick="closeNav()">Classes</a>
+            <a href="#classes" onclick="closeNav()">Classes</a>
             <a href="#event-div" onclick="closeNav()">Events</a>
             <a href="#contact-us-div" onclick="closeNav()">Contact Us</a>
         </div>
@@ -137,80 +138,80 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                 <path d="M0 162L23.3 165.5C46.7 169 93.3 176 140 176.7C186.7 177.3 233.3 171.7 280 170C326.7 168.3 373.3 170.7 420 172.7C466.7 174.7 513.3 176.3 560 174.8C606.7 173.3 653.3 168.7 700 172C746.7 175.3 793.3 186.7 840 182.7C886.7 178.7 933.3 159.3 980 154.5C1026.7 149.7 1073.3 159.3 1120 162.2C1166.7 165 1213.3 161 1260 162.2C1306.7 163.3 1353.3 169.7 1376.7 172.8L1400 176L1400 201L1376.7 201C1353.3 201 1306.7 201 1260 201C1213.3 201 1166.7 201 1120 201C1073.3 201 1026.7 201 980 201C933.3 201 886.7 201 840 201C793.3 201 746.7 201 700 201C653.3 201 606.7 201 560 201C513.3 201 466.7 201 420 201C373.3 201 326.7 201 280 201C233.3 201 186.7 201 140 201C93.3 201 46.7 201 23.3 201L0 201Z" fill="#18a5bc" />
             </svg>
         </div>
-        <div class='class-div'>
+        <div class='class-div' id='classes'>
             <div class="classes-div shadow-lg ">
-                <h1 id="classes-title" class='module'>Classes</h1>
+                <h1  class='module'><a href='classes.html'id="classes-title">Classes</a></h1>
                 <br />
                 <div class='container-fluid'>
                     <div class='row align-self-center'>
                         <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#ballet-dancing-class-page'>
-                            <img src="imgs/email/IMG-3759.jpg" class='class-img' />
+                            <img src="imgs/email/IMG-3759.jpg" class='class-img shadow-lg' />
                             <div>
                                 Ballet
                             </div>
                         </a>
                         <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#jazz-dancing-class-page'>
-                            <img src="imgs/email/IMG-3769.jpg" class='class-img' />
+                            <img src="imgs/email/IMG-3769.jpg" class='class-img shadow-lg' />
                             <div>
                                 Jazz
                             </div>
                         </a>
                         <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#contemporary-dancing-class-page'>
-                            <img src="imgs/email/IMG-3779.jpg" class='class-img' />
+                            <img src="imgs/email/IMG-3779.jpg" class='class-img shadow-lg' />
                             <div>
                                 Contemporary
                             </div>
                         </a>
                         <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#hiphop-dancing-class-page'>
-                            <img src="imgs/email/IMG-3786.jpg" class='class-img' />
+                            <img src="imgs/email/IMG-3786.jpg" class='class-img shadow-lg' />
                             <div>
                                 Hip-Hop
                             </div>
                         </a>
                         <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#lyrical-dancing-class-page'>
-                            <img src="imgs/email/IMG-3782.jpg" class='class-img' />
+                            <img src="imgs/email/IMG-3782.jpg" class='class-img shadow-lg' />
                             <div>
                                 Lyrical
                             </div>
                         </a>
                         <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#acro-dancing-class-page'>
-                            <img src="imgs/email/IMG-3771.jpg" class='class-img' />
+                            <img src="imgs/email/IMG-3771.jpg" class='class-img shadow-lg' />
                             <div>
                                 Acro
                             </div>
                         </a>
                         <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#line-dancing-class-page'>
-                            <img src="imgs/email/IMG-3761.jpg" class='class-img' />
+                            <img src="imgs/email/IMG-3761.jpg" class='class-img shadow-lg' />
                             <div>
                                 Line
                             </div>
                         </a>
                         <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#tap-dancing-class-page'>
-                            <img src="imgs/email/IMG-3777.jpg" class='class-img' />
+                            <img src="imgs/email/IMG-3777.jpg" class='class-img shadow-lg' />
                             <div>
                                 Tap
                             </div>
                         </a>
                         <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#break-dancing-class-page'>
-                            <img src="imgs/email/IMG-3773.jpg" class='class-img' />
+                            <img src="imgs/email/IMG-3773.jpg" class='class-img shadow-lg' />
                             <div>
                                 Break
                             </div>
                         </a>
                         <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#Pre-schoolers-class-page'>
-                            <img src="imgs/email/IMG-3751.jpg" class='class-img' />
+                            <img src="imgs/email/IMG-3751.jpg" class='class-img shadow-lg' />
                             <div>
                                 Toddlers
                             </div>
                         </a>
                         <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#adult-dancing-class-page'>
-                            <img src="imgs/email/IMG-3783.jpg" class='class-img' />
+                            <img src="imgs/email/IMG-3783.jpg" class='class-img shadow-lg' />
                             <div>
                                 Adult
                             </div>
                         </a>
                         <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#boy-dancing-class-page'>
-                            <img src="imgs/email/IMG-3774.jpg" class='class-img' />
+                            <img src="imgs/email/IMG-3774.jpg" class='class-img shadow-lg' />
                             <div>
                                 Boy
                             </div>
@@ -497,7 +498,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
             </div>
             <br />
             <div class='container'>
-                <span style='font-size:30px;'>What is included?</span></span><a href='#more-info' data-toggle='collapse' style='font-size:30px;color:black !important;'>&#43;</a>
+                <span style='font-size:30px;'>What is included?</span></span><a href='#more-info' data-toggle='collapse' style='font-size:30px;color:black !important;text-decoration:none;'>&#43;</a>
                 <div id='more-info' class='collapse'>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
