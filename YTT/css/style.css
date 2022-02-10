@@ -186,6 +186,12 @@ html, body {
   .flip-box-back .event-title-text {
     font-size: 1.48vw; }
 
+.event-title-text-1 {
+  font-size: 1.3vw; }
+
+.more-info-event {
+  margin-top: 30px !important; }
+
 #YTT-nav {
   height: 12vh;
   min-height: 75px; }
@@ -551,6 +557,9 @@ nav {
   .event-title-text {
     font-size: 2.4vw !important; }
 
+  .event-title-text-1 {
+    font-size: 2.2vw; }
+
   .test-carousel-text {
     font-size: 2.4vw !important; }
 
@@ -565,6 +574,9 @@ nav {
 
   .event-title-text {
     font-size: 4.8vw !important; }
+
+  .event-title-text-1 {
+    font-size: 4vw; }
 
   .test-carousel-text {
     font-size: 3vw !important;
@@ -599,6 +611,9 @@ nav {
   .event-title-text {
     font-size: 7.5vw !important; }
 
+  .event-title-text-1 {
+    font-size: 6vw; }
+
   .test-carousel-text {
     font-size: 3.4vw !important;
     padding-left: 0;
@@ -629,7 +644,7 @@ nav {
     display: block; }
 
   #YTT-nav {
-    height: 8vh !important; }
+    height: 10vh !important; }
 
   .hide {
     display: none; } }
@@ -668,7 +683,7 @@ nav {
 
 .overlay .closebtn {
   position: absolute;
-  top: 100px;
+  top: 75px;
   right: 20px;
   font-size: 60px; }
 

@@ -83,7 +83,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
             </div>
         </ul>
     </nav>
-    
+
     <section>
         <div id="title-div" class="container shadow-lg">
             <div class="title-text-div">
@@ -141,12 +141,12 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
         </div>
         <div class='class-div' id='classes'>
             <div class="classes-div shadow-lg ">
-                <h1  class='module'><a href='classes.html'id="classes-title">Classes</a></h1>
+                <h1 class='module'><a href='classes.html' id="classes-title">Classes</a></h1>
                 <br />
                 <div class='container-fluid'>
                     <div class='row align-self-center'>
                         <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#ballet-dancing-class-page'>
-                            <img src="imgs/email/ballet.jpg" style='padding-top:1px !important;'class='class-img shadow-lg' />
+                            <img src="imgs/email/ballet.jpg" style='padding-top:1px !important;' class='class-img shadow-lg' />
                             <div>
                                 Ballet
                             </div>
@@ -224,7 +224,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
         </div>
 
         <div class="class-bottom-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="visual"  width='100%' viewBox="0 0 1400 200" version="1.1">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="visual" width='100%' viewBox="0 0 1400 200" version="1.1">
                 <path d="M0 137L23.3 135.3C46.7 133.7 93.3 130.3 140 133.8C186.7 137.3 233.3 147.7 280 140.2C326.7 132.7 373.3 107.3 420 102.7C466.7 98 513.3 114 560 123.2C606.7 132.3 653.3 134.7 700 137.7C746.7 140.7 793.3 144.3 840 140.7C886.7 137 933.3 126 980 124.7C1026.7 123.3 1073.3 131.7 1120 129.8C1166.7 128 1213.3 116 1260 113.8C1306.7 111.7 1353.3 119.3 1376.7 123.2L1400 127L1400 0L1376.7 0C1353.3 0 1306.7 0 1260 0C1213.3 0 1166.7 0 1120 0C1073.3 0 1026.7 0 980 0C933.3 0 886.7 0 840 0C793.3 0 746.7 0 700 0C653.3 0 606.7 0 560 0C513.3 0 466.7 0 420 0C373.3 0 326.7 0 280 0C233.3 0 186.7 0 140 0C93.3 0 46.7 0 23.3 0L0 0Z" fill="#72c2ef" />
                 <path d="M0 111L23.3 111.8C46.7 112.7 93.3 114.3 140 113.7C186.7 113 233.3 110 280 107.2C326.7 104.3 373.3 101.7 420 95.5C466.7 89.3 513.3 79.7 560 80.5C606.7 81.3 653.3 92.7 700 96.7C746.7 100.7 793.3 97.3 840 99.8C886.7 102.3 933.3 110.7 980 107.2C1026.7 103.7 1073.3 88.3 1120 85.3C1166.7 82.3 1213.3 91.7 1260 96C1306.7 100.3 1353.3 99.7 1376.7 99.3L1400 99L1400 0L1376.7 0C1353.3 0 1306.7 0 1260 0C1213.3 0 1166.7 0 1120 0C1073.3 0 1026.7 0 980 0C933.3 0 886.7 0 840 0C793.3 0 746.7 0 700 0C653.3 0 606.7 0 560 0C513.3 0 466.7 0 420 0C373.3 0 326.7 0 280 0C233.3 0 186.7 0 140 0C93.3 0 46.7 0 23.3 0L0 0Z" fill="#57b9df" />
                 <path d="M0 51L23.3 52.5C46.7 54 93.3 57 140 62.7C186.7 68.3 233.3 76.7 280 76.5C326.7 76.3 373.3 67.7 420 65.7C466.7 63.7 513.3 68.3 560 64C606.7 59.7 653.3 46.3 700 45.7C746.7 45 793.3 57 840 66C886.7 75 933.3 81 980 81.3C1026.7 81.7 1073.3 76.3 1120 71C1166.7 65.7 1213.3 60.3 1260 61.3C1306.7 62.3 1353.3 69.7 1376.7 73.3L1400 77L1400 0L1376.7 0C1353.3 0 1306.7 0 1260 0C1213.3 0 1166.7 0 1120 0C1073.3 0 1026.7 0 980 0C933.3 0 886.7 0 840 0C793.3 0 746.7 0 700 0C653.3 0 606.7 0 560 0C513.3 0 466.7 0 420 0C373.3 0 326.7 0 280 0C233.3 0 186.7 0 140 0C93.3 0 46.7 0 23.3 0L0 0Z" fill="#3bafce" />
@@ -498,16 +498,62 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                 </div>
             </div>
             <br />
-            <div class='container'>
-                <span style='font-size:30px;'>What is included?</span></span><a href='#more-info' data-toggle='collapse' style='font-size:30px;color:black !important;text-decoration:none;'>&#43;</a>
-                <div id='more-info' class='collapse'>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+        </div>
+        <div class='mx-auto justify-content-center container-fluid d-flex'>
+            <span style='font-size:30px;position:absolute'>How much does it cost?
+                <a href='#more-info' data-toggle='collapse' style='font-size:30px;color:black !important;text-decoration:none;text-align:center'>&#43;
+                </a>
+            </span>
+            <div id='more-info' class='collapse'>
+                <br>
+                <br />
+                <div class='row'>
+                    <div class='col-xl-3 col-lg-6 more-info-event'>
+                        <p class='event-title-text-1' style='text-align:center;'>Birthday Party</p>
+                        <p class='event-text' style='max-width:40ch;text-align:center;margin:0 auto;'>
+                            <strong>$180</strong> for 2 hours with less than 20 kids.
+                            <br />
+                            <strong>$200</strong> for 2 hours with more than 20 kids.
+                            <br />
+                            The cost includes a party venue, entertainment, and party host. This package DOES NOT include any decorations, party food, or supplies.
+                        </p>
+                    </div>
+                    <div class='col-xl-3 col-lg-6 more-info-event'>
+                        <p class='event-title-text-1' style='text-align:center;'>Birthday Party + Game Supplies</p>
+                        <p class='event-text' style='max-width:40ch;text-align:center;margin:0 auto;'>
+                            <strong>$250</strong> for 2 hours with less than 20 kids.
+                            <br />
+                            <strong>$12</strong> for each additional child.
+                            <br />
+                            The cost includes party venue, entertainment, party host, party decorations, pass the parcel & Piñata!
+                            This package DOES NOT include party food or supplies
+                        </p>
+                    </div>
+                    <div class='col-xl-3 col-lg-6 more-info-event'>
+                        <p class='event-title-text-1' style='text-align:center;'>Holiday Clinics</p>
+                        <p class='event-text' style='max-width:40ch;margin:0 auto;text-align:center;'>
+                            <strong>$40</strong> per person
+                            <br />
+                            The costs for this clinic also includes a goodie bag with all of the activities & supplies needed for the clinic. This price also includes contactless delivery of each goodie bag!
+                        </p>
+                    </div>
+                    <div class='col-xl-3 col-lg-6 more-info-event'>
+                        <p class='event-title-text-1' style='text-align:center;'>Studio Rental</p>
+                        <p class='event-text'  style='max-width:40ch;text-align:center;margin:0 auto;'>
+                            <strong>$60</strong> flat rate per hour
+                            <br />
+                            Studio rental is suitable for dance practice, meetings, fitness groups, parties, & many more activities.
+                        </p>
+                    </div>
+
+
+
+
                 </div>
+
             </div>
         </div>
-
     </section>
     <br /><br />
     <section class='module'>
@@ -605,7 +651,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                 <div class='mb-3 row justify-content-center'>
                     <div class='col-sm-4'></div>
                     <div class='col-sm-6 col-lg-4'>
-                        <button type='button'style='border: 1px solid transparent;margin:0 auto;display:block;' onclick='validate(event)' class='btn btn-primary' >Submit</button>
+                        <button type='button' style='border: 1px solid transparent;margin:0 auto;display:block;' onclick='validate(event)' class='btn btn-primary'>Submit</button>
                     </div>
 
                 </div>
