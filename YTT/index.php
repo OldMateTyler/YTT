@@ -58,6 +58,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
         </a>
 
         <ul class="navbar-nav ml-auto">
+            <div id="progress-bar" class="fixed-top"></div>
             <div class="navbar">
                 <li class="active hide-icons hide">
                     <a class="nav-link nav-item" href="#top">Home</a>
@@ -82,7 +83,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
             </div>
         </ul>
     </nav>
-    <div id="progress-bar" class="fixed-top"></div>
+    
     <section>
         <div id="title-div" class="container shadow-lg">
             <div class="title-text-div">

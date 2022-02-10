@@ -190,6 +190,14 @@ html, body {
   height: 12vh;
   min-height: 75px; }
 
+.scrolled-down {
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out; }
+
+.scrolled-up {
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out; }
+
 #nav-photo {
   height: 100%;
   vertical-align: middle; }
@@ -619,6 +627,9 @@ nav {
 @media screen and (max-width: 713px) {
   #show-hamburger {
     display: block; }
+
+  #YTT-nav {
+    height: 8vh !important; }
 
   .hide {
     display: none; } }

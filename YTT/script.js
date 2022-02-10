@@ -245,3 +245,20 @@ $(window).on('hresize', function () {
             el.addClass('entrance-animation');
         })
   })
+  /*
+  $('body').css('padding-top', $('.navbar').outerHeight() + 'px')
+
+if ($('.navbar').length > 0) { // check if element exists
+    var last_scroll_top = 0;
+    $(window).on('scroll', function() {
+        scroll_top = $(this).scrollTop();
+        if(scroll_top < last_scroll_top) {
+            $('.navbar').removeClass('scrolled-down').addClass('scrolled-up');
+        }
+        else {
+            $('.navbar').removeClass('scrolled-up').addClass('scrolled-down');
+        }
+        last_scroll_top = scroll_top;
+    });
+}
+*/
