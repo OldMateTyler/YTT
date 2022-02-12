@@ -54,7 +54,7 @@ html, body {
   border-radius: 50%; }
 
 .form-invalid {
-  box-shadow: 0 1rem 3rem rgba(255, 0, 0, 0.75) !important; }
+  border: solid 1px rgba(255, 0, 0, 0.5) !important; }
 
 .fa-angle-down {
   color: black !important;
@@ -100,6 +100,14 @@ html, body {
 
 #form1 {
   padding: 20px; }
+  #form1 input:valid {
+    border: 1px rgba(0, 128, 0, 0.5) solid !important; }
+  #form1 input:not(:placeholder-shown):invalid {
+    border: solid 1px rgba(255, 0, 0, 0.5) !important; }
+  #form1 textarea:valid {
+    border: 1px rgba(0, 128, 0, 0.5) solid !important; }
+  #form1 textarea:not(:placeholder-shown):invalid {
+    border: solid 1px rgba(255, 0, 0, 0.5) !important; }
 
 .class-page-text-contrast {
   color: white !important; }
@@ -132,7 +140,7 @@ html, body {
   transform: rotateY(180deg); }
 
 .title-text {
-  font-size: 6vw;
+  font-size: 8vw;
   font-family: "Mulish", sans-serif;
   color: white;
   text-align: center;
@@ -141,14 +149,15 @@ html, body {
 .sub-text {
   text-align: center;
   color: white;
-  font-size: 2vw;
+  font-size: 2.66vw;
   text-shadow: 2px 3px 20px #212121; }
 
 .title-text-div {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  width: 100%; }
 
 #title-div {
   background: linear-gradient(to top, rgba(114, 194, 239, 0.8), rgba(24, 165, 188, 0.8)), url("family-photo-1.jpg");
@@ -182,7 +191,7 @@ html, body {
   padding: 0.4rem !important;
   padding-bottom: 1.5rem !important; }
   .flip-box-back .event-text {
-    font-size: 1vw; }
+    font-size: 1.3vw; }
   .flip-box-back .event-title-text {
     font-size: 1.48vw; }
 
@@ -297,7 +306,9 @@ nav {
 .find-out-more {
   width: 100%;
   border-color: #18a5bc !important;
-  font-size: 1.25vw !important; }
+  font-size: 1.25vw !important;
+  margin: 0 auto;
+  padding: 0; }
 
 .find-out-more:hover {
   background-color: #10657c !important;
@@ -381,7 +392,11 @@ nav {
   100% {
     opacity: 1; } }
 .event-photo {
-  margin-top: 24px; }
+  margin-top: 24px;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 5px; }
 
 #event-title {
   font-size: 60px;
@@ -409,7 +424,9 @@ nav {
 
 .card-body {
   padding: 0.4rem !important;
-  padding-bottom: 1.5rem !important; }
+  padding-bottom: 1.5rem !important;
+  width: 90%;
+  margin: 0 auto; }
 
 .card-img-top {
   justify-content: center;
@@ -521,19 +538,16 @@ nav {
     padding-right: 10px; } }
 @media screen and (max-width: 1200px) {
   .title-text {
-    font-size: 12vw !important; }
+    font-size: 10vw !important; }
 
   .sub-text {
-    font-size: 4.5vw !important; } }
-@media screen and (max-width: 800px) {
-  .sub-text {
-    font-size: 5.5vw !important; } }
+    font-size: 3.33vw !important; } }
 @media screen and (max-width: 536px) {
   .title-text {
-    font-size: 18vw !important; }
+    font-size: 15vw !important; }
 
   .sub-text {
-    font-size: 6.75vw !important; } }
+    font-size: 5vw !important; } }
 @media screen and (max-width: 1199px) {
   .class-card-title {
     font-size: 3vw !important; }
@@ -564,7 +578,8 @@ nav {
     font-size: 2.4vw !important; }
 
   .find-out-more {
-    font-size: 2vw !important; }
+    font-size: 2vw !important;
+    width: 90%; }
 
   .card-front-title-text {
     font-size: 1.25vw !important; } }
@@ -648,7 +663,7 @@ nav {
 
   .hide {
     display: none; } }
-@media screen and (min-width: 714px) {
+@media screen and (min-width: 1000px) {
   #show-hamburger {
     display: none; } }
 .overlay {

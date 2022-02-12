@@ -3,39 +3,32 @@ if ( window.history.replaceState ) {
   window.history.replaceState( null, null, window.location.href );
 }
 function validate(e){
+  
   if(document.getElementById("name").value == ""){
-    $("#name").removeClass("shadow-lg");
     $("#name").addClass("form-invalid");
   }
   else{
-    $("#name").addClass("shadow-lg");
     $("#name").removeClass("form-invalid");
   }
-  if(document.getElementById("email").value == ""){
-    $("#email").removeClass("shadow-lg");
+  if(document.getElementById("email").value == "" && emailIsValid(document.getElementById("email").value) == false){
     $("#email").addClass("form-invalid");
   }
   else{
-    $("#email").addClass("shadow-lg");
     $("#email").removeClass("form-invalid");
   }
   if(document.getElementById("message").value == ""){
-      $("#message").removeClass("shadow-lg");
       $("#message").addClass("form-invalid");
   }
   else{
-    $("#message").addClass("shadow-lg");
     $("#message").removeClass("form-invalid");
   }
   if(document.getElementById("subject").value == ""){
-    $("#subject").removeClass("shadow-lg");
     $("#subject").addClass("form-invalid");
 }
 else{
-  $("#subject").addClass("shadow-lg");
   $("#subject").removeClass("form-invalid");
 }
-  if(document.getElementById("name").value != "" && document.getElementById("email").value != "" && document.getElementById("message").value != "" && document.getElementById("subject").value != ""){
+  if(document.getElementById("name").value != "" && document.getElementById("email").value != "" && document.getElementById("message").value != "" && document.getElementById("subject").value != "" && emailIsValid(document.getElementById("email").value) == true){
     e.preventDefault();
     var myModal = new bootstrap.Modal(document.getElementById('myModal'));
     myModal.show();
@@ -56,6 +49,9 @@ else{
   }
   else{
     e.preventDefault();
+  }
+  function emailIsValid (email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
   }
 }
 function openNav(){

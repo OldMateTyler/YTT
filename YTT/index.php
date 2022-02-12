@@ -89,7 +89,8 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
             <div class="title-text-div">
                 <div class="title-text title-entrance">YOUR TALENT TEAM</div>
                 <h1 class="sub-text title-entrance">PERFORMANCE ACADEMY</h1>
-                <a href='#enrol-div' class="btn shadow-lg title-entrance" id='enrol-btn' style='border: 1px solid transparent;'>ENROL NOW!</a>
+                <br/>
+                <a href='#enrol-div' class="btn shadow-lg title-entrance" id='enrol-btn' style='border: 1px solid transparent;'>ENROL NOW</a>
             </div>
         </div>
         <br /><br /><br /><br />
@@ -238,120 +239,130 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
         <div id="event-div" class="shadow-md">
             <div id='event-div-wo-car'>
                 <h1 id="event-title" class='module'>Events</h1>
-                <div class="row mx-auto justify-content-center container-fluid d-flex">
-                    <div class="card col-md-3 col-xs-8 col-sm-8 event-card shadow-lg flip-box module" style='margin-top:10px'>
-                        <div class="flip-box-inner" id="toggle-me-2-c">
-                            <div class="flip-box-front" id="event-card-1">
-                                <img class="card-img-bottom event-photo" src="imgs/Events/event1.png" alt="Holiday Clinics" />
-                                <div class="card-body">
-                                    <span class="card-front-title">Birthday Parties</span>
-                                    <p class='card-front-title-text'>A special event thoughtfully planned for your little one.</p>
-                                    <a class="btn btn-primary find-out-more shadow-lg" id="toggle-card-2-c">Learn
-                                        More</a>
+                <div class="row mx-auto justify-content-center" style='padding-left:5%;padding-right:5%;'>
+                    <div class="col-md-4 col-xs-8 col-sm-8">
+                        <div class="card event-card shadow-lg flip-box module">
+                            <div class="flip-box-inner" id="toggle-me-2-c">
+                                <div class="flip-box-front" id="event-card-1">
+                                    <img class=" event-photo" src="imgs/Events/event1.png" alt="Holiday Clinics" />
+                                    <div class="card-body">
+                                        <span class="card-front-title">Birthday Parties</span>
+                                        <p class='card-front-title-text'>A special event thoughtfully planned for your little one.</p>
+                                        <a class="btn btn-primary find-out-more shadow-lg" id="toggle-card-2-c">Learn
+                                            More</a>
+                                        <br />
+                                    </div>
+                                </div>
+                                <div class="flip-box-back">
                                     <br />
-                                </div>
-                            </div>
-                            <div class="flip-box-back">
-                                <br />
-                                <p class="event-title-text">Birthday Parties</p>
-                                <p class="event-text">
-                                    The Birthday packages at YTT are offered to provide a simple
-                                    yet special day for your child and their friends
-                                </p>
-                                <p class="event-text">
-                                    Each party is uniquely planned by us, allowing you to offload
-                                    all of the planning stress
-                                </p>
-                                <p class="event-text">
-                                    Running for 2 hours, all of our packages include a safe party
-                                    venue, entertainment and a party host. If you would like to
-                                    extend on this, we have add-on's such as game supplies and
-                                    theme appropriate decorations.
-                                </p>
-                                <p class="event-text">
-                                    By purchasing one of our birthday packages, your child will
-                                    have the special day they deserve.
-                                </p>
+                                    <p class="event-title-text"><strong>Birthday Parties</strong></p>
+                                    <p class="event-text">
+                                        The Birthday packages at YTT are offered to provide a simple
+                                        yet special day for your child and their friends
+                                    </p>
+                                    <p class="event-text">
+                                        Each party is uniquely planned by us, allowing you to offload
+                                        all of the planning stress
+                                    </p>
+                                    <p class="event-text">
+                                        Running for 2 hours, all of our packages include a safe party
+                                        venue, entertainment and a party host. If you would like to
+                                        extend on this, we have add-on's such as game supplies and
+                                        theme appropriate decorations.
+                                    </p>
+                                    <p class="event-text">
+                                        By purchasing one of our birthday packages, your child will
+                                        have the special day they deserve.
+                                    </p>
 
-                                <a class="btn btn-primary find-out-more flip-button shadow-lg" id="return-card-2-c">Return</a>
+                                    <a class="btn btn-primary find-out-more flip-button shadow-lg" id="return-card-2-c" style='width:90%'>Return</a>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                     <br />
-                    <div class="card col-md-3 col-xs-8 col-sm-8 event-card shadow-lg flip-box module" style='margin-top:10px'>
-                        <div class="flip-box-inner" id="toggle-me-c">
-                            <div class="flip-box-front" id="event-card-2">
-                                <img class="card-img-bottom event-photo" src="imgs/Events/event2.png" alt="Holiday Clinics" />
-                                <div class="card-body">
-                                    <span class="card-front-title">Holiday Clinics</span>
-                                    <p class='card-front-title-text'>Family Friendly day out filled with hours of fun for all ages.</p>
-                                    <a class="btn btn-primary find-out-more shadow-lg" id="toggle-card-c">Learn More</a>
+                    <div class='col-md-4 col-xs-8 col-sm-8'>
+                        <div class="card event-card shadow-lg flip-box module">
+                            <div class="flip-box-inner" id="toggle-me-c">
+                                <div class="flip-box-front" id="event-card-2">
+                                    <img class="event-photo" src="imgs/Events/event2.png" alt="Holiday Clinics" />
+                                    <div class="card-body">
+                                        <span class="card-front-title">Holiday Clinics</span>
+                                        <p class='card-front-title-text'>Family Friendly day out filled with hours of fun for all ages.</p>
+                                        <a class="btn btn-primary find-out-more shadow-lg" id="toggle-card-c">Learn More</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="flip-box-back">
-                                <br />
-                                <p class="event-title-text">Holiday Clinics</p>
-                                <p class="event-text">
-                                    Holiday clinics are solely organised to give children of the
-                                    Shoalhaven something to look forward to during their time off
-                                    school.
-                                </p>
-                                <p class="event-text">
-                                    These clinics are uniquely themed by staff at YTT and do no
-                                    require any dance experience.
-                                </p>
-                                <p class="event-text">
-                                    Running from 9am-3pm, the kids will be involved in countless
-                                    activities that will ensure a great day outside of the house.
-                                </p>
-                                <p class="event-text">
-                                    By signing your child up to one of these clinics, they will be
-                                    able to connect with several children their age and provide
-                                    you with a massive break.
-                                </p>
+                                <div class="flip-box-back">
+                                    <br />
+                                    <p class="event-title-text"><strong>Holiday Clinics</strong></p>
+                                    <p class="event-text">
+                                        Holiday clinics are solely organised to give children of the
+                                        Shoalhaven something to look forward to during their time off
+                                        school.
+                                    </p>
+                                    <p class="event-text">
+                                        These clinics are uniquely themed by staff at YTT and do no
+                                        require any dance experience.
+                                    </p>
+                                    <p class="event-text">
+                                        Running from 9am-3pm, the kids will be involved in countless
+                                        activities that will ensure a great day outside of the house.
+                                    </p>
+                                    <p class="event-text">
+                                        By signing your child up to one of these clinics, they will be
+                                        able to connect with several children their age and provide
+                                        you with a massive break.
+                                    </p>
 
-                                <a class="btn btn-primary find-out-more flip-button shadow-lg" id="return-card-c">Return</a>
+                                    <a class="btn btn-primary find-out-more flip-button shadow-lg" id="return-card-c" style='width:90%'>Return</a>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                     <br />
-                    <div class="card col-md-3 col-xs-8 col-sm-8 event-card shadow-lg flip-box module" style='margin-top:10px'>
-                        <div class="flip-box-inner" id="toggle-me-3-c">
-                            <div class="flip-box-front" id="event-card-3">
-                                <img class="card-img-bottom event-photo" src="imgs/Events/event3.png" alt="Holiday Clinics" />
-                                <div class="card-body">
-                                    <span class="card-front-title">Studio Rental</span>
-                                    <p class='card-front-title-text'>In need of space for dance practice, a party, or a meeting?</p>
-                                    <a class="btn btn-primary find-out-more shadow-lg" id="toggle-card-3-c">Learn
-                                        More</a>
+                    <div class='col-md-4 col-xs-8 col-sm-8'>
+                        <div class="card  event-card shadow-lg flip-box module">
+                            <div class="flip-box-inner" id="toggle-me-3-c">
+                                <div class="flip-box-front" id="event-card-3">
+                                    <img class="event-photo" src="imgs/Events/event3.png" alt="Holiday Clinics" />
+                                    <div class="card-body">
+                                        <span class="card-front-title">Studio Rental</span>
+                                        <p class='card-front-title-text'>In need of space for dance practice, a party, or a meeting?</p>
+                                        <a class="btn btn-primary find-out-more shadow-lg" id="toggle-card-3-c">Learn
+                                            More</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="flip-box-back">
-                                <br />
-                                <p class="event-title-text">Studio Rental</p>
-                                <p class="event-text">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                    Eveniet a, quasi obcaecati sapiente tempore labore!
-                                </p>
-                                <p class="event-text">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Aliquam perferendis tenetur modi quo, autem labore magnam
-                                    eaque quasi odio qui.
-                                </p>
-                                <p class="event-text">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
-                                    ipsam fugit accusamus a. Architecto, voluptatum?
-                                </p>
-                                <p class="event-text">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                    Libero distinctio odit fuga, sit quidem magni id voluptatibus
-                                    vero sapiente nisi!.
-                                </p>
+                                <div class="flip-box-back">
+                                    <br />
+                                    <p class="event-title-text"><strong>Studio Rental</strong></p>
+                                    <p class="event-text">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Eveniet a, quasi obcaecati sapiente tempore labore!
+                                    </p>
+                                    <p class="event-text">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Aliquam perferendis tenetur modi quo, autem labore magnam
+                                        eaque quasi odio qui.
+                                    </p>
+                                    <p class="event-text">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
+                                        ipsam fugit accusamus a. Architecto, voluptatum?
+                                    </p>
+                                    <p class="event-text">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Libero distinctio odit fuga, sit quidem magni id voluptatibus
+                                        vero sapiente nisi!.
+                                    </p>
 
-                                <a class="btn btn-primary find-out-more flip-button shadow-lg" id="return-card-3-c">Return</a>
+                                    <a class="btn btn-primary find-out-more flip-button shadow-lg" id="return-card-3-c" style='width:90%'>Return</a>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+
                     <br />
                 </div>
 
@@ -380,7 +391,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                                     </div>
                                     <div class="flip-box-back flip-box-back-2">
                                         <br />
-                                        <p class="event-title-text">Birthday Parties</p>
+                                        <p class="event-title-text"><strong>Birthday Parties</strong></p>
                                         <p class="event-text">
                                             The Birthday packages at YTT are offered to provide a simple
                                             yet special day for your child and their friends
@@ -400,7 +411,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                                             have the special day they deserve.
                                         </p>
 
-                                        <a class="btn btn-primary find-out-more flip-button shadow-lg" id="return-card-2">Return</a>
+                                        <a class="btn btn-primary find-out-more flip-button shadow-lg" id="return-card-2" style='width:90%'>Return</a>
                                     </div>
                                 </div>
                             </div>
@@ -420,7 +431,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                                     </div>
                                     <div class="flip-box-back flip-box-back-2">
                                         <br />
-                                        <p class="event-title-text">Holiday Clinics</p>
+                                        <p class="event-title-text"><strong>Holiday Clinics</strong></p>
                                         <p class="event-text">
                                             Holiday clinics are solely organised to give children of the
                                             Shoalhaven something to look forward to during their time off
@@ -440,7 +451,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                                             you with a massive break.
                                         </p>
 
-                                        <a class="btn btn-primary find-out-more flip-button shadow-lg" id="return-card">Return</a>
+                                        <a class="btn btn-primary find-out-more flip-button shadow-lg" id="return-card" style='width:90%'>Return</a>
                                     </div>
                                 </div>
                             </div>
@@ -460,7 +471,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                                     </div>
                                     <div class="flip-box-back flip-box-back-2">
                                         <br />
-                                        <p class="event-title-text">Studio Rental</p>
+                                        <p class="event-title-text"><strong>Studio Rental</strong></p>
                                         <p class="event-text">
                                             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                                             Eveniet a, quasi obcaecati sapiente tempore labore!
@@ -480,7 +491,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                                             vero sapiente nisi!.
                                         </p>
 
-                                        <a class="btn btn-primary find-out-more flip-button shadow-lg" id="return-card-3">Return</a>
+                                        <a class="btn btn-primary find-out-more flip-button shadow-lg" id="return-card-3" style='width:90%'>Return</a>
                                     </div>
                                 </div>
                             </div>
@@ -501,7 +512,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
 
         </div>
         <div class='mx-auto justify-content-center container-fluid d-flex'>
-            <span style='font-size:30px;position:absolute'>How much does it cost?
+            <span style='font-size:2rem;position:absolute'>How much does it cost?
                 <a href='#more-info' data-toggle='collapse' style='font-size:30px;color:black !important;text-decoration:none;text-align:center'>&#43;
                 </a>
             </span>
@@ -510,7 +521,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                 <br />
                 <div class='row'>
                     <div class='col-xl-3 col-lg-6 more-info-event'>
-                        <p class='event-title-text-1' style='text-align:center;'>Birthday Party</p>
+                        <p class='event-title-text-1' style='text-align:center;'><strong>Birthday Party</strong></p>
                         <p class='event-text' style='max-width:40ch;text-align:center;margin:0 auto;'>
                             <strong>$180</strong> for 2 hours with less than 20 kids.
                             <br />
@@ -520,7 +531,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                         </p>
                     </div>
                     <div class='col-xl-3 col-lg-6 more-info-event'>
-                        <p class='event-title-text-1' style='text-align:center;'>Birthday Party + Game Supplies</p>
+                        <p class='event-title-text-1' style='text-align:center;'><strong>Birthday Party + Game Supplies</strong></p>
                         <p class='event-text' style='max-width:40ch;text-align:center;margin:0 auto;'>
                             <strong>$250</strong> for 2 hours with less than 20 kids.
                             <br />
@@ -531,7 +542,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                         </p>
                     </div>
                     <div class='col-xl-3 col-lg-6 more-info-event'>
-                        <p class='event-title-text-1' style='text-align:center;'>Holiday Clinics</p>
+                        <p class='event-title-text-1' style='text-align:center;'><strong>Holiday Clinics</strong></p>
                         <p class='event-text' style='max-width:40ch;margin:0 auto;text-align:center;'>
                             <strong>$40</strong> per person
                             <br />
@@ -539,20 +550,17 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                         </p>
                     </div>
                     <div class='col-xl-3 col-lg-6 more-info-event'>
-                        <p class='event-title-text-1' style='text-align:center;'>Studio Rental</p>
-                        <p class='event-text'  style='max-width:40ch;text-align:center;margin:0 auto;'>
+                        <p class='event-title-text-1' style='text-align:center;'><strong>Studio Rental</strong></p>
+                        <p class='event-text' style='max-width:40ch;text-align:center;margin:0 auto;'>
                             <strong>$60</strong> flat rate per hour
                             <br />
                             Studio rental is suitable for dance practice, meetings, fitness groups, parties, & many more activities.
                         </p>
                     </div>
-
-
-
-
                 </div>
 
             </div>
+            <br/><br/>
         </div>
     </section>
     <br /><br />
@@ -625,27 +633,27 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                 <div class='mb-3 row justify-content-center'>
                     <label for='fname' class='col-form-label col-sm-4' id='fname'>Name:</label>
                     <div class='col-sm-6 col-lg-4'>
-                        <input type='text' class='form-control shadow-lg' name='name' id='name' placeholder="Enter Full Name">
+                        <input type='text' class='form-control shadow-lg' name='name' id='name' placeholder="Enter Full Name" required>
                     </div>
                 </div>
 
                 <div class='mb-3 row justify-content-center'>
                     <label for='email' class='col-form-label col-sm-4' id='mail'>Email:</label>
                     <div class='col-sm-6 col-lg-4'>
-                        <input type='email' id='email' name='Email' class='form-control shadow-lg' placeholder="Enter Email">
+                        <input type='email' id='email' name='Email' class='form-control shadow-lg' placeholder="Enter Email" required>
                     </div>
                 </div>
 
                 <div class='mb-3 row justify-content-center'>
                     <label for='subject' class='col-form-label col-sm-4' id='sub'>Subject</label>
                     <div class='col-sm-6 col-lg-4'>
-                        <input type='text' class='form-control shadow-lg' name='subject' id='subject' placeholder="Enter Subject">
+                        <input type='text' class='form-control shadow-lg' name='subject' id='subject' placeholder="Enter Subject" required>
                     </div>
                 </div>
                 <div class='mb-3 row justify-content-center'>
                     <label for='message' class='col-form-label col-sm-4' id='body'>Body:</label>
                     <div class='col-sm-6 col-lg-4' id='yourself-div'>
-                        <textarea class='form-control shadow-lg' id='message' name='message' placeholder="Type your message here..." rows='4'></textarea>
+                        <textarea class='form-control shadow-lg' id='message' name='message' placeholder="Type your message here..." rows='4' required></textarea>
                     </div>
                 </div>
                 <div class='mb-3 row justify-content-center'>
@@ -728,7 +736,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
     </section>
     <section>
         <div id="footer" class="justify-content-center d-flex">
-            <p>© 2021 YourSite.com - All Rights Reserved.</p>
+            <span>© 2021 YourTalentTeam.com - All Rights Reserved.</span>
         </div>
     </section>
 </body>
