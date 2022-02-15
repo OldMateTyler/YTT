@@ -146,74 +146,74 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                 <br />
                 <div class='container-fluid'>
                     <div class='row align-self-center'>
-                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#ballet-dancing-class-page'>
-                            <img src="imgs/Classes/ballet.jpg" style='padding-top:1px !important;' class='class-img shadow-lg' />
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#ballet-dancing-class-page'>
+                            <img src="imgs/Classes/ballet-small.jpg" style='padding-top:1px !important;' class='class-img shadow-lg' />
                             <div>
                                 Ballet
                             </div>
                         </a>
-                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#jazz-dancing-class-page'>
-                            <img src="imgs/Classes/IMG-3777.jpg" class='class-img shadow-lg' />
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#jazz-dancing-class-page'>
+                            <img src="imgs/Classes/IMG-3777-small.jpg" class='class-img shadow-lg' />
                             <div>
                                 Jazz
                             </div>
                         </a>
-                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#contemporary-dancing-class-page'>
-                            <img src="imgs/Classes/IMG-3779.jpg" class='class-img shadow-lg' />
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#contemporary-dancing-class-page'>
+                            <img src="imgs/Classes/IMG-3779-small.jpg" class='class-img shadow-lg' />
                             <div>
                                 Contemporary
                             </div>
                         </a>
-                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#hiphop-dancing-class-page'>
-                            <img src="imgs/Classes/IMG-3773.jpg" class='class-img shadow-lg' />
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#hiphop-dancing-class-page'>
+                            <img src="imgs/Classes/IMG-3773-small.jpg" class='class-img shadow-lg' />
                             <div>
                                 Hip-Hop
                             </div>
                         </a>
-                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#lyrical-dancing-class-page'>
-                            <img src="imgs/Classes/IMG-3782.jpg" class='class-img shadow-lg' />
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#lyrical-dancing-class-page'>
+                            <img src="imgs/Classes/IMG-3782-small.jpg" class='class-img shadow-lg' />
                             <div>
                                 Lyrical
                             </div>
                         </a>
-                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#acro-dancing-class-page'>
-                            <img src="imgs/Classes/IMG-3802.jpg" class='class-img shadow-lg' />
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#acro-dancing-class-page'>
+                            <img src="imgs/Classes/IMG-3802-small.jpg" class='class-img shadow-lg' />
                             <div>
                                 Acro
                             </div>
                         </a>
-                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#line-dancing-class-page'>
-                            <img src="imgs/Classes/line.jpg" class='class-img shadow-lg' />
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#line-dancing-class-page'>
+                            <img src="imgs/Classes/line-small.jpg" class='class-img shadow-lg' />
                             <div>
                                 Line
                             </div>
                         </a>
-                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#tap-dancing-class-page'>
-                            <img src='imgs/Classes/tap.jpg' class='class-img shadow-lg' />
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#tap-dancing-class-page'>
+                            <img src='imgs/Classes/tap-small.jpg' class='class-img shadow-lg' />
                             <div>
                                 Tap
                             </div>
                         </a>
-                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info ' href='classes.html#break-dancing-class-page'>
-                            <img src="imgs/Classes/IMG-3786.jpg" class='class-img shadow-lg' />
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#break-dancing-class-page'>
+                            <img src="imgs/Classes/IMG-3786-small.jpg" class='class-img shadow-lg' />
                             <div>
                                 Break
                             </div>
                         </a>
-                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#Pre-schoolers-class-page'>
-                            <img src="imgs/Classes/pre.jpg" class='class-img shadow-lg' />
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#Pre-schoolers-class-page'>
+                            <img src="imgs/Classes/pre-small.jpg" class='class-img shadow-lg' />
                             <div>
                                 Toddlers
                             </div>
                         </a>
-                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#adult-dancing-class-page'>
-                            <img src="imgs/Classes/adult.jpg" class='class-img shadow-lg' />
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#adult-dancing-class-page'>
+                            <img src="imgs/Classes/adult-small.jpg" class='class-img shadow-lg' />
                             <div>
                                 Adult
                             </div>
                         </a>
-                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#boy-dancing-class-page'>
-                            <img src="imgs/Classes/boy.jpg" class='class-img shadow-lg' />
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#boy-dancing-class-page'>
+                            <img src="imgs/Classes/boy-small.jpg" class='class-img shadow-lg' />
                             <div>
                                 Boy
                             </div>
