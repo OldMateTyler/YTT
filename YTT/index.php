@@ -146,74 +146,74 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                 <br />
                 <div class='container-fluid'>
                     <div class='row align-self-center'>
-                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#ballet-dancing-class-page'>
-                            <img src="imgs/email/ballet.jpg" style='padding-top:1px !important;' class='class-img shadow-lg' />
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#ballet-dancing-class-page'>
+                            <img src="imgs/Classes/ballet.jpg" style='padding-top:1px !important;' class='class-img shadow-lg' />
                             <div>
                                 Ballet
                             </div>
                         </a>
-                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#jazz-dancing-class-page'>
-                            <img src="imgs/email/IMG-3777.jpg" class='class-img shadow-lg' />
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#jazz-dancing-class-page'>
+                            <img src="imgs/Classes/IMG-3777.jpg" class='class-img shadow-lg' />
                             <div>
                                 Jazz
                             </div>
                         </a>
-                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#contemporary-dancing-class-page'>
-                            <img src="imgs/email/IMG-3779.jpg" class='class-img shadow-lg' />
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#contemporary-dancing-class-page'>
+                            <img src="imgs/Classes/IMG-3779.jpg" class='class-img shadow-lg' />
                             <div>
                                 Contemporary
                             </div>
                         </a>
-                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#hiphop-dancing-class-page'>
-                            <img src="imgs/email/IMG-3773.jpg" class='class-img shadow-lg' />
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#hiphop-dancing-class-page'>
+                            <img src="imgs/Classes/IMG-3773.jpg" class='class-img shadow-lg' />
                             <div>
                                 Hip-Hop
                             </div>
                         </a>
-                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#lyrical-dancing-class-page'>
-                            <img src="imgs/email/IMG-3782.jpg" class='class-img shadow-lg' />
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#lyrical-dancing-class-page'>
+                            <img src="imgs/Classes/IMG-3782.jpg" class='class-img shadow-lg' />
                             <div>
                                 Lyrical
                             </div>
                         </a>
-                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#acro-dancing-class-page'>
-                            <img src="imgs/email/IMG-3802.jpg" class='class-img shadow-lg' />
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#acro-dancing-class-page'>
+                            <img src="imgs/Classes/IMG-3802.jpg" class='class-img shadow-lg' />
                             <div>
                                 Acro
                             </div>
                         </a>
-                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#line-dancing-class-page'>
-                            <img src="imgs/email/line.jpg" class='class-img shadow-lg' />
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#line-dancing-class-page'>
+                            <img src="imgs/Classes/line.jpg" class='class-img shadow-lg' />
                             <div>
                                 Line
                             </div>
                         </a>
-                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#tap-dancing-class-page'>
-                            <img src='imgs/email/tap.jpg' class='class-img shadow-lg' />
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#tap-dancing-class-page'>
+                            <img src='imgs/Classes/tap.jpg' class='class-img shadow-lg' />
                             <div>
                                 Tap
                             </div>
                         </a>
-                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#break-dancing-class-page'>
-                            <img src="imgs/email/IMG-3786.jpg" class='class-img shadow-lg' />
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info ' href='classes.html#break-dancing-class-page'>
+                            <img src="imgs/Classes/IMG-3786.jpg" class='class-img shadow-lg' />
                             <div>
                                 Break
                             </div>
                         </a>
-                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#Pre-schoolers-class-page'>
-                            <img src="imgs/email/pre.jpg" class='class-img shadow-lg' />
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#Pre-schoolers-class-page'>
+                            <img src="imgs/Classes/pre.jpg" class='class-img shadow-lg' />
                             <div>
                                 Toddlers
                             </div>
                         </a>
-                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#adult-dancing-class-page'>
-                            <img src="imgs/email/adult.jpg" class='class-img shadow-lg' />
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#adult-dancing-class-page'>
+                            <img src="imgs/Classes/adult.jpg" class='class-img shadow-lg' />
                             <div>
                                 Adult
                             </div>
                         </a>
-                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#boy-dancing-class-page'>
-                            <img src="imgs/email/boy.jpg" class='class-img shadow-lg' />
+                        <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info' href='classes.html#boy-dancing-class-page'>
+                            <img src="imgs/Classes/boy.jpg" class='class-img shadow-lg' />
                             <div>
                                 Boy
                             </div>
@@ -338,23 +338,14 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                                     <br />
                                     <p class="event-title-text"><strong>Studio Rental</strong></p>
                                     <p class="event-text">
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                        Eveniet a, quasi obcaecati sapiente tempore labore!
-                                    </p>
-                                    <p class="event-text">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                        Aliquam perferendis tenetur modi quo, autem labore magnam
-                                        eaque quasi odio qui.
-                                    </p>
-                                    <p class="event-text">
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
-                                        ipsam fugit accusamus a. Architecto, voluptatum?
-                                    </p>
-                                    <p class="event-text">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Libero distinctio odit fuga, sit quidem magni id voluptatibus
-                                        vero sapiente nisi!.
-                                    </p>
+                                        When we aren't running classes at YTT, our studio space is always up for rental! 
+                                        </p>
+                                        <p class="event-text">
+                                        Within the open-plan layout, the studio has great air flow with multiple windows and ceiling fans, as well as air conditioning. 
+                                        </p>
+                                        <p class="event-text">
+                                        This space is regularly used for sizeable work functions, photo/video shoots, private rehearsals, fitness classes and much more! 
+                                        </p>
 
                                     <a class="btn btn-primary find-out-more flip-button shadow-lg" id="return-card-3-c" style='width:90%'>Return</a>
                                 </div>
@@ -473,24 +464,14 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                                         <br />
                                         <p class="event-title-text"><strong>Studio Rental</strong></p>
                                         <p class="event-text">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                            Eveniet a, quasi obcaecati sapiente tempore labore!
+                                        When we aren't running classes at YTT, our studio space is always up for rental! 
                                         </p>
                                         <p class="event-text">
-                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                            Aliquam perferendis tenetur modi quo, autem labore magnam
-                                            eaque quasi odio qui.
+                                        Within the open-plan layout, the studio has great air flow with multiple windows and ceiling fans, as well as air conditioning. 
                                         </p>
                                         <p class="event-text">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
-                                            ipsam fugit accusamus a. Architecto, voluptatum?
+                                        This space is regularly used for sizeable work functions, photo/video shoots, private rehearsals, fitness classes and much more! 
                                         </p>
-                                        <p class="event-text">
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                            Libero distinctio odit fuga, sit quidem magni id voluptatibus
-                                            vero sapiente nisi!.
-                                        </p>
-
                                         <a class="btn btn-primary find-out-more flip-button shadow-lg" id="return-card-3" style='width:90%'>Return</a>
                                     </div>
                                 </div>
@@ -545,8 +526,9 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                         <p class='event-title-text-1' style='text-align:center;'><strong>Holiday Clinics</strong></p>
                         <p class='event-text' style='max-width:40ch;margin:0 auto;text-align:center;'>
                             <strong>$40</strong> per person
+                            <br/>
                             <br />
-                            The costs for this clinic also includes a goodie bag with all of the activities & supplies needed for the clinic. This price also includes contactless delivery of each goodie bag!
+                            The costs for this clinic also includes a goodie bag with all of the activities & supplies needed for the clinic. This price also includes contactless delivery!
                         </p>
                     </div>
                     <div class='col-xl-3 col-lg-6 more-info-event'>
@@ -554,7 +536,8 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                         <p class='event-text' style='max-width:40ch;text-align:center;margin:0 auto;'>
                             <strong>$60</strong> flat rate per hour
                             <br />
-                            Studio rental is suitable for dance practice, meetings, fitness groups, parties, & many more activities.
+                            <br/>
+                            This space is regularly used for sizeable work functions, photo/video shoots, private rehearsals, fitness classes and much more! 
                         </p>
                     </div>
                 </div>
