@@ -273,7 +273,7 @@ nav {
   background-color: white;
   color: #303030 !important;
   border-color: white !important;
-  width: 200px !important;
+  width: 175px !important;
   justify-content: center;
   animation: none;
   -webkit-animation: none; }
@@ -363,10 +363,8 @@ nav {
   transition: 0.3s; }
 
 .nav-link:hover {
-  -webkit-animation: pulse 1s infinite;
-  -webkit-transition: .3s ease-in-out;
-  animation: pulse 1s infinite;
-  transition: .3s ease-in-out; }
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1); }
 
 .come-in {
   -webkit-animation: come-in 1.5s ease;
@@ -383,8 +381,8 @@ nav {
   animation: none; }
 
 .entrance-animation {
-  -webkit-animation: come-in 1.5s ease;
-  animation: come-in 1.5s ease; }
+  -webkit-animation: come-in 2.5s ease;
+  animation: come-in 2.5s ease; }
 
 @keyframes come-in {
   0% {
@@ -621,7 +619,7 @@ nav {
     padding-right: 25px; }
 
   .event-text {
-    font-size: 3.75vw !important; }
+    font-size: 3.7vw !important; }
 
   .event-title-text {
     font-size: 7.5vw !important; }

@@ -220,8 +220,10 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                         </a>
                     </div>
                 </div>
-
+                <br/>
+                <a href='imgs/timetable.PNG'class="btn shadow-lg" id='timetable' target='_blank' style='border: 1px solid transparent;'>VIEW TIMETABLE</a>
             </div>
+
         </div>
 
         <div class="class-bottom-svg">
@@ -402,7 +404,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                                             have the special day they deserve.
                                         </p>
 
-                                        <a class="btn btn-primary find-out-more flip-button shadow-lg" id="return-card-2" style='width:90%'>Return</a>
+                                        <a class="btn btn-primary find-out-more flip-button shadow-lg" id="return-card-2" style='width:80%'>Return</a>
                                     </div>
                                 </div>
                             </div>
@@ -442,7 +444,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                                             you with a massive break.
                                         </p>
 
-                                        <a class="btn btn-primary find-out-more flip-button shadow-lg" id="return-card" style='width:90%'>Return</a>
+                                        <a class="btn btn-primary find-out-more flip-button shadow-lg" id="return-card" style='width:80%'>Return</a>
                                     </div>
                                 </div>
                             </div>
@@ -472,7 +474,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                                         <p class="event-text">
                                         This space is regularly used for sizeable work functions, photo/video shoots, private rehearsals, fitness classes and much more! 
                                         </p>
-                                        <a class="btn btn-primary find-out-more flip-button shadow-lg" id="return-card-3" style='width:90%'>Return</a>
+                                        <a class="btn btn-primary find-out-more flip-button shadow-lg" id="return-card-3" style='width:80%'>Return</a>
                                     </div>
                                 </div>
                             </div>
