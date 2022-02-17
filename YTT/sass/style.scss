@@ -22,14 +22,29 @@ html, body{
   border-radius:50%;
   color:$font-colour;
 }
+.rotate {
+  transform: rotateX(0deg);
+  transition: .5s linear;
+}
+
+.rotate.flipping {
+  transform: rotateX(180deg);
+  transition: .5s linear;
+}
 .icon{
   margin:1vw;
 }
 .fa:hover{
-  opacity:0.75;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  text-decoration:none !important;
+  color: $font-colour;
 }
 .fa-facebook{
   color: #3b5998;
+}
+.fa-facebook:hover{
+  color: #3b5998 !important;
 }
 #insta-back{
   font-size:30px;
@@ -38,6 +53,10 @@ html, body{
   background-color: white;
   border-radius:50%;
   display:inline-block;
+}
+#insta-back:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
 }
 #insta {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
@@ -55,13 +74,16 @@ html, body{
   height: 150px;
   border-radius: 50%;
 }
+#footer-logo:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
 .form-invalid{
   border:solid 1px rgba(255, 0, 0, 0.5) !important;
 }
-.fa-angle-down{
-  color:black !important;
+.fa-angle-up{
   background:none;
-  font-size:15px;
+  font-size:30px;
 
 }
 .class-img{
@@ -286,33 +308,21 @@ nav {
   border-color: white !important;
   width: 175px !important;
   justify-content:center;
-  animation:none;
-  -webkit-animation: none;
 }
 #enrol-btn{
   background-color: white;
   color: #303030;
   width: 150px;
-  animation:none;
-  -webkit-animation: none;
   display: block;
   margin: 0 auto;
 }
 #enrol-btn:hover{
   background-color: #e2e2e2 !important;
   color: black !important;
-  -webkit-animation:pulse 1s infinite ;
-  -webkit-transition:.3s ease-in-out;
-  animation: pulse 1s infinite;
-  transition: .3s ease-in-out; 
 }
 #timetable:hover{
   background-color: #e2e2e2 !important;
   color: black !important;
-  -webkit-animation:pulse 1s infinite ;
-  -webkit-transition:.3s ease-in-out;
-  animation: pulse 1s infinite;
-  transition: .3s ease-in-out; 
 }
 .find-out-more{
   width: 100%;
@@ -320,10 +330,6 @@ nav {
   font-size: 1.25vw !important;
   margin: 0 auto;
   padding:0;
-}
-.find-out-more:hover{
-background-color:#10657c !important;
-border-color: #10657c !important;
 }
 .flip-button{
   position: absolute;

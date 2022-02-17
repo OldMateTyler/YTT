@@ -241,6 +241,15 @@ $(window).on('hresize', function () {
             el.addClass('entrance-animation');
         })
   })
+  $(".fa-angle-up").on('click',function(e){
+    const value = e.target;
+    if(value.classList.contains("rotate")){
+        value.classList.toggle("flipping");
+    }
+    else{
+      value.classList.toggle('rotate');
+    }
+  })
   /*
   $('body').css('padding-top', $('.navbar').outerHeight() + 'px')
 

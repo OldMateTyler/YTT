@@ -89,7 +89,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
             <div class="title-text-div">
                 <div class="title-text title-entrance">YOUR TALENT TEAM</div>
                 <h1 class="sub-text title-entrance">PERFORMANCE ACADEMY</h1>
-                <br/>
+                <br />
                 <a href='#enrol-div' class="btn shadow-lg title-entrance" id='enrol-btn' style='border: 1px solid transparent;'>ENROL NOW</a>
             </div>
         </div>
@@ -220,8 +220,8 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                         </a>
                     </div>
                 </div>
-                <br/>
-                <a href='imgs/timetable.PNG'class="btn shadow-lg" id='timetable' target='_blank' style='border: 1px solid transparent;'>VIEW TIMETABLE</a>
+                <br />
+                <a href='imgs/timetable.PNG' class="btn shadow-lg module" id='timetable' target='_blank' style='border: 1px solid transparent;'>VIEW TIMETABLE</a>
             </div>
 
         </div>
@@ -340,14 +340,14 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                                     <br />
                                     <p class="event-title-text"><strong>Studio Rental</strong></p>
                                     <p class="event-text">
-                                        When we aren't running classes at YTT, our studio space is always up for rental! 
-                                        </p>
-                                        <p class="event-text">
-                                        Within the open-plan layout, the studio has great air flow with multiple windows and ceiling fans, as well as air conditioning. 
-                                        </p>
-                                        <p class="event-text">
-                                        This space is regularly used for sizeable work functions, photo/video shoots, private rehearsals, fitness classes and much more! 
-                                        </p>
+                                        When we aren't running classes at YTT, our studio space is always up for rental!
+                                    </p>
+                                    <p class="event-text">
+                                        Within the open-plan layout, the studio has great air flow with multiple windows and ceiling fans, as well as air conditioning.
+                                    </p>
+                                    <p class="event-text">
+                                        This space is regularly used for sizeable work functions, photo/video shoots, private rehearsals, fitness classes and much more!
+                                    </p>
 
                                     <a class="btn btn-primary find-out-more flip-button shadow-lg" id="return-card-3-c" style='width:90%'>Return</a>
                                 </div>
@@ -466,13 +466,13 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                                         <br />
                                         <p class="event-title-text"><strong>Studio Rental</strong></p>
                                         <p class="event-text">
-                                        When we aren't running classes at YTT, our studio space is always up for rental! 
+                                            When we aren't running classes at YTT, our studio space is always up for rental!
                                         </p>
                                         <p class="event-text">
-                                        Within the open-plan layout, the studio has great air flow with multiple windows and ceiling fans, as well as air conditioning. 
+                                            Within the open-plan layout, the studio has great air flow with multiple windows and ceiling fans, as well as air conditioning.
                                         </p>
                                         <p class="event-text">
-                                        This space is regularly used for sizeable work functions, photo/video shoots, private rehearsals, fitness classes and much more! 
+                                            This space is regularly used for sizeable work functions, photo/video shoots, private rehearsals, fitness classes and much more!
                                         </p>
                                         <a class="btn btn-primary find-out-more flip-button shadow-lg" id="return-card-3" style='width:80%'>Return</a>
                                     </div>
@@ -496,7 +496,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
         </div>
         <div class='mx-auto justify-content-center container-fluid d-flex'>
             <span style='font-size:2rem;position:absolute'>How much does it cost?
-                <a href='#more-info' data-toggle='collapse' style='font-size:30px;color:black !important;text-decoration:none;text-align:center'>&#43;
+                <a href='#more-info' data-toggle='collapse'><i class='fa fa-angle-up rotate flipping' style="margin-left:-15px;color: black;vertical-align: middle;text-decoration:none;"></i>
                 </a>
             </span>
             <div id='more-info' class='collapse'>
@@ -528,7 +528,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                         <p class='event-title-text-1' style='text-align:center;'><strong>Holiday Clinics</strong></p>
                         <p class='event-text' style='max-width:40ch;margin:0 auto;text-align:center;'>
                             <strong>$40</strong> per person
-                            <br/>
+                            <br />
                             <br />
                             The costs for this clinic also includes a goodie bag with all of the activities & supplies needed for the clinic. This price also includes contactless delivery!
                         </p>
@@ -538,14 +538,14 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                         <p class='event-text' style='max-width:40ch;text-align:center;margin:0 auto;'>
                             <strong>$60</strong> flat rate per hour
                             <br />
-                            <br/>
-                            This space is regularly used for sizeable work functions, photo/video shoots, private rehearsals, fitness classes and much more! 
+                            <br />
+                            This space is regularly used for sizeable work functions, photo/video shoots, private rehearsals, fitness classes and much more!
                         </p>
                     </div>
                 </div>
 
             </div>
-            <br/><br/>
+            <br /><br />
         </div>
     </section>
     <br /><br />
@@ -677,7 +677,9 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
         <div id='socials-div' class='container-fluid justify-content-center'>
             <div class='module'>
                 <br />
-                <img src='imgs/white-logo.PNG' id='footer-logo' />
+                <a href='index.php' id='foot-logo'>
+                    <img src='imgs/white-logo.PNG' id='footer-logo' /></a>
+
                 <br />
                 <span class='icon'>
                     <a href='https://www.facebook.com/yourtalentteam' target='_blank' class='fa fa-facebook'></a>
