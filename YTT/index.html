@@ -1,4 +1,40 @@
+<?php
+if (isset($_POST['name']) && $_POST['name'] != '') {
+    if (isset($_POST['subject']) && $_POST['subject'] != '')
+        if (isset($_POST['Email']) && $_POST['Email'] != '' && filter_var($_POST['Email'], FILTER_VALIDATE_EMAIL)) {
+            if (isset($_POST['message']) && $_POST['message'] != '') {
+                $fullName = $_POST['name'];
+                $email = $_POST['Email'];
+                $intro = $_POST['message'];
+                $sub = $_POST['subject'];
+
+                $to = 'tyler.simmonds254@gmail.com';
+                $subject = 'Contact-Form';
+
+                $body = '';
+                $body .= "Name: " . $fullName . "\r\n";
+                $body .= "Email: " . $email . "\r\n";
+                $body .= "Subject: " . $sub . "\r\n";
+                $body .= "Message: " . $intro . "\r\n";
+
+
+                $headers = "MIME-Version: 1.0" . "\r\n";
+                $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+                $headers .= 'From: <tyler.simmondsYTT@gmail.com>' . "\r\n";
+                $message = nl2br($body);
+                if (mail($to, $subject, $message, $headers)) {
+                    $message_sent = true;
+                }
+            }
+        }
+}
+
+
+?>
+
 <html lang="en">
+
 <head>
     <title>Your Talent Team</title>
     <link rel='icon' type='image/x-icon' href='imgs/image.png'>
@@ -57,7 +93,7 @@
                 <a href='#enrol-div' class="btn shadow-lg title-entrance" id='enrol-btn' style='border: 1px solid transparent;'>ENROL NOW</a>
             </div>
         </div>
-        <br/><br class='vanish'/><br class='vanish'>
+        <br /><br class='vanish' /><br class='vanish'>
     </section>
 
     <section>
@@ -206,116 +242,125 @@
                 <h1 id="event-title" class='module'>Events</h1>
                 <div class="row mx-auto justify-content-center" style='padding-left:5%;padding-right:5%;'>
                     <div class="col-md-4 col-xs-8 col-sm-8">
-                        <div class="card event-card shadow-lg flip-box module">
-                            <div class="flip-box-inner" id="toggle-me-2-c">
-                                <div class="flip-box-front" id="event-card-1">
-                                    <img class=" event-photo" src="imgs/Events/event1.png" alt="Holiday Clinics" />
-                                    <div class="card-body">
-                                        <span class="card-front-title">Birthday Parties</span>
-                                        <p class='card-front-title-text'>A special event thoughtfully planned for your little one.</p>
-                                        <a class="btn btn-primary find-out-more shadow-lg" id="toggle-card-2-c">Learn
-                                            More</a>
+                        <div class='adjust'>
+                            <div class="card event-card shadow-lg flip-box module">
+                                <div class="flip-box-inner" id="toggle-me-2-c">
+                                    <div class="flip-box-front" id="event-card-1">
+                                        <img class=" event-photo" src="imgs/Events/event1.png" alt="Holiday Clinics" />
+                                        <div class="card-body">
+                                            <span class="card-front-title">Birthday Parties</span>
+                                            <p class='card-front-title-text'>A special event thoughtfully planned for your little one.</p>
+                                            <a class="btn btn-primary find-out-more shadow-lg" id="toggle-card-2-c">Learn
+                                                More</a>
+                                            <br />
+                                        </div>
+                                    </div>
+                                    <div class="flip-box-back">
                                         <br />
-                                    </div>
-                                </div>
-                                <div class="flip-box-back">
-                                    <br />
-                                    <p class="event-title-text"><strong>Birthday Parties</strong></p>
-                                    <p class="event-text">
-                                        The Birthday packages at YTT are offered to provide a simple
-                                        yet special day for your child and their friends
-                                    </p>
-                                    <p class="event-text">
-                                        Each party is uniquely planned by us, allowing you to offload
-                                        all of the planning stress
-                                    </p>
-                                    <p class="event-text">
-                                        Running for 2 hours, all of our packages include a safe party
-                                        venue, entertainment and a party host. If you would like to
-                                        extend on this, we have add-on's such as game supplies and
-                                        theme appropriate decorations.
-                                    </p>
-                                    <p class="event-text">
-                                        By purchasing one of our birthday packages, your child will
-                                        have the special day they deserve.
-                                    </p>
+                                        <p class="event-title-text"><strong>Birthday Parties</strong></p>
+                                        <p class="event-text">
+                                            The Birthday packages at YTT are offered to provide a simple
+                                            yet special day for your child and their friends
+                                        </p>
+                                        <p class="event-text">
+                                            Each party is uniquely planned by us, allowing you to offload
+                                            all of the planning stress
+                                        </p>
+                                        <p class="event-text">
+                                            Running for 2 hours, all of our packages include a safe party
+                                            venue, entertainment and a party host. If you would like to
+                                            extend on this, we have add-on's such as game supplies and
+                                            theme appropriate decorations.
+                                        </p>
+                                        <p class="event-text">
+                                            By purchasing one of our birthday packages, your child will
+                                            have the special day they deserve.
+                                        </p>
 
-                                    <a class="btn btn-primary find-out-more flip-button shadow-lg" id="return-card-2-c" style='width:90%'>Return</a>
+                                        <a class="btn btn-primary find-out-more flip-button shadow-lg" id="return-card-2-c" style='width:90%'>Return</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
                     <br />
                     <div class='col-md-4 col-xs-8 col-sm-8'>
-                        <div class="card event-card shadow-lg flip-box module">
-                            <div class="flip-box-inner" id="toggle-me-c">
-                                <div class="flip-box-front" id="event-card-2">
-                                    <img class="event-photo" src="imgs/Events/event2.png" alt="Holiday Clinics" />
-                                    <div class="card-body">
-                                        <span class="card-front-title">Holiday Clinics</span>
-                                        <p class='card-front-title-text'>Family Friendly day out filled with hours of fun for all ages.</p>
-                                        <a class="btn btn-primary find-out-more shadow-lg" id="toggle-card-c">Learn More</a>
+                        <div class='adjust'>
+                            <div class="card event-card shadow-lg flip-box module">
+                                <div class="flip-box-inner" id="toggle-me-c">
+                                    <div class="flip-box-front" id="event-card-2">
+                                        <img class="event-photo" src="imgs/Events/event2.png" alt="Holiday Clinics" />
+                                        <div class="card-body">
+                                            <span class="card-front-title">Holiday Clinics</span>
+                                            <p class='card-front-title-text'>Family Friendly day out filled with hours of fun for all ages.</p>
+                                            <a class="btn btn-primary find-out-more shadow-lg" id="toggle-card-c">Learn More</a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="flip-box-back">
-                                    <br />
-                                    <p class="event-title-text"><strong>Holiday Clinics</strong></p>
-                                    <p class="event-text">
-                                        Holiday clinics are solely organised to give children of the
-                                        Shoalhaven something to look forward to during their time off
-                                        school.
-                                    </p>
-                                    <p class="event-text">
-                                        These clinics are uniquely themed by staff at YTT and do no
-                                        require any dance experience.
-                                    </p>
-                                    <p class="event-text">
-                                        Running from 9am-3pm, the kids will be involved in countless
-                                        activities that will ensure a great day outside of the house.
-                                    </p>
-                                    <p class="event-text">
-                                        By signing your child up to one of these clinics, they will be
-                                        able to connect with several children their age and provide
-                                        you with a massive break.
-                                    </p>
+                                    <div class="flip-box-back">
+                                        <br />
+                                        <p class="event-title-text"><strong>Holiday Clinics</strong></p>
+                                        <p class="event-text">
+                                            Holiday clinics are solely organised to give children of the
+                                            Shoalhaven something to look forward to during their time off
+                                            school.
+                                        </p>
+                                        <p class="event-text">
+                                            These clinics are uniquely themed by staff at YTT and do no
+                                            require any dance experience.
+                                        </p>
+                                        <p class="event-text">
+                                            Running from 9am-3pm, the kids will be involved in countless
+                                            activities that will ensure a great day outside of the house.
+                                        </p>
+                                        <p class="event-text">
+                                            By signing your child up to one of these clinics, they will be
+                                            able to connect with several children their age and provide
+                                            you with a massive break.
+                                        </p>
 
-                                    <a class="btn btn-primary find-out-more flip-button shadow-lg" id="return-card-c" style='width:90%'>Return</a>
+                                        <a class="btn btn-primary find-out-more flip-button shadow-lg" id="return-card-c" style='width:90%'>Return</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
                     <br />
                     <div class='col-md-4 col-xs-8 col-sm-8'>
-                        <div class="card  event-card shadow-lg flip-box module">
-                            <div class="flip-box-inner" id="toggle-me-3-c">
-                                <div class="flip-box-front" id="event-card-3">
-                                    <img class="event-photo" src="imgs/Events/event3.png" alt="Holiday Clinics" />
-                                    <div class="card-body">
-                                        <span class="card-front-title">Studio Rental</span>
-                                        <p class='card-front-title-text'>In need of space for dance practice, a party, or a meeting?</p>
-                                        <a class="btn btn-primary find-out-more shadow-lg" id="toggle-card-3-c">Learn
-                                            More</a>
+                        <div class='adjust'>
+                            <div class="card  event-card shadow-lg flip-box module">
+                                <div class="flip-box-inner" id="toggle-me-3-c">
+                                    <div class="flip-box-front" id="event-card-3">
+                                        <img class="event-photo" src="imgs/Events/event3.png" alt="Holiday Clinics" />
+                                        <div class="card-body">
+                                            <span class="card-front-title">Studio Rental</span>
+                                            <p class='card-front-title-text'>In need of space for dance practice, a party, or a meeting?</p>
+                                            <a class="btn btn-primary find-out-more shadow-lg" id="toggle-card-3-c">Learn
+                                                More</a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="flip-box-back">
-                                    <br />
-                                    <p class="event-title-text"><strong>Studio Rental</strong></p>
-                                    <p class="event-text">
-                                        When we aren't running classes at YTT, our studio space is always up for rental!
-                                    </p>
-                                    <p class="event-text">
-                                        Within the open-plan layout, the studio has great air flow with multiple windows and ceiling fans, as well as air conditioning.
-                                    </p>
-                                    <p class="event-text">
-                                        This space is regularly used for sizeable work functions, photo/video shoots, private rehearsals, fitness classes and much more!
-                                    </p>
+                                    <div class="flip-box-back">
+                                        <br />
+                                        <p class="event-title-text"><strong>Studio Rental</strong></p>
+                                        <p class="event-text">
+                                            When we aren't running classes at YTT, our studio space is always up for rental!
+                                        </p>
+                                        <p class="event-text">
+                                            Within the open-plan layout, the studio has great air flow with multiple windows and ceiling fans, as well as air conditioning.
+                                        </p>
+                                        <p class="event-text">
+                                            This space is regularly used for sizeable work functions, photo/video shoots, private rehearsals, fitness classes and much more!
+                                        </p>
 
-                                    <a class="btn btn-primary find-out-more flip-button shadow-lg" id="return-card-3-c" style='width:90%'>Return</a>
+                                        <a class="btn btn-primary find-out-more flip-button shadow-lg" id="return-card-3-c" style='width:90%'>Return</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
 
@@ -458,7 +503,7 @@
         </div>
         <br>
         <div class='mx-auto justify-content-center container-fluid d-flex'>
-            <span style='font-size:2rem;position:absolute'>How much does it cost?
+            <span style='font-size:1.8rem;position:absolute'>How much does it cost?
                 <a href='#more-info' data-toggle='collapse'><i class='fa fa-angle-down' style="margin-left:-15px;color: black;vertical-align: middle;text-decoration:none;"></i>
                 </a>
             </span>
@@ -628,7 +673,7 @@
             </div>
         </div>
     </section>
-    <section style='margin-top:-175px'>
+    <section style='margin-top:-7vw'>
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="visual" id="contact-svg" viewBox="0 0 1440 200" width='100%' version="1.1">
             <path d="M0 165L45.7 163C91.3 161 182.7 157 274.2 155C365.7 153 457.3 153 548.8 154C640.3 155 731.7 157 823 157.3C914.3 157.7 1005.7 156.3 1097 159C1188.3 161.7 1279.7 168.3 1371.2 170.7C1462.7 173 1554.3 171 1645.8 168.3C1737.3 165.7 1828.7 162.3 1874.3 160.7L1920 159L1920 201L1874.3 201C1828.7 201 1737.3 201 1645.8 201C1554.3 201 1462.7 201 1371.2 201C1279.7 201 1188.3 201 1097 201C1005.7 201 914.3 201 823 201C731.7 201 640.3 201 548.8 201C457.3 201 365.7 201 274.2 201C182.7 201 91.3 201 45.7 201L0 201Z" fill="#72c2ef" />
             <path d="M0 180L45.7 178.5C91.3 177 182.7 174 274.2 175.3C365.7 176.7 457.3 182.3 548.8 184.8C640.3 187.3 731.7 186.7 823 184.2C914.3 181.7 1005.7 177.3 1097 176.7C1188.3 176 1279.7 179 1371.2 179.7C1462.7 180.3 1554.3 178.7 1645.8 179.3C1737.3 180 1828.7 183 1874.3 184.5L1920 186L1920 201L1874.3 201C1828.7 201 1737.3 201 1645.8 201C1554.3 201 1462.7 201 1371.2 201C1279.7 201 1188.3 201 1097 201C1005.7 201 914.3 201 823 201C731.7 201 640.3 201 548.8 201C457.3 201 365.7 201 274.2 201C182.7 201 91.3 201 45.7 201L0 201Z" fill="#18a5bc" />

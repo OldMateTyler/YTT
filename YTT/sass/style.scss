@@ -3,7 +3,7 @@ $font-fam: "Mulish", sans-serif;
 $font-colour: #18a5bc;
 html, body{
   scroll-behavior: smooth;
-  scroll-padding-top: 14vh;
+  scroll-padding-top: 11vh;
   overflow-x:hidden;
   font-family: $font-fam !important;
   min-width: 320px;
@@ -218,7 +218,7 @@ html, body{
   padding:0.4rem !important;
   padding-bottom: 1.5rem !important;
   .event-text{
-    font-size: 1.3vw;
+    font-size: 1.2vw;
   }
   .event-title-text{
     font-size: 1.48vw;
@@ -428,10 +428,12 @@ nav {
   text-align: center;
 }
 .event-card {
-  margin-top: 20px;
-  margin-top: 0.2vw;
-  margin-left: 1vw;
-  margin-right: 1vw;
+  width:80%;
+  text-align:center !important;
+  margin:0 auto !important;
+}
+.adjust{
+  width:100%;
 }
 #event-div {
   font-family: $font-fam;
@@ -497,6 +499,11 @@ nav {
   color: white;
 
 }
+@media screen and (max-width:1200px){
+    #test-background{
+    height: 60vw !important;
+  }
+}
 @media screen and (max-width:992px) {
   #about-paragraph{
     font-size: 3vw !important;
@@ -511,6 +518,8 @@ nav {
   #about-paragraph{
     font-size:4vw !important;
 
+  }  #test-background{
+    height: 60vh !important;
   }
 }
 @media screen and (max-width:575px){
@@ -530,9 +539,6 @@ nav {
   }
   #event-carousel{
     display:block;
-  }
-  #test-background{
-    height: 60vh !important;
   }
 }
 .event-carousel-indicator .active{
@@ -597,6 +603,11 @@ nav {
     font-size: 5vw !important;
   }
 }
+@media screen and (max-width:1500px){
+  .event-card{
+    width: 90% !important;
+  }
+}
 @media screen and (max-width:1199px){
   .class-card-title{
     font-size: 3vw !important;
@@ -615,7 +626,7 @@ nav {
     padding-right: 0px;
   }
   .event-text{
-    font-size: 1.2vw !important;
+    font-size: 1.3vw !important;
   }
   .event-title-text{
     font-size: 2.4vw !important;
@@ -634,6 +645,9 @@ nav {
   .card-front-title-text{
     font-size:1.25vw !important;
   }
+  .event-card{
+    width: 100% !important;
+  }
 }
 @media screen and(max-width:767px){
   .event-text{
@@ -646,7 +660,7 @@ nav {
     font-size:4vw;
   }
   .test-carousel-text{
-    font-size: 3vw !important;
+    font-size: 2.75vw !important;
     padding-left: 5vw;
     padding-right:5vw;
 
@@ -717,16 +731,21 @@ nav {
   #show-hamburger {
     display: block;
   }
-  #YTT-nav{
-    height: 10vh !important;
-  }
-  .hide {
-    display: none;
-  }
+
 }
 @media screen and(min-width:1000px) {
   #show-hamburger {
     display: none;
+  }
+}
+@media screen and (max-width:999px){
+  .hide {
+    display: none !important;
+  }
+}
+@media screen and (max-width:1200px){
+    #YTT-nav{
+    height: 10vh !important;
   }
 }
 .overlay {

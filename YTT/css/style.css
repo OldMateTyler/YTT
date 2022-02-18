@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap");
 html, body {
   scroll-behavior: smooth;
-  scroll-padding-top: 14vh;
+  scroll-padding-top: 11vh;
   overflow-x: hidden;
   font-family: "Mulish", sans-serif !important;
   min-width: 320px; }
@@ -208,7 +208,7 @@ html, body {
   padding: 0.4rem !important;
   padding-bottom: 1.5rem !important; }
   .flip-box-back .event-text {
-    font-size: 1.3vw; }
+    font-size: 1.2vw; }
   .flip-box-back .event-title-text {
     font-size: 1.48vw; }
 
@@ -409,10 +409,12 @@ nav {
   text-align: center; }
 
 .event-card {
-  margin-top: 20px;
-  margin-top: 0.2vw;
-  margin-left: 1vw;
-  margin-right: 1vw; }
+  width: 80%;
+  text-align: center !important;
+  margin: 0 auto !important; }
+
+.adjust {
+  width: 100%; }
 
 #event-div {
   font-family: "Mulish", sans-serif;
@@ -477,6 +479,9 @@ nav {
   background-color: #1884a1;
   color: white; }
 
+@media screen and (max-width: 1200px) {
+  #test-background {
+    height: 60vw !important; } }
 @media screen and (max-width: 992px) {
   #about-paragraph {
     font-size: 3vw !important; } }
@@ -485,7 +490,10 @@ nav {
     background-attachment: scroll; } }
 @media screen and (max-width: 675px) {
   #about-paragraph {
-    font-size: 4vw !important; } }
+    font-size: 4vw !important; }
+
+  #test-background {
+    height: 60vh !important; } }
 @media screen and (max-width: 575px) {
   #about-paragraph {
     font-size: 5vw !important;
@@ -502,10 +510,7 @@ nav {
     display: block; }
 
   #event-carousel {
-    display: block; }
-
-  #test-background {
-    height: 60vh !important; } }
+    display: block; } }
 .event-carousel-indicator .active {
   background-color: #18a5bc !important; }
 
@@ -556,6 +561,9 @@ nav {
 
   .sub-text {
     font-size: 5vw !important; } }
+@media screen and (max-width: 1500px) {
+  .event-card {
+    width: 90% !important; } }
 @media screen and (max-width: 1199px) {
   .class-card-title {
     font-size: 3vw !important; }
@@ -574,7 +582,7 @@ nav {
     padding-right: 0px; }
 
   .event-text {
-    font-size: 1.2vw !important; }
+    font-size: 1.3vw !important; }
 
   .event-title-text {
     font-size: 2.4vw !important; }
@@ -590,7 +598,10 @@ nav {
     width: 90%; }
 
   .card-front-title-text {
-    font-size: 1.25vw !important; } }
+    font-size: 1.25vw !important; }
+
+  .event-card {
+    width: 100% !important; } }
 @media screen and (max-width: 767px) {
   .event-text {
     font-size: 2.5vw !important; }
@@ -602,7 +613,7 @@ nav {
     font-size: 4vw; }
 
   .test-carousel-text {
-    font-size: 3vw !important;
+    font-size: 2.75vw !important;
     padding-left: 5vw;
     padding-right: 5vw; }
 
@@ -664,16 +675,16 @@ nav {
     font-size: 3.6vw !important; } }
 @media screen and (max-width: 713px) {
   #show-hamburger {
-    display: block; }
-
-  #YTT-nav {
-    height: 10vh !important; }
-
-  .hide {
-    display: none; } }
+    display: block; } }
 @media screen and (min-width: 1000px) {
   #show-hamburger {
     display: none; } }
+@media screen and (max-width: 999px) {
+  .hide {
+    display: none !important; } }
+@media screen and (max-width: 1200px) {
+  #YTT-nav {
+    height: 10vh !important; } }
 .overlay {
   height: 0%;
   width: 100%;
