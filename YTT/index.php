@@ -93,14 +93,14 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                 <a href='#enrol-div' class="btn shadow-lg title-entrance" id='enrol-btn' style='border: 1px solid transparent;'>ENROL NOW</a>
             </div>
         </div>
-        <br /><br /><br /><br />
+        <br/><br class='vanish'/><br class='vanish'>
     </section>
 
     <section>
         <div class="container-fluid d-flex" id="about-us">
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-8" id="about">
-                    <img class="shadow-lg module" src="imgs/about-1.jpg" width="100%" style="border-radius: 20px" />
+                <div class="col-lg-4 col-8" id="about">
+                    <img class="shadow-lg module" src="imgs/about-1.jpg" id='about-pic' width="100%" style="border-radius: 20px" />
                 </div>
                 <div class="col-lg-7 align-self-center" id="about-text">
                     <br />
@@ -143,7 +143,6 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
         <div class='class-div' id='classes'>
             <div class="classes-div shadow-lg ">
                 <h1 class='module'><a href='classes.html' id="classes-title">Classes</a></h1>
-                <br />
                 <div class='container-fluid'>
                     <div class='row align-self-center'>
                         <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#ballet-dancing-class-page'>
@@ -491,12 +490,12 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                     </a>
                 </div>
             </div>
-            <br />
 
         </div>
+        <br>
         <div class='mx-auto justify-content-center container-fluid d-flex'>
             <span style='font-size:2rem;position:absolute'>How much does it cost?
-                <a href='#more-info' data-toggle='collapse'><i class='fa fa-angle-up rotate flipping' style="margin-left:-15px;color: black;vertical-align: middle;text-decoration:none;"></i>
+                <a href='#more-info' data-toggle='collapse'><i class='fa fa-angle-down' style="margin-left:-15px;color: black;vertical-align: middle;text-decoration:none;"></i>
                 </a>
             </span>
             <div id='more-info' class='collapse'>
@@ -665,15 +664,11 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
             </div>
         </div>
     </section>
-    <section>
-        <div id="contact-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="visual" viewBox="0 0 1440 200" width='100%' version="1.1">
-                <path d="M0 165L45.7 163C91.3 161 182.7 157 274.2 155C365.7 153 457.3 153 548.8 154C640.3 155 731.7 157 823 157.3C914.3 157.7 1005.7 156.3 1097 159C1188.3 161.7 1279.7 168.3 1371.2 170.7C1462.7 173 1554.3 171 1645.8 168.3C1737.3 165.7 1828.7 162.3 1874.3 160.7L1920 159L1920 201L1874.3 201C1828.7 201 1737.3 201 1645.8 201C1554.3 201 1462.7 201 1371.2 201C1279.7 201 1188.3 201 1097 201C1005.7 201 914.3 201 823 201C731.7 201 640.3 201 548.8 201C457.3 201 365.7 201 274.2 201C182.7 201 91.3 201 45.7 201L0 201Z" fill="#72c2ef" />
-                <path d="M0 180L45.7 178.5C91.3 177 182.7 174 274.2 175.3C365.7 176.7 457.3 182.3 548.8 184.8C640.3 187.3 731.7 186.7 823 184.2C914.3 181.7 1005.7 177.3 1097 176.7C1188.3 176 1279.7 179 1371.2 179.7C1462.7 180.3 1554.3 178.7 1645.8 179.3C1737.3 180 1828.7 183 1874.3 184.5L1920 186L1920 201L1874.3 201C1828.7 201 1737.3 201 1645.8 201C1554.3 201 1462.7 201 1371.2 201C1279.7 201 1188.3 201 1097 201C1005.7 201 914.3 201 823 201C731.7 201 640.3 201 548.8 201C457.3 201 365.7 201 274.2 201C182.7 201 91.3 201 45.7 201L0 201Z" fill="#18a5bc" />
-            </svg>
-        </div>
-    </section>
-    <section>
+    <section style='margin-top:-175px'>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="visual" id="contact-svg" viewBox="0 0 1440 200" width='100%' version="1.1">
+            <path d="M0 165L45.7 163C91.3 161 182.7 157 274.2 155C365.7 153 457.3 153 548.8 154C640.3 155 731.7 157 823 157.3C914.3 157.7 1005.7 156.3 1097 159C1188.3 161.7 1279.7 168.3 1371.2 170.7C1462.7 173 1554.3 171 1645.8 168.3C1737.3 165.7 1828.7 162.3 1874.3 160.7L1920 159L1920 201L1874.3 201C1828.7 201 1737.3 201 1645.8 201C1554.3 201 1462.7 201 1371.2 201C1279.7 201 1188.3 201 1097 201C1005.7 201 914.3 201 823 201C731.7 201 640.3 201 548.8 201C457.3 201 365.7 201 274.2 201C182.7 201 91.3 201 45.7 201L0 201Z" fill="#72c2ef" />
+            <path d="M0 180L45.7 178.5C91.3 177 182.7 174 274.2 175.3C365.7 176.7 457.3 182.3 548.8 184.8C640.3 187.3 731.7 186.7 823 184.2C914.3 181.7 1005.7 177.3 1097 176.7C1188.3 176 1279.7 179 1371.2 179.7C1462.7 180.3 1554.3 178.7 1645.8 179.3C1737.3 180 1828.7 183 1874.3 184.5L1920 186L1920 201L1874.3 201C1828.7 201 1737.3 201 1645.8 201C1554.3 201 1462.7 201 1371.2 201C1279.7 201 1188.3 201 1097 201C1005.7 201 914.3 201 823 201C731.7 201 640.3 201 548.8 201C457.3 201 365.7 201 274.2 201C182.7 201 91.3 201 45.7 201L0 201Z" fill="#18a5bc" />
+        </svg>
         <div id='socials-div' class='container-fluid justify-content-center'>
             <div class='module'>
                 <br />
@@ -720,8 +715,6 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
 
             <br />
         </div>
-    </section>
-    <section>
         <div id="footer" class="justify-content-center d-flex">
             <span>© 2021 YourTalentTeam.com - All Rights Reserved.</span>
         </div>

@@ -243,13 +243,14 @@ $(window).on('hresize', function () {
   })
   $(".fa-angle-up").on('click',function(e){
     const value = e.target;
-    if(value.classList.contains("rotate")){
-        value.classList.toggle("flipping");
-    }
-    else{
-      value.classList.toggle('rotate');
-    }
-  })
+    value.classList.toggle("fa-angle-up");
+    value.classList.toggle("fa-angle-down");
+  });
+  $(".fa-angle-down").on('click',function(e){
+    const value = e.target;
+    value.classList.toggle("fa-angle-down");
+    value.classList.toggle("fa-angle-up");
+  });
   /*
   $('body').css('padding-top', $('.navbar').outerHeight() + 'px')
 

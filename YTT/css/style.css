@@ -20,14 +20,6 @@ html, body {
   border-radius: 50%;
   color: #18a5bc; }
 
-.rotate {
-  transform: rotateX(0deg);
-  transition: .5s linear; }
-
-.rotate.flipping {
-  transform: rotateX(180deg);
-  transition: .5s linear; }
-
 .icon {
   margin: 1vw; }
 
@@ -80,7 +72,11 @@ html, body {
 
 .fa-angle-up {
   background: none;
-  font-size: 30px; }
+  font-size: 25px !important; }
+
+.fa-angle-down {
+  background: none;
+  font-size: 25px !important; }
 
 .class-img {
   width: 150px;
@@ -295,7 +291,8 @@ nav {
   color: #303030 !important;
   border-color: white !important;
   width: 175px !important;
-  justify-content: center; }
+  justify-content: center;
+  border-radius: 25px; }
 
 #enrol-btn {
   background-color: white;
@@ -310,7 +307,8 @@ nav {
 
 #timetable:hover {
   background-color: #e2e2e2 !important;
-  color: black !important; }
+  color: black !important;
+  border-color: #e2e2e2 !important; }
 
 .find-out-more {
   width: 100%;
@@ -318,6 +316,10 @@ nav {
   font-size: 1.25vw !important;
   margin: 0 auto;
   padding: 0; }
+
+.find-out-more:hover {
+  background-color: #1884a1 !important;
+  border-color: #1884a1 !important; }
 
 .flip-button {
   position: absolute;
@@ -489,6 +491,9 @@ nav {
     font-size: 5vw !important;
     padding-left: 0px !important;
     padding-right: 0px !important; }
+
+  .vanish {
+    display: none !important; }
 
   #event-div-wo-car {
     display: none; }
