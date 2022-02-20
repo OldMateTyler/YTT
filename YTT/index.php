@@ -220,7 +220,22 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                     </div>
                 </div>
                 <br />
-                <a href='imgs/timetable.PNG' class="btn shadow-lg module" id='timetable' target='_blank' style='border: 1px solid transparent;'>VIEW TIMETABLE</a>
+                <br/>
+                <h1 class='module'><a href='classes.html' id="classes-title">Timetables</a></h1>
+                <br/>
+                <div class='row justify-content-center'>
+                <div href='imgs/timetable.PNG' class="btn shadow-lg module col-md-2 col-6  timetable-button" id='timetable' target='_blank' style='border: 1px solid transparent;'>MASTER<br>TIMETABLE</div>
+                </div>
+                <br/>
+                <div class='row justify-content-center'>
+                <div href='imgs/timetable.PNG' class="btn shadow-lg module col-md-2 col-6 timetable-button" id='timetable' target='_blank' style='border: 1px solid transparent;'>SENIOR <br/> TIMETABLE</div>
+                    <div href='imgs/timetable.PNG' class="btn shadow-lg module col-md-2 col-6  timetable-button" id='timetable' target='_blank' style='border: 1px solid transparent;'>JUNIOR <br/> TIMETABLE</div>
+                    <div href='imgs/timetable.PNG' class="btn shadow-lg module col-md-2 col-6 timetable-button" id='timetable' target='_blank' style='border: 1px solid transparent;'>ADULTS <br>TIMETABLE</div>
+                <div href='imgs/timetable.PNG' class="btn shadow-lg module col-md-2 timetable-button" id='timetable' target='_blank' style='border: 1px solid transparent;'>PRESCHOOL<br> TIMETABLE</div>
+                    <div href='imgs/timetable.PNG' class="btn shadow-lg module col-md-2 col-6 timetable-button" id='timetable' target='_blank' style='border: 1px solid transparent;'>MINIS<br> TIMETABLE</div>
+                    <div href='imgs/timetable.PNG' class="btn shadow-lg module col-md-2 col-6 timetable-button" id='timetable' target='_blank' style='border: 1px solid transparent;'>TINY <br>TIMETABLE</div>
+                </div>
+                <br/><br/>
             </div>
 
         </div>
@@ -504,7 +519,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
         <br>
         <div class='mx-auto justify-content-center container-fluid d-flex'>
             <span style='font-size:1.8rem;position:absolute'>How much does it cost?
-                <a href='#more-info' data-toggle='collapse'><i class='fa fa-angle-down' style="margin-left:-15px;color: black;vertical-align: middle;text-decoration:none;"></i>
+                <a href='#more-info' data-toggle='collapse'><i class='fa fa-angle-down' style="margin-left:-15px;top:0px;color: black;vertical-align: middle;text-decoration:none;"></i>
                 </a>
             </span>
             <div id='more-info' class='collapse'>

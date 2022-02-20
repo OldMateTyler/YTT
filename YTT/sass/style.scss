@@ -75,10 +75,14 @@ html, body{
 .fa-angle-up{
   background:none;
   font-size:25px !important;
+  position: absolute;
+  bottom: -15px;
 }
 .fa-angle-down{
   background:none;
   font-size:25px !important;
+  position: absolute;
+  bottom: -15px;
 }
 .class-img{
   width: 150px;
@@ -105,6 +109,11 @@ html, body{
   text-align: center;
   vertical-align: middle;
   height: 100%;
+}
+.class-img-taught{
+  border-radius: 50%;
+  max-width: 75px;
+  max-height: 75px;
 }
 .class-page-photos{
   border-radius: 15px;
@@ -300,9 +309,17 @@ nav {
   background-color: white;
   color: #303030 !important;
   border-color: white !important;
-  width: 175px !important;
+  max-width: 150px !important;
   justify-content:center;
   border-radius: 25px;
+}
+.timetable-button{
+  display:flex;
+  align-items:center;
+  margin:auto;
+  margin:10px;
+  font-size:14px;
+  
 }
 #enrol-btn{
   background-color: white;
@@ -601,6 +618,22 @@ nav {
   }
   .sub-text{
     font-size: 5vw !important;
+  }
+}
+@media screen and (max-width:500px){
+  #appear{
+    display:block;
+  }
+  #disappear{
+    display:none;
+  }
+}
+@media screen and (min-width:501px){
+  #disappear{
+    display:block;
+  }
+  #appear{
+    display:none;
   }
 }
 @media screen and (max-width:1500px){
