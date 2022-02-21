@@ -31,7 +31,94 @@
                 value.classList.toggle("fa-angle-up");
             });
         });
-
+        function contemporary1() {
+            if (document.getElementById("show-more-contemporary").classList.contains("show")) {
+                document.getElementById("contemp-swap2").click();
+            }
+        }
+        function contemporary2() {
+            if (document.getElementById("show-more-contemporary-1").classList.contains("show")) {
+                document.getElementById("contemp-swap1").click();
+            }
+        }
+        function jazz1() {
+            if (document.getElementById("show-more-jazz-2").classList.contains("show")) {
+                document.getElementById("jazz-swap-2").click();
+            }
+        }
+        function jazz2() {
+            if (document.getElementById("show-more-jazz-1").classList.contains("show")) {
+                document.getElementById("jazz-swap-1").click();
+            }
+        }
+        function hip1() {
+            if (document.getElementById("show-more-hip-2").classList.contains("show")) {
+                document.getElementById("hip-swap2").click();
+            }
+            if (document.getElementById("show-more-hip-3").classList.contains("show")) {
+                document.getElementById("hip-swap3").click();
+            }
+        }
+        function hip2() {
+            if (document.getElementById("show-more-hip-1").classList.contains("show")) {
+                document.getElementById("hip-swap1").click();
+            }
+            if (document.getElementById("show-more-hip-3").classList.contains("show")) {
+                document.getElementById("hip-swap3").click();
+            }
+        }
+        function hip3() {
+            if (document.getElementById("show-more-hip-2").classList.contains("show")) {
+                document.getElementById("hip-swap2").click();
+            }
+            if (document.getElementById("show-more-hip-1").classList.contains("show")) {
+                document.getElementById("hip-swap1").click();
+            }
+        }
+        function adult1() {
+            if (document.getElementById("show-more-adult-2").classList.contains("show")) {
+                document.getElementById("adult-swap2").click();
+            }
+            if (document.getElementById("show-more-adult-3").classList.contains("show")) {
+                document.getElementById("adult-swap3").click();
+            }
+            if (document.getElementById("show-more-adult-4").classList.contains("show")) {
+                document.getElementById("adult-swap4").click();
+            }
+        }
+        function adult2() {
+            if (document.getElementById("show-more-adult-1").classList.contains("show")) {
+                document.getElementById("adult-swap1").click();
+            }
+            if (document.getElementById("show-more-adult-3").classList.contains("show")) {
+                document.getElementById("adult-swap3").click();
+            }
+            if (document.getElementById("show-more-adult-4").classList.contains("show")) {
+                document.getElementById("adult-swap4").click();
+            }
+        }
+        function adult3() {
+            if (document.getElementById("show-more-adult-2").classList.contains("show")) {
+                document.getElementById("adult-swap2").click();
+            }
+            if (document.getElementById("show-more-adult-1").classList.contains("show")) {
+                document.getElementById("adult-swap1").click();
+            }
+            if (document.getElementById("show-more-adult-4").classList.contains("show")) {
+                document.getElementById("adult-swap4").click();
+            }
+        }
+        function adult4() {
+            if (document.getElementById("show-more-adult-2").classList.contains("show")) {
+                document.getElementById("adult-swap2").click();
+            }
+            if (document.getElementById("show-more-adult-3").classList.contains("show")) {
+                document.getElementById("adult-swap3").click();
+            }
+            if (document.getElementById("show-more-adult-1").classList.contains("show")) {
+                document.getElementById("adult-swap1").click();
+            }
+        }
         function openNav() {
             document.getElementById("myNav").style.height = "100%";
         }
@@ -117,11 +204,11 @@
         </div>
         <div class="row mx-auto justify-content-center container-fluid d-flex'class-row contrast-div"
             id='ballet-dancing-class-page'>
-            <div class='col-9 col-sm-4'>
+            <div class='col-9 col-md-4'>
                 <img src="imgs/Classes/ballet.jpg" id='class-page-img' width='100%'
                     class='shadow-lg class-page-photos' />
             </div>
-            <div class='class-page-text class-page-text-contrast col-sm-6 col-12 align-self-center shadow-lg marg-top'>
+            <div class='class-page-text class-page-text-contrast col-md-7 col-12 align-self-center shadow-lg marg-top'>
                 <br />
                 <p class='class-page-title align-self-center class-page-title-contrast'>Ballet Dancing</p>
                 <p>The RAD offers an internationally- recognised portfolio of examinations and assessments designed to
@@ -132,19 +219,19 @@
                 <p>includes Graded Examinations (Primary in Dance - Grade 8), Class Awards (Pre-Primary in Dance - Grade
                     3), Presentation Classes (Grades 4-8), and Solo Performance Awards (Grades 1-3)</p>
                 <p>is appropriate for candidates from the ages of 5 years</p>
-                <div class='class-profile container shadow-lg' style='margin-bottom: 15px;'>
+                <div class='class-profile container-fluid shadow-lg' style='margin-bottom: 15px;'>
                     <div style='padding-top:10px;padding-bottom:10px;'>
-                        <div class='class-page-title class-page-title-contrast'>Taught By</div>
+                        <div class='class-page-title-contrast'>Taught By</div>
                         <br>
-                        <div class='row justify-content-center'>
-                            <div class="col-6 col-lg-3">
-                                <img src='imgs/Classes/kathryn.jpg' class='class-img-taught'/>
-                                <div>Miss Kathryn<a href='#show-more-ballet' data-toggle='collapse'><i
+                        <div class='row justify-content-center' style='margin-top:-20px;'>
+                            <div class="col-3">
+                                <img src='imgs/Classes/kathryn.jpg' class='class-img-taught' />
+                                <div>Kathryn<br class='linebr' /><a href='#show-more-ballet' data-toggle='collapse'><i
                                             class='fa fa-angle-down'
-                                            style="margin-left:-15px;color: white;vertical-align: middle;text-decoration:none;"></i></a>
+                                            style="color: white;vertical-align: middle;text-decoration:none;"></i></a>
                                 </div>
                             </div>
-    
+
                         </div>
                         <div id='show-more-ballet' class='collapse'>
                             <h2>Kathryn Hailey</h2>
@@ -160,7 +247,7 @@
                             <br>
                         </div>
                     </div>
-    
+
                 </div>
             </div>
         </div>
@@ -184,11 +271,11 @@
         </div>
 
         <div class="row mx-auto justify-content-center container-fluid d-flex'class-row" id='jazz-dancing-class-page'>
-            <div class='col-9 col-sm-4'>
+            <div class='col-9 col-md-4'>
                 <img src="imgs/Classes/IMG-3777.jpg" id='class-page-img' width='100%'
                     class='shadow-lg class-page-photos' />
             </div>
-            <div class='class-page-text col-sm-6 col-12 align-self-center shadow-lg marg-top'>
+            <div class='class-page-text col-md-7 col-12 align-self-center shadow-lg marg-top'>
                 <br />
                 <p class='class-page-title align-self-center'>Jazz Dancing</p>
                 <p>There are many styles of Jazz as it has progressed and developed as a genre in its own right with a
@@ -199,32 +286,32 @@
                     coordination, rhythm, and use of space.</p>
                 <p>Jazz helps children feel secure, strong, and confident in their own body and their dance environment.
                     Jazz also encourages teamwork, friendships, and creative expression</p>
-                <div class='class-profile container shadow-lg' style='margin-bottom: 15px;'>
+                <div class='class-profile container-fluid shadow-lg' style='margin-bottom: 15px;'>
                     <div style='padding-top:10px;padding-bottom:10px;'>
-                        <div class='class-page-title'>Taught By</div>
+                        <div>Taught By</div>
                         <br>
-                        <div class='row justify-content-center'>
-                            <div class="col-6 col-lg-3">
-                                <img src='imgs/Classes/steph.jpg' class='class-img-taught'/>
+                        <div class='row justify-content-center' style='margin-top:-20px;'>
+                            <div class="col-3">
+                                <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
 
-                                <div>Miss Emma <a href='#show-more-jazz-1' data-toggle='collapse'><i
-                                            class='fa fa-angle-down'
-                                            style="margin-left:-15px;color: black;vertical-align: middle;text-decoration:none;"></i></a>
+                                <div>Emma<br class='linebr' /><a href='#show-more-jazz-1' data-toggle='collapse'
+                                        onclick='jazz1()'><i class='fa fa-angle-down' id='jazz-swap-1'
+                                            style="color: black;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
                                 </div>
 
                             </div>
-                            <div class="col-6 col-lg-3">
-                                <img src='imgs/Classes/steph.jpg' class='class-img-taught'/>
-                                <div>Miss Steph<a href='#show-more-jazz' data-toggle='collapse'><i
-                                            class='fa fa-angle-down'
-                                            style="margin-left:-15px;color: black;vertical-align: middle;text-decoration:none;"></i></a>
+                            <div class="col-3">
+                                <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
+                                <div>Steph<br class='linebr' /><a href='#show-more-jazz-2' data-toggle='collapse'
+                                        onclick="jazz2()"><i class='fa fa-angle-down' id='jazz-swap-2'
+                                            style="color: black;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
                                 </div>
 
 
                             </div>
 
                         </div>
-                        <div id='show-more-jazz' class='collapse'>
+                        <div id='show-more-jazz-2' class='collapse'>
                             <br />
                             <h2>Stephanie Perry</h2>
                             <h3>Owner/Principal</h3>
@@ -283,11 +370,11 @@
 
         <div class="row mx-auto justify-content-center container-fluid d-flex'class-row contrast-div"
             id='contemporary-dancing-class-page'>
-            <div class='col-9 col-sm-4'>
+            <div class='col-9 col-md-4'>
                 <img src='imgs/Classes/IMG-3779.jpg' id='class-page-img' width='100%'
                     class='shadow-lg class-page-photos' />
             </div>
-            <div class='class-page-text class-page-text-contrast col-sm-6 col-12 align-self-center shadow-lg marg-top'>
+            <div class='class-page-text class-page-text-contrast col-md-7 col-12 align-self-center shadow-lg marg-top'>
                 <br />
                 <p class='class-page-title align-self-center class-page-title-contrast'>Contemporary Dancing</p>
                 <p>Encourage your students with positivity and inspiration to fly high and free, allowing them to
@@ -297,25 +384,25 @@
                 <p>Contemporary dance involves playing with balance, floor work, fall and recovery, creative
                     interpretation and expression, improvisation. With the focus on breathing posture emotional state in
                     order to establish a mind/body connection.</p>
-                <div class='class-profile container shadow-lg' style='margin-bottom: 15px;'>
+                <div class='class-profile container-fluid shadow-lg' style='margin-bottom: 15px;'>
                     <div style='padding-top:10px;padding-bottom:10px;'>
-                        <div class='class-page-title class-page-title-contrast'>Taught By</div>
+                        <div class='class-page-title-contrast'>Taught By</div>
                         <br>
-                        <div class='row justify-content-center'>
-                            <div class="col-6 col-lg-3">
-                                <img src='imgs/Classes/steph.jpg' class='class-img-taught'/>
+                        <div class='row justify-content-center' style='margin-top:-20px;'>
+                            <div class="col-3">
+                                <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
 
-                                <div>Miss Emma <a href='#show-more-contemporary-1' data-toggle='collapse'><i
-                                            class='fa fa-angle-down'
-                                            style="margin-left:-15px;color: white;vertical-align: middle;text-decoration:none;"></i></a>
+                                <div>Emma<br class='linebr' /><a href='#show-more-contemporary-1' data-toggle='collapse'
+                                        onclick="contemporary1()"><i class='fa fa-angle-down' id='contemp-swap1'
+                                            style="color: white;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
                                 </div>
 
                             </div>
-                            <div class="col-6 col-lg-3">
-                                <img src='imgs/Classes/steph.jpg' class='class-img-taught'/>
-                                <div>Miss Steph<a href='#show-more-contemporary' data-toggle='collapse'><i
-                                            class='fa fa-angle-down'
-                                            style="margin-left:-15px;color: white;vertical-align: middle;text-decoration:none;"></i></a>
+                            <div class="col-3">
+                                <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
+                                <div>Steph<br class='linebr' /><a href='#show-more-contemporary' data-toggle='collapse'
+                                        onclick="contemporary2()"><i class='fa fa-angle-down' id='contemp-swap2'
+                                            style="color: white;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
                                 </div>
 
 
@@ -380,10 +467,10 @@
     </div>
 
     <div class="row mx-auto justify-content-center container-fluid d-flex class-row" id='hiphop-dancing-class-page'>
-        <div class='col-9 col-sm-4'>
+        <div class='col-9 col-md-4'>
             <img src="imgs/Classes/IMG-3773.jpg" id='class-page-img' width='100%' class='shadow-lg class-page-photos' />
         </div>
-        <div class='class-page-text col-sm-6 col-12 align-self-center shadow-lg marg-top'>
+        <div class='class-page-text col-md-7 col-12 align-self-center shadow-lg marg-top'>
             <br />
             <p class='class-page-title align-self-center'>Hip Hop Dancing</p>
             <p>Hip Hop dance refers to street dance styles primarily performed to hip hop music that has evolved as
@@ -393,31 +480,34 @@
                 of their personality. They have freedom of movement and interpretation whilst gaining fitness. And
                 now we offer this to the ADULTS!! Come along and try a class for free.</p>
             <p>(note: there is no Syllabus for Hip Hop)</p>
-            <div class='class-profile container shadow-lg' style='margin-bottom: 15px;'>
+            <div class='class-profile container-fluid shadow-lg' style='margin-bottom: 15px;'>
                 <div style='padding-top:10px;padding-bottom:10px;'>
-                    <div class='class-page-title'>Taught By</div>
+                    <div>Taught By</div>
                     <br>
-                    <div class='row justify-content-center'>
-                        <div class="col-6 col-lg-3">
-                            <img src='imgs/Classes/steph.jpg' class='class-img-taught'/>
+                    <div class='row justify-content-center' style='margin-top:-20px;'>
+                        <div class="col-3">
+                            <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
 
-                            <div>Miss Rach <a href='#show-more-hip' data-toggle='collapse'><i class='fa fa-angle-down'
-                                        style="margin-left:-15px;color: black;vertical-align: middle;text-decoration:none;"></i></a>
+                            <div>Rachael<br class='linebr' /><a href='#show-more-hip-3' data-toggle='collapse'
+                                    onclick="hip3()"><i class='fa fa-angle-down' id='hip-swap3'
+                                        style="color: black;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
                             </div>
 
                         </div>
-                        <div class="col-6 col-lg-3">
-                            <img src='imgs/Classes/steph.jpg' class='class-img-taught'/>
-                            <div>Miss Steph<a href='#show-more-hip-1' data-toggle='collapse'><i class='fa fa-angle-down'
-                                        style="margin-left:-15px;color: black;vertical-align: middle;text-decoration:none;"></i></a>
+                        <div class="col-3">
+                            <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
+                            <div>Steph<br class='linebr' /><a href='#show-more-hip-1' data-toggle='collapse'
+                                    onclick="hip1()"><i class='fa fa-angle-down' id='hip-swap1'
+                                        style="color: black;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
                             </div>
 
 
                         </div>
-                        <div class="col-6 col-lg-3">
-                            <img src='imgs/Classes/jordan.jpg' class='class-img-taught'/>
-                            <div>Mr Jordan<a href='#show-more-hip-2' data-toggle='collapse'><i class='fa fa-angle-down'
-                                        style="margin-left:-15px;color: black;vertical-align: middle;text-decoration:none;"></i></a>
+                        <div class="col-3">
+                            <img src='imgs/Classes/jordan.jpg' class='class-img-taught' />
+                            <div>Jordan<br class='linebr' /><a href='#show-more-hip-2' data-toggle='collapse'
+                                    onclick="hip2()"><i class='fa fa-angle-down' id='hip-swap2'
+                                        style="color: black;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
                             </div>
 
 
@@ -442,7 +532,7 @@
                         <br>
                     </div>
 
-                    <div id='show-more-hip' class='collapse'>
+                    <div id='show-more-hip-3' class='collapse'>
                         <br />
                         <h2>Miss Rachael</h2>
                         <p> Starting dance at just 18 months of age, Miss Emma found a deep passion that has stuck
@@ -499,10 +589,10 @@
     </div>
     <div class="row mx-auto justify-content-center container-fluid d-flex'class-row contrast-div"
         id='lyrical-dancing-class-page'>
-        <div class='col-9 col-sm-4'>
+        <div class='col-9 col-md-4'>
             <img src='imgs/Classes/IMG-3782.jpg' id='class-page-img' width='100%' class='shadow-lg class-page-photos' />
         </div>
-        <div class='class-page-text class-page-text-contrast col-sm-6 col-12 align-self-center shadow-lg marg-top'>
+        <div class='class-page-text class-page-text-contrast col-md-7 col-12 align-self-center shadow-lg marg-top'>
             <br />
             <p class='class-page-title class-page-text-contrast align-self-center'>Lyrical Dancing</p>
             <p>Lyrical is a dance style that embodies various aspects of ballet, jazz, acrobatics, and modern dance
@@ -511,16 +601,16 @@
                 definitely a YTT favourite from all of our students. Dancers have freedom of movement and
                 interpretation
                 whilst building strength, flexibility and technique.</p>
-            <div class='class-profile container shadow-lg' style='margin-bottom: 15px;'>
+            <div class='class-profile container-fluid shadow-lg' style='margin-bottom: 15px;'>
                 <div style='padding-top:10px;padding-bottom:10px;'>
-                    <div class='class-page-title class-page-title-contrast'>Taught By</div>
+                    <div class=' class-page-title-contrast'>Taught By</div>
                     <br>
-                    <div class='row justify-content-center'>
-                        <div class="col-6 col-lg-3">
-                            <img src='imgs/Classes/steph.jpg' class='class-img-taught'/>
-                            <div>Miss Steph<a href='#show-more-lyrical' data-toggle='collapse'><i
+                    <div class='row justify-content-center' style='margin-top:-20px;'>
+                        <div class="col-3">
+                            <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
+                            <div>Steph<br class='linebr' /><a href='#show-more-lyrical' data-toggle='collapse'><i
                                         class='fa fa-angle-down'
-                                        style="margin-left:-15px;color: white;vertical-align: middle;text-decoration:none;"></i></a>
+                                        style="color: white;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
                             </div>
                         </div>
 
@@ -567,10 +657,10 @@
         </svg>
     </div>
     <div class="row mx-auto justify-content-center container-fluid d-flex'class-row" id='acro-dancing-class-page'>
-        <div class='col-9 col-sm-4'>
+        <div class='col-9 col-md-4'>
             <img src="imgs/Classes/IMG-3802.jpg" id='class-page-img' width='100%' class='shadow-lg class-page-photos' />
         </div>
-        <div class='class-page-text col-sm-6 col-12 align-self-center shadow-lg marg-top'>
+        <div class='class-page-text col-md-7 col-12 align-self-center shadow-lg marg-top'>
             <br />
             <p class='class-page-title align-self-center'>Acro Dancing</p>
             <p>Acrobatic Dance, or acro as it is commonly referred to by dancers and dance professionals, is the
@@ -582,15 +672,16 @@
                 tricks.</p>
 
 
-            <div class='class-profile container shadow-lg' style='margin-bottom: 15px;'>
+            <div class='class-profile container-fluid shadow-lg' style='margin-bottom: 15px;'>
                 <div style='padding-top:10px;padding-bottom:10px;'>
-                    <div class='class-page-title'>Taught By</div>
+                    <div>Taught By</div>
                     <br>
-                    <div class='row justify-content-center'>
-                        <div class="col-6 col-lg-3">
-                            <img src='imgs/Classes/steph.jpg' class='class-img-taught'/>
-                            <div>Miss Steph<a href='#show-more-acro' data-toggle='collapse'><i class='fa fa-angle-down'
-                                        style="margin-left:-15px;color: black;vertical-align: middle;text-decoration:none;"></i></a>
+                    <div class='row justify-content-center' style='margin-top:-20px;'>
+                        <div class="col-3">
+                            <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
+                            <div>Steph<br class='linebr' /><a href='#show-more-acro' data-toggle='collapse'><i
+                                        class='fa fa-angle-down'
+                                        style="color: black;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
                             </div>
                         </div>
 
@@ -640,10 +731,10 @@
 
     <div class="row mx-auto justify-content-center container-fluid d-flex'class-row contrast-div"
         id='line-dancing-class-page'>
-        <div class='col-9 col-sm-4'>
+        <div class='col-9 col-md-4'>
             <img src="imgs/Classes/line.jpg" width="100%" class='class-page-photos shadow-lg' />
         </div>
-        <div class='class-page-text class-page-text-contrast col-sm-6 col-12 align-self-center shadow-lg marg-top'>
+        <div class='class-page-text class-page-text-contrast col-md-7 col-12 align-self-center shadow-lg marg-top'>
             <br />
             <p class='class-page-title class-page-title-contrast'>Line Dancing</p>
             <p>At Your Talent Team we offer the only Line Dance classes in Nowra.
@@ -668,15 +759,16 @@
                 This fun and friendly class will keep you moving and make you laugh! And if that's not enough - hang
                 around afterwards to see our Competition team!
             </p>
-            <div class='class-profile container shadow-lg' style='margin-bottom: 15px;'>
+            <div class='class-profile container-fluid shadow-lg' style='margin-bottom: 15px;'>
                 <div style='padding-top:10px;padding-bottom:10px;'>
-                    <div class='class-page-title class-page-title-contrast'>Taught By</div>
+                    <div class='class-page-title-contrast'>Taught By</div>
                     <br>
-                    <div class='row justify-content-center'>
-                        <div class="col-6 col-lg-3">
-                            <img src='imgs/Classes/steph.jpg' class='class-img-taught'/>
-                            <div>Miss Steph<a href='#show-more-line' data-toggle='collapse'><i class='fa fa-angle-down'
-                                        style="margin-left:-15px;color: white;vertical-align: middle;text-decoration:none;"></i></a>
+                    <div class='row justify-content-center' style='margin-top:-20px;'>
+                        <div class="col-3">
+                            <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
+                            <div>Steph<br class='linebr' /><a href='#show-more-line' data-toggle='collapse'><i
+                                        class='fa fa-angle-down'
+                                        style="color: white;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
                             </div>
                         </div>
 
@@ -722,10 +814,10 @@
     </div>
     <br />
     <div class="row mx-auto justify-content-center container-fluid d-flex'class-row" id='tap-dancing-class-page'>
-        <div class='col-9 col-sm-4'>
+        <div class='col-9 col-md-4'>
             <img src='imgs/Classes/tap.jpg' id='class-page-img' width='100%' class='shadow-lg class-page-photos' />
         </div>
-        <div class='class-page-text col-sm-6 col-12 align-self-center shadow-lg marg-top'>
+        <div class='class-page-text col-md-7 col-12 align-self-center shadow-lg marg-top'>
             <br />
             <p class='class-page-title align-self-center'>Tap Dancing</p>
             <p>Have FUN moving and making music with your feet. A style of dance where the feet are the instrument
@@ -739,15 +831,16 @@
                 <li>Traditional Tap with a variety of rhythms including the waltz, foxtrot, tango cha cha </li>
                 <li>Street style funk Tap to modern music</li>
             </ul>
-            <div class='class-profile container shadow-lg' style='margin-bottom: 15px;'>
+            <div class='class-profile container-fluid shadow-lg' style='margin-bottom: 15px;'>
                 <div style='padding-top:10px;padding-bottom:10px;'>
-                    <div class='class-page-title'>Taught By</div>
+                    <div>Taught By</div>
                     <br>
-                    <div class='row justify-content-center'>
-                        <div class="col-6 col-lg-3">
-                            <img src='imgs/Classes/amy.jpg' class='class-img-taught'/>
-                            <div>Miss Amy<a href='#show-more-tap' data-toggle='collapse'><i class='fa fa-angle-down'
-                                        style="margin-left:-15px;color: black;vertical-align: middle;text-decoration:none;"></i></a>
+                    <div class='row justify-content-center' style='margin-top:-20px;'>
+                        <div class="col-3">
+                            <img src='imgs/Classes/amy.jpg' class='class-img-taught' />
+                            <div>Amy<br class='linebr' /><a href='#show-more-tap' data-toggle='collapse'><i
+                                        class='fa fa-angle-down'
+                                        style="color: black;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
                             </div>
                         </div>
 
@@ -795,10 +888,10 @@
     </div>
     <div class="row mx-auto justify-content-center container-fluid d-flex class-row contrast-div"
         id='break-dancing-class-page'>
-        <div class='col-9 col-sm-4'>
+        <div class='col-9 col-md-4'>
             <img src="imgs/Classes/IMG-3786.jpg" id='class-page-img' width="100%" class='class-page-photos shadow-lg' />
         </div>
-        <div class='class-page-text class-page-text-contrast col-sm-6 col-12 align-self-center marg-top shadow-lg'>
+        <div class='class-page-text class-page-text-contrast col-md-7 col-12 align-self-center marg-top shadow-lg'>
             <br />
             <p class='class-page-title class-page-title-contrast'>Break Dancing</p>
             <p>
@@ -809,15 +902,16 @@
                 YTT Break dancing is a fun class that will be focused on the drills & foundations that go into break
                 dancing. How to structure a set and how to perform like a B-boy or B-girl!
             </p>
-            <div class='class-profile container shadow-lg' style='margin-bottom: 15px;'>
+            <div class='class-profile container-fluid shadow-lg' style='margin-bottom: 15px;'>
                 <div style='padding-top:10px;padding-bottom:10px;'>
-                    <div class='class-page-title class-page-title-contrast'>Taught By</div>
+                    <div class='class-page-title-contrast'>Taught By</div>
                     <br>
-                    <div class='row justify-content-center'>
-                        <div class="col-6 col-lg-3">
-                            <img src='imgs/Classes/jordan.jpg' class='class-img-taught'/>
-                            <div>Mr Jordan<a href='#show-more-break' data-toggle='collapse'><i class='fa fa-angle-down'
-                                        style="margin-left:-15px;color: white;vertical-align: middle;text-decoration:none;"></i></a>
+                    <div class='row justify-content-center' style='margin-top:-20px;'>
+                        <div class="col-3">
+                            <img src='imgs/Classes/jordan.jpg' class='class-img-taught' />
+                            <div>Jordan<br class='linebr' /><a href='#show-more-break' data-toggle='collapse'><i
+                                        class='fa fa-angle-down'
+                                        style="color: white;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
                             </div>
                         </div>
 
@@ -863,10 +957,10 @@
         </svg>
     </div>
     <div class="row mx-auto justify-content-center container-fluid class-row" id='Pre-schoolers-class-page'>
-        <div class='col-9 col-sm-4'>
+        <div class='col-9 col-md-4'>
             <img src="imgs/Classes/pre.jpg" id='class-page-img' width='100%' class='class-page-photos shadow-lg' />
         </div>
-        <div class='class-page-text col-12 col-sm-6 align-self-center shadow-lg marg-top'>
+        <div class='class-page-text col-12 col-md-7 align-self-center shadow-lg marg-top'>
             <br />
             <p class='class-page-title'>Pre Schoolers Dancing</p>
             <p>
@@ -886,15 +980,16 @@
                 their learning and skill development, allowing them to explore and experience the joy of movement,
                 expression, teamwork, and creativity.
             </p>
-            <div class='class-profile container shadow-lg' style='margin-bottom: 15px;'>
+            <div class='class-profile container-fluid shadow-lg' style='margin-bottom: 15px;'>
                 <div style='padding-top:10px;padding-bottom:10px;'>
-                    <div class='class-page-title'>Taught By</div>
+                    <div>Taught By</div>
                     <br>
-                    <div class='row justify-content-center'>
-                        <div class="col-6 col-lg-3">
-                            <img src='imgs/Classes/steph.jpg'class='class-img-taught'/>
-                            <div>Miss Steph<a href='#show-more-pre' data-toggle='collapse'><i class='fa fa-angle-down'
-                                        style="margin-left:-15px;color: black;vertical-align: middle;text-decoration:none;"></i></a>
+                    <div class='row justify-content-center' style='margin-top:-20px;'>
+                        <div class="col-3">
+                            <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
+                            <div>Steph<br class='linebr' /><a href='#show-more-pre' data-toggle='collapse'><i
+                                        class='fa fa-angle-down'
+                                        style="color: black;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
                             </div>
                         </div>
 
@@ -940,55 +1035,59 @@
     </div>
     <div class="row mx-auto justify-content-center container-fluid d-flex'class-row contrast-div"
         id='adult-dancing-class-page'>
-        <div class='col-9 col-sm-4'>
+        <div class='col-9 col-md-4'>
             <img src="imgs/Classes/adult.jpg" id='class-page-img' width="100%" class='shadow-lg class-page-photos' />
         </div>
-        <div class='class-page-text class-page-text-contrast col-sm-6  col-12 align-self-center shadow-lg marg-top'>
+        <div class='class-page-text class-page-text-contrast col-md-7  col-12 align-self-center shadow-lg marg-top'>
             <br />
             <p class='class-page-title class-page-title-contrast'>Adult Dancing</p>
             <p>Dance for fun & Fitness!</p>
             <p>At Your Talent Team we offer a huge range of adult classes across 4 days a week!
-            <p></p>
             <p>Enjoy a gym class away from the gym and give Barre Attack a go! Work on smaller muscle groups that
                 you never knew could burn, and enjoy the use of specialised equipment like resistance bands and
                 barre attack sliding plates!</p>
             <p>Feel like putting on some dancing shoes? Why not try our NEW Adult Combo class! Enjoy a mixture of
                 Jazz, Ballet, and Hip Hop, catering to all from beginners to advanced dancers! This fun and friendly
-                class will keep you moving and make you laugh! And if thats not enough - hang around afterwards to
-                try your feet at Adult Tap! Our adult tap class has always been incredibly popular, utilising your
-                feet to make the music</p>
-            <div class='class-profile container shadow-lg' style='margin-bottom: 15px;'>
+                class will keep you moving and make you laugh!</p>
+            <div class='class-profile container-fluid shadow-lg' style='margin-bottom: 15px;'>
                 <div style='padding-top:10px;padding-bottom:10px;'>
-                    <div class='class-page-title class-page-title-contrast'>Taught By</div>
+                    <div class='class-page-title-contrast'>Taught By</div>
                     <br>
-                    <div class='row justify-content-center'>
-                        <div class="col-6 col-lg-3">
-                            <img src='imgs/Classes/sam.jpg'class='class-img-taught'/>
-                            <div>Sam<a href='#show-more-adult' data-toggle='collapse'><i class='fa fa-angle-down'
-                                        style="margin-left:-15px;color: white;vertical-align: middle;text-decoration:none;"></i></a>
+                    <div class='row justify-content-center' style='margin-top:-20px;'>
+                        <div class="col-3">
+                            <img src='imgs/Classes/sam.jpg' class='class-img-taught' />
+                            <div class='faculty'>Sam<br class='linebr' /><a href='#show-more-adult-4' onclick='adult4()'
+                                    data-toggle='collapse'><i class='fa fa-angle-down' id='adult-swap4'
+                                        style="color: white;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
                             </div>
                         </div>
-                        <div class="col-6 col-lg-3">
-                            <img src='imgs/Classes/jordan.jpg'class='class-img-taught'/>
-                            <div>Miss Emma<a href='#show-more-adult-1' data-toggle='collapse'><i class='fa fa-angle-down'
-                                        style="margin-left:-15px;color: white;vertical-align: middle;text-decoration:none;"></i></a>
+                        <div class="col-3">
+                            <img src='imgs/Classes/jordan.jpg' class='class-img-taught' />
+                            <div class='faculty'>Emma<br class='linebr' /><a href='#show-more-adult-1'
+                                    onclick='adult1()' data-toggle='collapse'><i class='fa fa-angle-down'
+                                        id='adult-swap1'
+                                        style="color: white;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
                             </div>
                         </div>
-                        <div class="col-6 col-lg-3">
-                            <img src='imgs/Classes/kathryn.jpg' class='class-img-taught'/>
-                            <div>Miss Kathryn<a href='#show-more-adult-2' data-toggle='collapse'><i class='fa fa-angle-down'
-                                        style="margin-left:-15px;color: white;vertical-align: middle;text-decoration:none;"></i></a>
+                        <div class="col-3">
+                            <img src='imgs/Classes/kathryn.jpg' class='class-img-taught' />
+                            <div class='faculty'>Kathryn<br class='linebr' /><a href='#show-more-adult-2'
+                                    onclick='adult2()' data-toggle='collapse'><i class='fa fa-angle-down'
+                                        id='adult-swap2'
+                                        style="color: white;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
                             </div>
                         </div>
-                        <div class="col-6 col-lg-3">
-                            <img src='imgs/Classes/steph.jpg' class='class-img-taught'/>
-                            <div>Miss Rach<a href='#show-more-adult-3' data-toggle='collapse'><i class='fa fa-angle-down'
-                                        style="margin-left:-15px;color: white;vertical-align: middle;text-decoration:none;"></i></a>
+                        <div class="col-3">
+                            <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
+                            <div class='faculty'>Rachael<br class='linebr' /><a href='#show-more-adult-3'
+                                    onclick='adult3()' data-toggle='collapse'><i class='fa fa-angle-down'
+                                        id='adult-swap3'
+                                        style="color: white;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
                             </div>
                         </div>
 
                     </div>
-                    <div id='show-more-adult' class='collapse'>
+                    <div id='show-more-adult-4' class='collapse'>
                         <br />
                         <h2>Samantha Topping</h2>
                         <p>Samantha is a Registered Personal Trainer / Gym Instructor / Group Exercise Instructor /
@@ -1062,10 +1161,10 @@
         </svg>
     </div>
     <div class="row mx-auto justify-content-center container-fluid d-flex'class-row" id='boy-dancing-class-page'>
-        <div class='col-9 col-sm-4'>
+        <div class='col-9 col-md-4'>
             <img src="imgs/Classes/boy.jpg" id='class-page-img' width="100%" class='shadow-lg class-page-photos' />
         </div>
-        <div class='class-page-text col-sm-6 col-12 align-self-center shadow-lg marg-top'>
+        <div class='class-page-text col-md-7 col-12 align-self-center shadow-lg marg-top'>
             <br />
             <p class='class-page-title'>Boy Dancing</p>
             <p>
@@ -1081,15 +1180,16 @@
                 Self-esteem and confidence is also learned by being in challenging circumstances such as on stage or
                 learning challenging steps.
             </p>
-            <div class='class-profile container shadow-lg' style='margin-bottom: 15px;'>
+            <div class='class-profile container-fluid shadow-lg' style='margin-bottom: 15px;'>
                 <div style='padding-top:10px;padding-bottom:10px;'>
-                    <div class='class-page-title'>Taught By</div>
+                    <div>Taught By</div>
                     <br>
-                    <div class='row justify-content-center'>
-                        <div class="col-6 col-lg-3">
-                            <img src='imgs/Classes/jordan.jpg' class='class-img-taught'/>
-                            <div>Mr Jordan<a href='#show-more-boy' data-toggle='collapse'><i class='fa fa-angle-down'
-                                        style="margin-left:-15px;color: black;vertical-align: middle;text-decoration:none;"></i></a>
+                    <div class='row justify-content-center' style='margin-top:-20px;'>
+                        <div class="col-3">
+                            <img src='imgs/Classes/jordan.jpg' class='class-img-taught' />
+                            <div>Jordan<br class='linebr' /><a href='#show-more-boy' data-toggle='collapse'><i
+                                        class='fa fa-angle-down'
+                                        style="margin-top:-3px;color: black;vertical-align: middle;text-decoration:none;font-size:16px !important;"></i></a>
                             </div>
                         </div>
 

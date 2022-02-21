@@ -88,7 +88,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
         <div id="title-div" class="container shadow-lg">
             <div class="title-text-div">
                 <div class="title-text title-entrance">YOUR TALENT TEAM</div>
-                <h1 class="sub-text title-entrance">PERFORMANCE ACADEMY</h1>
+                <h1 class="sub-text title-entrance">DANCE STUDIO, NOWRA</h1>
                 <br />
                 <a href='#enrol-div' class="btn shadow-lg title-entrance" id='enrol-btn' style='border: 1px solid transparent;'>ENROL NOW</a>
             </div>
@@ -147,108 +147,94 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                     <div class='row align-self-center'>
                         <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#ballet-dancing-class-page'>
                             <img src="imgs/Classes/ballet-small.jpg" style='padding-top:1px !important;' class='class-img shadow-lg' />
-                            <div>
+                            <div class='class-img-text'>
                                 Ballet
                             </div>
                         </a>
                         <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#jazz-dancing-class-page'>
                             <img src="imgs/Classes/IMG-3777-small.jpg" class='class-img shadow-lg' />
-                            <div>
+                            <div class='class-img-text'>
                                 Jazz
                             </div>
                         </a>
                         <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#contemporary-dancing-class-page'>
                             <img src="imgs/Classes/IMG-3779-small.jpg" class='class-img shadow-lg' />
-                            <div>
+                            <div class='class-img-text'>
                                 Contemporary
                             </div>
                         </a>
                         <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#hiphop-dancing-class-page'>
                             <img src="imgs/Classes/IMG-3773-small.jpg" class='class-img shadow-lg' />
-                            <div>
+                            <div class='class-img-text'>
                                 Hip-Hop
                             </div>
                         </a>
                         <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#lyrical-dancing-class-page'>
                             <img src="imgs/Classes/IMG-3782-small.jpg" class='class-img shadow-lg' />
-                            <div>
+                            <div class='class-img-text'>
                                 Lyrical
                             </div>
                         </a>
                         <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#acro-dancing-class-page'>
                             <img src="imgs/Classes/IMG-3802-small.jpg" class='class-img shadow-lg' />
-                            <div>
+                            <div class='class-img-text'>
                                 Acro
                             </div>
                         </a>
                         <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#line-dancing-class-page'>
                             <img src="imgs/Classes/line-small.jpg" class='class-img shadow-lg' />
-                            <div>
+                            <div class='class-img-text'>
                                 Line
                             </div>
                         </a>
                         <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#tap-dancing-class-page'>
                             <img src='imgs/Classes/tap-small.jpg' class='class-img shadow-lg' />
-                            <div>
+                            <div class='class-img-text'>
                                 Tap
                             </div>
                         </a>
                         <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#break-dancing-class-page'>
                             <img src="imgs/Classes/IMG-3786-small.jpg" class='class-img shadow-lg' />
-                            <div>
+                            <div class='class-img-text'>
                                 Break
                             </div>
                         </a>
                         <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#Pre-schoolers-class-page'>
                             <img src="imgs/Classes/pre-small.jpg" class='class-img shadow-lg' />
-                            <div>
+                            <div class='class-img-text'>
                                 Toddlers
                             </div>
                         </a>
                         <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#adult-dancing-class-page'>
                             <img src="imgs/Classes/adult-small.jpg" class='class-img shadow-lg' />
-                            <div>
+                            <div class='class-img-text'>
                                 Adult
                             </div>
                         </a>
                         <a class='col-lg-2 col-md-3 col-sm-4 col-6 class-info module' href='classes.html#boy-dancing-class-page'>
                             <img src="imgs/Classes/boy-small.jpg" class='class-img shadow-lg' />
-                            <div>
+                            <div class='class-img-text'>
                                 Boy
                             </div>
                         </a>
                     </div>
                 </div>
-                <br />
-                <br/>
-                <h1 class='module'><a href='classes.html' id="classes-title">Timetables</a></h1>
                 <br/>
                 <div class='row justify-content-center'>
-                <div href='imgs/timetable.PNG' class="btn shadow-lg module col-md-2 col-6  timetable-button" id='timetable' target='_blank' style='border: 1px solid transparent;'>MASTER<br>TIMETABLE</div>
+                    <a href='imgs/timetable.PNG' class="btn shadow-lg module col-md-2 col-6  timetable-button" id='timetable' target='_blank' style='border: 1px solid transparent;'>VIEW<br>TIMETABLE</a>
                 </div>
-                <br/>
-                <div class='row justify-content-center'>
-                <div href='imgs/timetable.PNG' class="btn shadow-lg module col-md-2 col-6 timetable-button" id='timetable' target='_blank' style='border: 1px solid transparent;'>SENIOR <br/> TIMETABLE</div>
-                    <div href='imgs/timetable.PNG' class="btn shadow-lg module col-md-2 col-6  timetable-button" id='timetable' target='_blank' style='border: 1px solid transparent;'>JUNIOR <br/> TIMETABLE</div>
-                    <div href='imgs/timetable.PNG' class="btn shadow-lg module col-md-2 col-6 timetable-button" id='timetable' target='_blank' style='border: 1px solid transparent;'>ADULTS <br>TIMETABLE</div>
-                <div href='imgs/timetable.PNG' class="btn shadow-lg module col-md-2 timetable-button" id='timetable' target='_blank' style='border: 1px solid transparent;'>PRESCHOOL<br> TIMETABLE</div>
-                    <div href='imgs/timetable.PNG' class="btn shadow-lg module col-md-2 col-6 timetable-button" id='timetable' target='_blank' style='border: 1px solid transparent;'>MINIS<br> TIMETABLE</div>
-                    <div href='imgs/timetable.PNG' class="btn shadow-lg module col-md-2 col-6 timetable-button" id='timetable' target='_blank' style='border: 1px solid transparent;'>TINY <br>TIMETABLE</div>
-                </div>
-                <br/><br/>
+
             </div>
 
-        </div>
-
-        <div class="class-bottom-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="visual" width='100%' viewBox="0 0 1400 200" version="1.1">
-                <path d="M0 137L23.3 135.3C46.7 133.7 93.3 130.3 140 133.8C186.7 137.3 233.3 147.7 280 140.2C326.7 132.7 373.3 107.3 420 102.7C466.7 98 513.3 114 560 123.2C606.7 132.3 653.3 134.7 700 137.7C746.7 140.7 793.3 144.3 840 140.7C886.7 137 933.3 126 980 124.7C1026.7 123.3 1073.3 131.7 1120 129.8C1166.7 128 1213.3 116 1260 113.8C1306.7 111.7 1353.3 119.3 1376.7 123.2L1400 127L1400 0L1376.7 0C1353.3 0 1306.7 0 1260 0C1213.3 0 1166.7 0 1120 0C1073.3 0 1026.7 0 980 0C933.3 0 886.7 0 840 0C793.3 0 746.7 0 700 0C653.3 0 606.7 0 560 0C513.3 0 466.7 0 420 0C373.3 0 326.7 0 280 0C233.3 0 186.7 0 140 0C93.3 0 46.7 0 23.3 0L0 0Z" fill="#72c2ef" />
-                <path d="M0 111L23.3 111.8C46.7 112.7 93.3 114.3 140 113.7C186.7 113 233.3 110 280 107.2C326.7 104.3 373.3 101.7 420 95.5C466.7 89.3 513.3 79.7 560 80.5C606.7 81.3 653.3 92.7 700 96.7C746.7 100.7 793.3 97.3 840 99.8C886.7 102.3 933.3 110.7 980 107.2C1026.7 103.7 1073.3 88.3 1120 85.3C1166.7 82.3 1213.3 91.7 1260 96C1306.7 100.3 1353.3 99.7 1376.7 99.3L1400 99L1400 0L1376.7 0C1353.3 0 1306.7 0 1260 0C1213.3 0 1166.7 0 1120 0C1073.3 0 1026.7 0 980 0C933.3 0 886.7 0 840 0C793.3 0 746.7 0 700 0C653.3 0 606.7 0 560 0C513.3 0 466.7 0 420 0C373.3 0 326.7 0 280 0C233.3 0 186.7 0 140 0C93.3 0 46.7 0 23.3 0L0 0Z" fill="#57b9df" />
-                <path d="M0 51L23.3 52.5C46.7 54 93.3 57 140 62.7C186.7 68.3 233.3 76.7 280 76.5C326.7 76.3 373.3 67.7 420 65.7C466.7 63.7 513.3 68.3 560 64C606.7 59.7 653.3 46.3 700 45.7C746.7 45 793.3 57 840 66C886.7 75 933.3 81 980 81.3C1026.7 81.7 1073.3 76.3 1120 71C1166.7 65.7 1213.3 60.3 1260 61.3C1306.7 62.3 1353.3 69.7 1376.7 73.3L1400 77L1400 0L1376.7 0C1353.3 0 1306.7 0 1260 0C1213.3 0 1166.7 0 1120 0C1073.3 0 1026.7 0 980 0C933.3 0 886.7 0 840 0C793.3 0 746.7 0 700 0C653.3 0 606.7 0 560 0C513.3 0 466.7 0 420 0C373.3 0 326.7 0 280 0C233.3 0 186.7 0 140 0C93.3 0 46.7 0 23.3 0L0 0Z" fill="#3bafce" />
-                <path d="M0 36L23.3 32.5C46.7 29 93.3 22 140 21.3C186.7 20.7 233.3 26.3 280 28C326.7 29.7 373.3 27.3 420 25.3C466.7 23.3 513.3 21.7 560 23.2C606.7 24.7 653.3 29.3 700 26C746.7 22.7 793.3 11.3 840 15.3C886.7 19.3 933.3 38.7 980 43.5C1026.7 48.3 1073.3 38.7 1120 35.8C1166.7 33 1213.3 37 1260 35.8C1306.7 34.7 1353.3 28.3 1376.7 25.2L1400 22L1400 0L1376.7 0C1353.3 0 1306.7 0 1260 0C1213.3 0 1166.7 0 1120 0C1073.3 0 1026.7 0 980 0C933.3 0 886.7 0 840 0C793.3 0 746.7 0 700 0C653.3 0 606.7 0 560 0C513.3 0 466.7 0 420 0C373.3 0 326.7 0 280 0C233.3 0 186.7 0 140 0C93.3 0 46.7 0 23.3 0L0 0Z" fill="#18a5bc" />
-            </svg>
-        </div>
-        <br />
+            <div class="class-bottom-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="visual" width='100%' viewBox="0 0 1400 200" version="1.1">
+                    <path d="M0 137L23.3 135.3C46.7 133.7 93.3 130.3 140 133.8C186.7 137.3 233.3 147.7 280 140.2C326.7 132.7 373.3 107.3 420 102.7C466.7 98 513.3 114 560 123.2C606.7 132.3 653.3 134.7 700 137.7C746.7 140.7 793.3 144.3 840 140.7C886.7 137 933.3 126 980 124.7C1026.7 123.3 1073.3 131.7 1120 129.8C1166.7 128 1213.3 116 1260 113.8C1306.7 111.7 1353.3 119.3 1376.7 123.2L1400 127L1400 0L1376.7 0C1353.3 0 1306.7 0 1260 0C1213.3 0 1166.7 0 1120 0C1073.3 0 1026.7 0 980 0C933.3 0 886.7 0 840 0C793.3 0 746.7 0 700 0C653.3 0 606.7 0 560 0C513.3 0 466.7 0 420 0C373.3 0 326.7 0 280 0C233.3 0 186.7 0 140 0C93.3 0 46.7 0 23.3 0L0 0Z" fill="#72c2ef" />
+                    <path d="M0 111L23.3 111.8C46.7 112.7 93.3 114.3 140 113.7C186.7 113 233.3 110 280 107.2C326.7 104.3 373.3 101.7 420 95.5C466.7 89.3 513.3 79.7 560 80.5C606.7 81.3 653.3 92.7 700 96.7C746.7 100.7 793.3 97.3 840 99.8C886.7 102.3 933.3 110.7 980 107.2C1026.7 103.7 1073.3 88.3 1120 85.3C1166.7 82.3 1213.3 91.7 1260 96C1306.7 100.3 1353.3 99.7 1376.7 99.3L1400 99L1400 0L1376.7 0C1353.3 0 1306.7 0 1260 0C1213.3 0 1166.7 0 1120 0C1073.3 0 1026.7 0 980 0C933.3 0 886.7 0 840 0C793.3 0 746.7 0 700 0C653.3 0 606.7 0 560 0C513.3 0 466.7 0 420 0C373.3 0 326.7 0 280 0C233.3 0 186.7 0 140 0C93.3 0 46.7 0 23.3 0L0 0Z" fill="#57b9df" />
+                    <path d="M0 51L23.3 52.5C46.7 54 93.3 57 140 62.7C186.7 68.3 233.3 76.7 280 76.5C326.7 76.3 373.3 67.7 420 65.7C466.7 63.7 513.3 68.3 560 64C606.7 59.7 653.3 46.3 700 45.7C746.7 45 793.3 57 840 66C886.7 75 933.3 81 980 81.3C1026.7 81.7 1073.3 76.3 1120 71C1166.7 65.7 1213.3 60.3 1260 61.3C1306.7 62.3 1353.3 69.7 1376.7 73.3L1400 77L1400 0L1376.7 0C1353.3 0 1306.7 0 1260 0C1213.3 0 1166.7 0 1120 0C1073.3 0 1026.7 0 980 0C933.3 0 886.7 0 840 0C793.3 0 746.7 0 700 0C653.3 0 606.7 0 560 0C513.3 0 466.7 0 420 0C373.3 0 326.7 0 280 0C233.3 0 186.7 0 140 0C93.3 0 46.7 0 23.3 0L0 0Z" fill="#3bafce" />
+                    <path d="M0 36L23.3 32.5C46.7 29 93.3 22 140 21.3C186.7 20.7 233.3 26.3 280 28C326.7 29.7 373.3 27.3 420 25.3C466.7 23.3 513.3 21.7 560 23.2C606.7 24.7 653.3 29.3 700 26C746.7 22.7 793.3 11.3 840 15.3C886.7 19.3 933.3 38.7 980 43.5C1026.7 48.3 1073.3 38.7 1120 35.8C1166.7 33 1213.3 37 1260 35.8C1306.7 34.7 1353.3 28.3 1376.7 25.2L1400 22L1400 0L1376.7 0C1353.3 0 1306.7 0 1260 0C1213.3 0 1166.7 0 1120 0C1073.3 0 1026.7 0 980 0C933.3 0 886.7 0 840 0C793.3 0 746.7 0 700 0C653.3 0 606.7 0 560 0C513.3 0 466.7 0 420 0C373.3 0 326.7 0 280 0C233.3 0 186.7 0 140 0C93.3 0 46.7 0 23.3 0L0 0Z" fill="#18a5bc" />
+                </svg>
+            </div>
+            <br />
     </section>
 
     <section>
@@ -517,9 +503,9 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
 
         </div>
         <br>
-        <div class='mx-auto justify-content-center container-fluid d-flex'>
-            <span style='font-size:1.8rem;position:absolute'>How much does it cost?
-                <a href='#more-info' data-toggle='collapse'><i class='fa fa-angle-down' style="margin-left:-15px;top:0px;color: black;vertical-align: middle;text-decoration:none;"></i>
+        <div class='mx-auto justify-content-center container-fluid d-flex module'>
+            <span style='font-size:1.8rem;position:absolute' class='cost'>How much does it cost?
+                <a href='#more-info' data-toggle='collapse'><i class='fa fa-angle-down' id='toggle-event-info' style="margin-left:-5px;top:0px;color: black;vertical-align: middle;text-decoration:none;font-size:20px !important;"></i>
                 </a>
             </span>
             <div id='more-info' class='collapse'>
@@ -567,8 +553,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                     </div>
                 </div>
 
-            </div>
-            <br /><br />
+</div>
         </div>
     </section>
     <br /><br />
@@ -676,11 +661,11 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                 <div class='modal-dialog modal-dialog-centered'>
                     <div class='modal-content'>
                         <div class='modal-header'>
-                            <h2 class='modal-title' style="text-align:center;">Thank you for contacting us!</h2>
+                            <h3 class='modal-title' style="text-align:center;">Thank you for contacting us!</h3>
                         </div>
                         <div class='modal-body' style='text-align:center;'>
                             Our staff at YTT will be in contact with you within the following days. For urgent enquires please contact us on 0434 437 071
-                            <br />
+                            <br /><br/>
                             <button type='button' style='border: 1px solid transparent;' class='btn btn-primary' data-bs-dismiss='modal'>Close</button>
                         </div>
                     </div>
@@ -698,8 +683,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                 <br />
                 <a href='index.php' id='foot-logo'>
                     <img src='imgs/white-logo.PNG' id='footer-logo' /></a>
-
-                <br />
+                <br/>
                 <span class='icon'>
                     <a href='https://www.facebook.com/yourtalentteam' target='_blank' class='fa fa-facebook'></a>
                 </span>
@@ -733,7 +717,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                     </div>
                 </div>
                 <div>
-                    <img src='imgs/vouch.png' height='150px'>
+                    <img src='imgs/vouch.png' width="240px">
                 </div>
             </div>
 
