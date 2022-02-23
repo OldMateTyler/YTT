@@ -219,11 +219,10 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                         </a>
                     </div>
                 </div>
-                <br/>
+                <br />
                 <div class='row justify-content-center'>
-                    <a href='imgs/timetable.PNG' class="btn shadow-lg module col-md-2 col-6  timetable-button" id='timetable' target='_blank' style='border: 1px solid transparent;'>VIEW<br>TIMETABLE</a>
+                    <a href='imgs/timetable.PNG' class="btn shadow-lg module timetable-button" id='timetable' target='_blank' style='border: 1px solid transparent;'>VIEW TIMETABLE</a>
                 </div>
-
             </div>
 
             <div class="class-bottom-svg">
@@ -503,11 +502,14 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
 
         </div>
         <br>
+        <div style='text-align:center' class='module'>
+            <a href='#more-info' data-toggle='collapse'style='text-decoration:none;color:black;' onclick='costFlip(this)'>
+                <div style='font-size:1.8rem;' class='cost'>
+                    How much does it cost?<i class='fa fa-angle-down' id='toggle-event-info' style='color:black !important'></i>
+                </div>
+            </a>
+        </div>
         <div class='mx-auto justify-content-center container-fluid d-flex module'>
-            <span style='font-size:1.8rem;position:absolute' class='cost'>How much does it cost?
-                <a href='#more-info' data-toggle='collapse'><i class='fa fa-angle-down' id='toggle-event-info' style="margin-left:-5px;top:0px;color: black;vertical-align: middle;text-decoration:none;font-size:20px !important;"></i>
-                </a>
-            </span>
             <div id='more-info' class='collapse'>
                 <br>
                 <br />
@@ -553,7 +555,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                     </div>
                 </div>
 
-</div>
+            </div>
         </div>
     </section>
     <br /><br />
@@ -568,43 +570,25 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                     <div id='test-background'>
                         <div class='carousel-item active'>
                             <div class='test-carousel-text'>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos voluptatem aliquam ut
-                                dignissimos quos, facere incidunt dolor inventore amet, commodi sint rerum magni libero
-                                debitis voluptates? Eum eligendi corporis velit possimus placeat porro voluptatum! Ipsam
-                                sint corrupti maiores nisi assumenda magni et facilis tempore ipsum ad consequatur
-                                voluptatum beatae doloremque, reiciendis eos illo aliquid qui deserunt. Incidunt dolor
-                                debitis sunt similique itaque ea ab impedit quam, est natus. Deserunt, quibusdam at.
-                                Nulla aperiam omnis reprehenderit commodi consectetur dolorem. Saepe cum blanditiis
-                                reiciendis. Excepturi, dolorem labore, similique ex alias expedita minus quasi at quos
-                                molestias ipsum rerum tenetur cumque magnam beatae.
+                                "Amazing dance company! Making everyone feel extremely welcome and valued. The
+                                 staff are encouraging and proud of every single student. Wouldn't go anywhere else!""
                                 <p>-Tyler Simmonds</p>
                             </div>
                         </div>
                         <div class='carousel-item'>
                             <div class='test-carousel-text'>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos voluptatem aliquam ut
-                                dignissimos quos, facere incidunt dolor inventore amet, commodi sint rerum magni libero
-                                debitis voluptates? Eum eligendi corporis velit possimus placeat porro voluptatum! Ipsam
-                                sint corrupti maiores nisi assumenda magni et facilis tempore ipsum ad consequatur
-                                voluptatum beatae doloremque, reiciendis eos illo aliquid qui deserunt. Incidunt dolor
-                                debitis sunt similique itaque ea ab impedit quam, est natus. Deserunt, quibusdam at.
-                                Nulla aperiam omnis reprehenderit commodi consectetur dolorem. Saepe cum blanditiis
-                                reiciendis. Excepturi, dolorem labore, similique ex alias expedita minus quasi at quos
-                                molestias ipsum rerum tenetur cumque magnam beatae.
+                                "Your Talent Team and their dedicated owner and teacher Miss Steph have provided such a
+                                 professional caring and supportive environment for my girls. We are so happy being a 
+                                 part of the Your Talent Team crew I would highly recommend Miss Steph and her amazing 
+                                 teachers and studio to anyone wanting to start dancing"
                                 <p>-Kye Jones</p>
                             </div>
                         </div>
                         <div class='carousel-item'>
                             <div class='test-carousel-text'>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos voluptatem aliquam ut
-                                dignissimos quos, facere incidunt dolor inventore amet, commodi sint rerum magni libero
-                                debitis voluptates? Eum eligendi corporis velit possimus placeat porro voluptatum! Ipsam
-                                sint corrupti maiores nisi assumenda magni et facilis tempore ipsum ad consequatur
-                                voluptatum beatae doloremque, reiciendis eos illo aliquid qui deserunt. Incidunt dolor
-                                debitis sunt similique itaque ea ab impedit quam, est natus. Deserunt, quibusdam at.
-                                Nulla aperiam omnis reprehenderit commodi consectetur dolorem. Saepe cum blanditiis
-                                reiciendis. Excepturi, dolorem labore, similique ex alias expedita minus quasi at quos
-                                molestias ipsum rerum tenetur cumque magnam beatae.
+                                "Nothing but friendly encourage and genuine people, affordable pricing, great selection
+                                 of dance styles, plus fitness class for adults. Your Talent Team is a helpful and 
+                                 professional business, wouldn't take my kids anywhere else!"
                                 <p>-Joshua Haughton</p>
                             </div>
                         </div>
@@ -660,12 +644,12 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
             <div class='modal fade' id='myModal'>
                 <div class='modal-dialog modal-dialog-centered'>
                     <div class='modal-content'>
-                        <div class='modal-header'>
-                            <h3 class='modal-title' style="text-align:center;">Thank you for contacting us!</h3>
+                        <div class='modal-header justify-content-center'>
+                            <h3 class='modal-title' style="text-align:center;margin:0 auto;">Thank you for contacting us!</h3>
                         </div>
                         <div class='modal-body' style='text-align:center;'>
                             Our staff at YTT will be in contact with you within the following days. For urgent enquires please contact us on 0434 437 071
-                            <br /><br/>
+                            <br /><br />
                             <button type='button' style='border: 1px solid transparent;' class='btn btn-primary' data-bs-dismiss='modal'>Close</button>
                         </div>
                     </div>
@@ -683,7 +667,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                 <br />
                 <a href='index.php' id='foot-logo'>
                     <img src='imgs/white-logo.PNG' id='footer-logo' /></a>
-                <br/>
+                <br />
                 <span class='icon'>
                     <a href='https://www.facebook.com/yourtalentteam' target='_blank' class='fa fa-facebook'></a>
                 </span>
@@ -724,7 +708,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
             <br />
         </div>
         <div id="footer" class="justify-content-center d-flex">
-            <span>© 2021 YourTalentTeam.com - All Rights Reserved.</span>
+            <p>© 2021 YourSite.com - All Rights Reserved.</p>
         </div>
     </section>
 </body>

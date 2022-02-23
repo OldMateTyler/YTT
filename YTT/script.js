@@ -241,16 +241,11 @@ $(window).on('hresize', function () {
             el.addClass('entrance-animation');
         })
   })
-  $(".fa-angle-up").on('click',function(e){
-    const value = e.target;
+  function costFlip(e){
+    const value = e.lastElementChild.firstElementChild;
     value.classList.toggle("fa-angle-up");
     value.classList.toggle("fa-angle-down");
-  });
-  $(".fa-angle-down").on('click',function(e){
-    const value = e.target;
-    value.classList.toggle("fa-angle-down");
-    value.classList.toggle("fa-angle-up");
-  });
+  }
   /*
   $('body').css('padding-top', $('.navbar').outerHeight() + 'px')
 

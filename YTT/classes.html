@@ -19,18 +19,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="//fonts.cdnfonts.com/css/kollektif" rel="stylesheet">
     <script type='text/javascript'>
-        $(document).ready(function () {
-            $(".fa-angle-up").on('click', function (e) {
-                const value = e.target;
-                value.classList.toggle("fa-angle-up");
-                value.classList.toggle("fa-angle-down");
-            });
-            $(".fa-angle-down").on('click', function (e) {
-                const value = e.target;
-                value.classList.toggle("fa-angle-down");
-                value.classList.toggle("fa-angle-up");
-            });
-        });
+        function addEventList(e) {
+            var classes = $(".show-faculty");
+            for (var i = 0; i < classes.length; i++) {
+                classes[i].addEventListener("click", toggleArrow(e));
+            }
+        }
+        function toggleArrow(e) {
+            const value = e.lastElementChild.firstElementChild;
+            value.classList.toggle("fa-angle-up");
+            value.classList.toggle("fa-angle-down");
+        }
         function contemporary1() {
             if (document.getElementById("show-more-contemporary").classList.contains("show")) {
                 document.getElementById("contemp-swap2").click();
@@ -221,15 +220,19 @@
                 <p>is appropriate for candidates from the ages of 5 years</p>
                 <div class='class-profile container-fluid shadow-lg' style='margin-bottom: 15px;'>
                     <div style='padding-top:10px;padding-bottom:10px;'>
-                        <div class='class-page-title-contrast'>Taught By</div>
+                        <div class='class-page-title-contrast class-page-title'>Taught By</div>
                         <br>
                         <div class='row justify-content-center' style='margin-top:-20px;'>
                             <div class="col-3">
-                                <img src='imgs/Classes/kathryn.jpg' class='class-img-taught' />
-                                <div>Kathryn<br class='linebr' /><a href='#show-more-ballet' data-toggle='collapse'><i
-                                            class='fa fa-angle-down'
-                                            style="color: white;vertical-align: middle;text-decoration:none;"></i></a>
-                                </div>
+                                <a href='#show-more-ballet' data-toggle='collapse' class='show-faculty'
+                                    onclick="addEventList(this)" style='text-decoration:none;color:white;'>
+                                    <img src='imgs/Classes/kathryn.jpg' class='class-img-taught' />
+                                    <div class='faculty'>
+                                        Kathryn<i class='fa fa-angle-down'
+                                            style="color: white;vertical-align: middle;text-decoration:none;"></i>
+                                    </div>
+
+                                </a>
                             </div>
 
                         </div>
@@ -288,24 +291,30 @@
                     Jazz also encourages teamwork, friendships, and creative expression</p>
                 <div class='class-profile container-fluid shadow-lg' style='margin-bottom: 15px;'>
                     <div style='padding-top:10px;padding-bottom:10px;'>
-                        <div>Taught By</div>
+                        <div class="class-page-title">Taught By</div>
                         <br>
                         <div class='row justify-content-center' style='margin-top:-20px;'>
                             <div class="col-3">
-                                <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
+                                <a href='#show-more-jazz-1' id='jazz-swap-1' data-toggle='collapse'
+                                    onclick='jazz1(); addEventList(this)' class="show-faculty" style='text-decoration:none;color:black;'>
+                                    <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
+                                    <div class='faculty'>Emma<i class='fa fa-angle-down'
+                                            style="color: black;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i>
+                                    </div>
 
-                                <div>Emma<br class='linebr' /><a href='#show-more-jazz-1' data-toggle='collapse'
-                                        onclick='jazz1()'><i class='fa fa-angle-down' id='jazz-swap-1'
-                                            style="color: black;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
-                                </div>
+                                </a>
 
                             </div>
                             <div class="col-3">
-                                <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
-                                <div>Steph<br class='linebr' /><a href='#show-more-jazz-2' data-toggle='collapse'
-                                        onclick="jazz2()"><i class='fa fa-angle-down' id='jazz-swap-2'
-                                            style="color: black;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
-                                </div>
+                                <a href='#show-more-jazz-2' data-toggle='collapse' id='jazz-swap-2'
+                                    onclick="jazz2(); addEventList(this)" class='show-faculty' style='text-decoration:none;color:black;'>
+                                    <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
+                                    <div class='faculty'>Steph<i class='fa fa-angle-down'
+                                            style="color: black;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i>
+                                    </div>
+
+                                </a>
+
 
 
                             </div>
@@ -386,67 +395,73 @@
                     order to establish a mind/body connection.</p>
                 <div class='class-profile container-fluid shadow-lg' style='margin-bottom: 15px;'>
                     <div style='padding-top:10px;padding-bottom:10px;'>
-                        <div class='class-page-title-contrast'>Taught By</div>
+                        <div class='class-page-title-contrast class-page-title'>Taught By</div>
                         <br>
                         <div class='row justify-content-center' style='margin-top:-20px;'>
                             <div class="col-3">
-                                <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
-
-                                <div>Emma<br class='linebr' /><a href='#show-more-contemporary-1' data-toggle='collapse'
-                                        onclick="contemporary1()"><i class='fa fa-angle-down' id='contemp-swap1'
-                                            style="color: white;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
-                                </div>
+                                <a href='#show-more-contemporary-1' id='contemp-swap1' data-toggle='collapse'
+                                    onclick="contemporary1(); addEventList(this)" style='text-decoration:none;color:white;'>
+                                    <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
+                                    <div class='faculty'>
+                                        Emma<i class='fa fa-angle-down'
+                                            style="color: white;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i>
+                                    </div>
+                                </a>
 
                             </div>
                             <div class="col-3">
-                                <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
-                                <div>Steph<br class='linebr' /><a href='#show-more-contemporary' data-toggle='collapse'
-                                        onclick="contemporary2()"><i class='fa fa-angle-down' id='contemp-swap2'
-                                            style="color: white;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
-                                </div>
-
-
+                                <a href='#show-more-contemporary' id='contemp-swap2' data-toggle='collapse'
+                                    onclick="contemporary2(); addEventList(this)" style='text-decoration:none;color:white;'>
+                                    <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
+                                    <div class='faculty'>
+                                        Steph<i class='fa fa-angle-down'
+                                            style="color: white;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i>
+                                    </div>
+                                </a>
                             </div>
 
-                        </div>
-                        <div id='show-more-contemporary' class='collapse'>
-                            <br />
-                            <h2>Stephanie Perry</h2>
-                            <h3>Owner/Principal</h3>
-                            <p>Stephanie has always loved dancing. When given the opportunity to assist in dance
-                                classes, Stephanie was over the moon. She began learning the ways & developing her
-                                knowledge, leading up to teaching her very own classes, Stephanie gained experience and
-                                continued to teach for five years.</p>
-                            <p>After recent events, Stephanie was eager to take ownership of Your Talent Team to
-                                continue to provide a positive environment for our dancers to strive and achieve their
-                                goals and develop their dance training in the Shoalhaven.</p>
-                            <p>Stephanie looks forward to working with every dancer to meet their personal goals and
-                                encourage every dancer to work their very hardest.</p>
-                            <p>Stephanie is eager to continue her studies and gain more qualifications for her dance
-                                teaching.</p>
-                            <br>
-                        </div>
-
-                        <div id='show-more-contemporary-1' class='collapse'>
-                            <br />
-                            <h2>Miss Emma</h2>
-                            <p> Starting dance at just 18 months of age, Miss Emma found a deep passion that has stuck
-                                with her
-                                ever since. </p>
-                            <p>Over the years she has developed into a versatile dancer that specialises in
-                                jazz and
-                                contemporary. </p>
-                            <p>Miss Emma's continued passion has seen her complete a Diploma of Dance
-                                (Elite
-                                Performance), which has granted her the fundamental ability to teach and inspire the
-                                students at YTT.</p>
 
                         </div>
+
+                    </div>
+                    <div id='show-more-contemporary' class='collapse'>
+                        <br />
+                        <h2>Stephanie Perry</h2>
+                        <h3>Owner/Principal</h3>
+                        <p>Stephanie has always loved dancing. When given the opportunity to assist in dance
+                            classes, Stephanie was over the moon. She began learning the ways & developing her
+                            knowledge, leading up to teaching her very own classes, Stephanie gained experience and
+                            continued to teach for five years.</p>
+                        <p>After recent events, Stephanie was eager to take ownership of Your Talent Team to
+                            continue to provide a positive environment for our dancers to strive and achieve their
+                            goals and develop their dance training in the Shoalhaven.</p>
+                        <p>Stephanie looks forward to working with every dancer to meet their personal goals and
+                            encourage every dancer to work their very hardest.</p>
+                        <p>Stephanie is eager to continue her studies and gain more qualifications for her dance
+                            teaching.</p>
+                        <br>
                     </div>
 
+                    <div id='show-more-contemporary-1' class='collapse'>
+                        <br />
+                        <h2>Miss Emma</h2>
+                        <p> Starting dance at just 18 months of age, Miss Emma found a deep passion that has stuck
+                            with her
+                            ever since. </p>
+                        <p>Over the years she has developed into a versatile dancer that specialises in
+                            jazz and
+                            contemporary. </p>
+                        <p>Miss Emma's continued passion has seen her complete a Diploma of Dance
+                            (Elite
+                            Performance), which has granted her the fundamental ability to teach and inspire the
+                            students at YTT.</p>
+
+                    </div>
                 </div>
+
             </div>
         </div>
+    </div>
     </div>
     <div class='class-bottom-svg'>
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="visual"
@@ -482,35 +497,38 @@
             <p>(note: there is no Syllabus for Hip Hop)</p>
             <div class='class-profile container-fluid shadow-lg' style='margin-bottom: 15px;'>
                 <div style='padding-top:10px;padding-bottom:10px;'>
-                    <div>Taught By</div>
+                    <div class="class-page-title">Taught By</div>
                     <br>
                     <div class='row justify-content-center' style='margin-top:-20px;'>
                         <div class="col-3">
-                            <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
-
-                            <div>Rachael<br class='linebr' /><a href='#show-more-hip-3' data-toggle='collapse'
-                                    onclick="hip3()"><i class='fa fa-angle-down' id='hip-swap3'
-                                        style="color: black;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
-                            </div>
-
+                            <a href='#show-more-hip-3' data-toggle='collapse' onclick="hip3(); addEventList(this)"
+                                id='hip-swap3' style='text-decoration:none;color:black;'>
+                                <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
+                                <div class='faculty'>
+                                    Rachael<i class='fa fa-angle-down'
+                                        style="color: black;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i>
+                                </div>
+                            </a>
                         </div>
                         <div class="col-3">
-                            <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
-                            <div>Steph<br class='linebr' /><a href='#show-more-hip-1' data-toggle='collapse'
-                                    onclick="hip1()"><i class='fa fa-angle-down' id='hip-swap1'
-                                        style="color: black;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
-                            </div>
-
-
+                            <a href='#show-more-hip-1' data-toggle='collapse' onclick="hip1(); addEventList(this)"
+                                id='hip-swap1' style='text-decoration:none;color:black;'>
+                                <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
+                                <div class='faculty'>
+                                    Steph<i class='fa fa-angle-down'
+                                        style="color: black;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i>
+                                </div>
+                            </a>
                         </div>
                         <div class="col-3">
-                            <img src='imgs/Classes/jordan.jpg' class='class-img-taught' />
-                            <div>Jordan<br class='linebr' /><a href='#show-more-hip-2' data-toggle='collapse'
-                                    onclick="hip2()"><i class='fa fa-angle-down' id='hip-swap2'
-                                        style="color: black;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
-                            </div>
-
-
+                            <a href='#show-more-hip-2' data-toggle='collapse' onclick="hip2(); addEventList(this)"
+                                id='hip-swap2' style='text-decoration:none;color:black;'>
+                                <img src='imgs/Classes/jordan.jpg' class='class-img-taught' />
+                                <div class='faculty'>
+                                    Jordan<i class='fa fa-angle-down'
+                                        style="color: black;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i>
+                                </div>
+                            </a>
                         </div>
 
                     </div>
@@ -603,15 +621,17 @@
                 whilst building strength, flexibility and technique.</p>
             <div class='class-profile container-fluid shadow-lg' style='margin-bottom: 15px;'>
                 <div style='padding-top:10px;padding-bottom:10px;'>
-                    <div class=' class-page-title-contrast'>Taught By</div>
+                    <div class=' class-page-title-contrast class-page-title'>Taught By</div>
                     <br>
                     <div class='row justify-content-center' style='margin-top:-20px;'>
                         <div class="col-3">
-                            <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
-                            <div>Steph<br class='linebr' /><a href='#show-more-lyrical' data-toggle='collapse'><i
-                                        class='fa fa-angle-down'
-                                        style="color: white;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
-                            </div>
+                            <a href='#show-more-lyrical' data-toggle='collapse' onclick="addEventList(this)" style='text-decoration:none;color:white;'>
+                                <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
+                                <div class='faculty'>
+                                    Steph<i class='fa fa-angle-down'
+                                        style="color: white;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i>
+                                </div>
+                            </a>
                         </div>
 
                     </div>
@@ -674,15 +694,17 @@
 
             <div class='class-profile container-fluid shadow-lg' style='margin-bottom: 15px;'>
                 <div style='padding-top:10px;padding-bottom:10px;'>
-                    <div>Taught By</div>
+                    <div class="class-page-title">Taught By</div>
                     <br>
                     <div class='row justify-content-center' style='margin-top:-20px;'>
                         <div class="col-3">
-                            <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
-                            <div>Steph<br class='linebr' /><a href='#show-more-acro' data-toggle='collapse'><i
-                                        class='fa fa-angle-down'
-                                        style="color: black;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
-                            </div>
+                            <a href='#show-more-acro' data-toggle='collapse' onclick='addEventList(this)' style='text-decoration:none;color:black;'>
+                                <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
+                                <div class='faculty'>
+                                    Steph<i class='fa fa-angle-down'
+                                        style="color: black;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i>
+                                </div>
+                            </a>
                         </div>
 
                     </div>
@@ -761,39 +783,42 @@
             </p>
             <div class='class-profile container-fluid shadow-lg' style='margin-bottom: 15px;'>
                 <div style='padding-top:10px;padding-bottom:10px;'>
-                    <div class='class-page-title-contrast'>Taught By</div>
+                    <div class='class-page-title-contrast class-page-title'>Taught By</div>
                     <br>
                     <div class='row justify-content-center' style='margin-top:-20px;'>
                         <div class="col-3">
-                            <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
-                            <div>Steph<br class='linebr' /><a href='#show-more-line' data-toggle='collapse'><i
-                                        class='fa fa-angle-down'
-                                        style="color: white;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
-                            </div>
+                            <a href='#show-more-line' data-toggle='collapse' onclick="addEventList(this)" style='text-decoration:none;color:white;'>
+                                <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
+                                <div class='faculty'>
+                                    Steph<i class='fa fa-angle-down'
+                                        style="color: white;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i>
+                                </div>
+                            </a>
                         </div>
+                    </div>
 
-                    </div>
-                    <div id='show-more-line' class='collapse'>
-                        <br />
-                        <h2>Stephanie Perry</h2>
-                        <h3>Owner/Principal</h3>
-                        <p>Stephanie has always loved dancing. When given the opportunity to assist in dance
-                            classes, Stephanie was over the moon. She began learning the ways & developing her
-                            knowledge, leading up to teaching her very own classes, Stephanie gained experience and
-                            continued to teach for five years.</p>
-                        <p>After recent events, Stephanie was eager to take ownership of Your Talent Team to
-                            continue to provide a positive environment for our dancers to strive and achieve their
-                            goals and develop their dance training in the Shoalhaven.</p>
-                        <p>Stephanie looks forward to working with every dancer to meet their personal goals and
-                            encourage every dancer to work their very hardest.</p>
-                        <p>Stephanie is eager to continue her studies and gain more qualifications for her dance
-                            teaching.</p>
-                        <br>
-                    </div>
                 </div>
-
+                <div id='show-more-line' class='collapse'>
+                    <br />
+                    <h2>Stephanie Perry</h2>
+                    <h3>Owner/Principal</h3>
+                    <p>Stephanie has always loved dancing. When given the opportunity to assist in dance
+                        classes, Stephanie was over the moon. She began learning the ways & developing her
+                        knowledge, leading up to teaching her very own classes, Stephanie gained experience and
+                        continued to teach for five years.</p>
+                    <p>After recent events, Stephanie was eager to take ownership of Your Talent Team to
+                        continue to provide a positive environment for our dancers to strive and achieve their
+                        goals and develop their dance training in the Shoalhaven.</p>
+                    <p>Stephanie looks forward to working with every dancer to meet their personal goals and
+                        encourage every dancer to work their very hardest.</p>
+                    <p>Stephanie is eager to continue her studies and gain more qualifications for her dance
+                        teaching.</p>
+                    <br>
+                </div>
             </div>
+
         </div>
+    </div>
     </div>
     <div class='class-bottom-svg'>
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="visual"
@@ -833,15 +858,17 @@
             </ul>
             <div class='class-profile container-fluid shadow-lg' style='margin-bottom: 15px;'>
                 <div style='padding-top:10px;padding-bottom:10px;'>
-                    <div>Taught By</div>
+                    <div class="class-page-title">Taught By</div>
                     <br>
                     <div class='row justify-content-center' style='margin-top:-20px;'>
                         <div class="col-3">
-                            <img src='imgs/Classes/amy.jpg' class='class-img-taught' />
-                            <div>Amy<br class='linebr' /><a href='#show-more-tap' data-toggle='collapse'><i
-                                        class='fa fa-angle-down'
-                                        style="color: black;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
-                            </div>
+                            <a href='#show-more-tap' data-toggle='collapse' onclick='addEventList(this)' style='text-decoration:none;color:black;'>
+                                <img src='imgs/Classes/amy.jpg' class='class-img-taught' />
+                                <div class='faculty'>
+                                    Amy<i class='fa fa-angle-down'
+                                        style="color: black;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i>
+                                </div>
+                            </a>
                         </div>
 
                     </div>
@@ -904,40 +931,44 @@
             </p>
             <div class='class-profile container-fluid shadow-lg' style='margin-bottom: 15px;'>
                 <div style='padding-top:10px;padding-bottom:10px;'>
-                    <div class='class-page-title-contrast'>Taught By</div>
+                    <div class='class-page-title-contrast class-page-title'>Taught By</div>
                     <br>
                     <div class='row justify-content-center' style='margin-top:-20px;'>
                         <div class="col-3">
-                            <img src='imgs/Classes/jordan.jpg' class='class-img-taught' />
-                            <div>Jordan<br class='linebr' /><a href='#show-more-break' data-toggle='collapse'><i
-                                        class='fa fa-angle-down'
-                                        style="color: white;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
-                            </div>
+
+                            <a href='#show-more-break' data-toggle='collapse' onclick="addEventList(this)" style='text-decoration:none;color:white;'>
+                                <img src='imgs/Classes/jordan.jpg' class='class-img-taught' />
+                                <div class='faculty'>
+                                    Jordan<i class='fa fa-angle-down'
+                                        style="color: white;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i>
+                                </div>
+                            </a>
                         </div>
+                    </div>
 
-                    </div>
-                    <div id='show-more-break' class='collapse'>
-                        <br />
-                        <h2>Jordan Angilley</h2>
-                        <p>Jordan first found his passion and love for dance at the age of 4, starting in an
-                            all-boys Hip Hop class in a local studio at Dapto. As he grew up and moved to the south
-                            coast, he joined many other dance companies and partaken in many more styles, such as
-                            jazz, lyrical and contemporary. Jordan’s passion for dance grew more and more, learning
-                            from a variety of teachers and improving his skills. </p>
-                        <p>Since joining YTT in 2017 as a student, Jordan was given the opportunity to teach hip hop
-                            to the boys class he partakes in, which he gladly accepted, beginning his career as a
-                            dance teacher. Jordan’s passion for hip hop forever grows as he strives to not only
-                            teach more but to learn more about it, passing down his knowledge to his students and
-                            help them grow as dancers. His eager and energetic charisma is fueled by his desire to
-                            spread his knowledge of dance to a younger generation. Jordan strives to become a
-                            qualified dance teacher, partaking in many courses to broaden his skills base in order
-                            to share more with his students.</p>
-                        <br>
-                    </div>
                 </div>
-
+                <div id='show-more-break' class='collapse'>
+                    <br />
+                    <h2>Jordan Angilley</h2>
+                    <p>Jordan first found his passion and love for dance at the age of 4, starting in an
+                        all-boys Hip Hop class in a local studio at Dapto. As he grew up and moved to the south
+                        coast, he joined many other dance companies and partaken in many more styles, such as
+                        jazz, lyrical and contemporary. Jordan’s passion for dance grew more and more, learning
+                        from a variety of teachers and improving his skills. </p>
+                    <p>Since joining YTT in 2017 as a student, Jordan was given the opportunity to teach hip hop
+                        to the boys class he partakes in, which he gladly accepted, beginning his career as a
+                        dance teacher. Jordan’s passion for hip hop forever grows as he strives to not only
+                        teach more but to learn more about it, passing down his knowledge to his students and
+                        help them grow as dancers. His eager and energetic charisma is fueled by his desire to
+                        spread his knowledge of dance to a younger generation. Jordan strives to become a
+                        qualified dance teacher, partaking in many courses to broaden his skills base in order
+                        to share more with his students.</p>
+                    <br>
+                </div>
             </div>
+
         </div>
+    </div>
     </div>
     <div class='class-bottom-svg'>
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="visual"
@@ -982,15 +1013,18 @@
             </p>
             <div class='class-profile container-fluid shadow-lg' style='margin-bottom: 15px;'>
                 <div style='padding-top:10px;padding-bottom:10px;'>
-                    <div>Taught By</div>
+                    <div class="class-page-title">Taught By</div>
                     <br>
                     <div class='row justify-content-center' style='margin-top:-20px;'>
                         <div class="col-3">
-                            <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
-                            <div>Steph<br class='linebr' /><a href='#show-more-pre' data-toggle='collapse'><i
-                                        class='fa fa-angle-down'
-                                        style="color: black;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
-                            </div>
+
+                            <a href='#show-more-pre' data-toggle='collapse' onclick="addEventList(this)" style='text-decoration:none;color:black;'>
+                                <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
+                                <div class='faculty'>
+                                    Steph<i class='fa fa-angle-down'
+                                        style="color: black;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i>
+                                </div>
+                            </a>
                         </div>
 
                     </div>
@@ -1051,39 +1085,49 @@
                 class will keep you moving and make you laugh!</p>
             <div class='class-profile container-fluid shadow-lg' style='margin-bottom: 15px;'>
                 <div style='padding-top:10px;padding-bottom:10px;'>
-                    <div class='class-page-title-contrast'>Taught By</div>
+                    <div class='class-page-title-contrast class-page-title'>Taught By</div>
                     <br>
                     <div class='row justify-content-center' style='margin-top:-20px;'>
                         <div class="col-3">
-                            <img src='imgs/Classes/sam.jpg' class='class-img-taught' />
-                            <div class='faculty'>Sam<br class='linebr' /><a href='#show-more-adult-4' onclick='adult4()'
-                                    data-toggle='collapse'><i class='fa fa-angle-down' id='adult-swap4'
-                                        style="color: white;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
-                            </div>
+                            <a href='#show-more-adult-4' onclick='adult4(); addEventList(this)' data-toggle='collapse'
+                                id='adult-swap4' style='text-decoration:none;color:white;'>
+                                <img src='imgs/Classes/sam.jpg' class='class-img-taught' />
+                                <div class='faculty'>
+                                    Sam<i class='fa fa-angle-down'
+                                        style="color: white;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i>
+                                </div>
+                            </a>
                         </div>
                         <div class="col-3">
-                            <img src='imgs/Classes/jordan.jpg' class='class-img-taught' />
-                            <div class='faculty'>Emma<br class='linebr' /><a href='#show-more-adult-1'
-                                    onclick='adult1()' data-toggle='collapse'><i class='fa fa-angle-down'
-                                        id='adult-swap1'
-                                        style="color: white;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
-                            </div>
+
+                            <a href='#show-more-adult-1' onclick='adult1(); addEventList(this)' data-toggle='collapse'
+                                id='adult-swap1' style='text-decoration:none;color:white;'>
+                                <img src='imgs/Classes/jordan.jpg' class='class-img-taught' />
+                                <div class='faculty'>
+                                    Emma<i class='fa fa-angle-down'
+                                        style="color: white;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i>
+                                </div>
+                            </a>
                         </div>
                         <div class="col-3">
-                            <img src='imgs/Classes/kathryn.jpg' class='class-img-taught' />
-                            <div class='faculty'>Kathryn<br class='linebr' /><a href='#show-more-adult-2'
-                                    onclick='adult2()' data-toggle='collapse'><i class='fa fa-angle-down'
-                                        id='adult-swap2'
-                                        style="color: white;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
-                            </div>
+                            <a href='#show-more-adult-2' onclick='adult2();addEventList(this)' data-toggle='collapse'
+                                id='adult-swap2' style='text-decoration:none;color:white;'>
+                                <img src='imgs/Classes/kathryn.jpg' class='class-img-taught' />
+                                <div class='faculty'>
+                                    Kathryn<i class='fa fa-angle-down'
+                                        style="color: white;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i>
+                                </div>
+                            </a>
                         </div>
                         <div class="col-3">
-                            <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
-                            <div class='faculty'>Rachael<br class='linebr' /><a href='#show-more-adult-3'
-                                    onclick='adult3()' data-toggle='collapse'><i class='fa fa-angle-down'
-                                        id='adult-swap3'
-                                        style="color: white;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i></a>
-                            </div>
+                            <a href='#show-more-adult-3' onclick='adult3(); addEventList(this)' data-toggle='collapse'
+                                id='adult-swap3' style='text-decoration:none;color:white;'>
+                                <img src='imgs/Classes/steph.jpg' class='class-img-taught' />
+                                <div class='faculty'>
+                                    Rachael<i class='fa fa-angle-down'
+                                        style="color: white;vertical-align: middle;text-decoration:none;margin-top:-3px;"></i>
+                                </div>
+                            </a>
                         </div>
 
                     </div>
@@ -1182,15 +1226,17 @@
             </p>
             <div class='class-profile container-fluid shadow-lg' style='margin-bottom: 15px;'>
                 <div style='padding-top:10px;padding-bottom:10px;'>
-                    <div>Taught By</div>
+                    <div class="class-page-title">Taught By</div>
                     <br>
                     <div class='row justify-content-center' style='margin-top:-20px;'>
                         <div class="col-3">
-                            <img src='imgs/Classes/jordan.jpg' class='class-img-taught' />
-                            <div>Jordan<br class='linebr' /><a href='#show-more-boy' data-toggle='collapse'><i
-                                        class='fa fa-angle-down'
-                                        style="margin-top:-3px;color: black;vertical-align: middle;text-decoration:none;font-size:16px !important;"></i></a>
-                            </div>
+                            <a href='#show-more-boy' data-toggle='collapse' onclick='addEventList(this)' style='text-decoration:none;color:black;'>
+                                <img src='imgs/Classes/jordan.jpg' class='class-img-taught' />
+                                <div class='faculty'>
+                                    Jordan<i class='fa fa-angle-down'
+                                        style="margin-top:-3px;color: black;vertical-align: middle;font-size:16px !important;"></i>
+                                </div>
+                            </a>
                         </div>
 
                     </div>
@@ -1269,7 +1315,7 @@
                     </div>
                 </div>
                 <div>
-                    <img src='imgs/vouch.png' height='150px'>
+                    <img src='imgs/vouch.png' width="240px">
                 </div>
             </div>
 
