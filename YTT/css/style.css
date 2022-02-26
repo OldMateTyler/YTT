@@ -479,13 +479,35 @@ nav {
 
 .test-carousel-text {
   text-align: center;
-  font-size: 1.5vw;
+  font-size: 32px;
   padding-left: 15vw;
   padding-right: 15vw; }
 
 #testimonial-text {
   text-align: center; }
 
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  opacity: 0;
+  animation: disappear 1s linear 0s  normal forwards; }
+
+.carousel:hover .carousel-control-prev-icon {
+  animation: appear 1s linear 0s  normal forwards;
+  animation-iteration-count: 1; }
+
+.carousel:hover .carousel-control-next-icon {
+  animation: appear 1s linear 0s  normal forwards;
+  animation-iteration-count: 1; }
+
+@keyframes appear {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes disappear {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
 #enrol-title {
   font-size: 60px;
   color: #18a5bc;
@@ -501,9 +523,6 @@ nav {
   background-color: #1884a1;
   color: white; }
 
-@media screen and (max-width: 1200px) {
-  #test-background {
-    height: 60vw !important; } }
 @media screen and (max-width: 992px) {
   #about-paragraph {
     font-size: 3vw !important; } }
@@ -514,8 +533,11 @@ nav {
   #about-paragraph {
     font-size: 4vw !important; }
 
+  .test-carousel-text {
+    font-size: 20px !important; }
+
   #test-background {
-    height: 60vh !important; } }
+    height: 70vh !important; } }
 @media screen and (max-width: 575px) {
   #about-paragraph {
     font-size: 5vw !important;
@@ -552,8 +574,8 @@ nav {
   .cost {
     font-size: 1.8rem !important; }
 
-  div {
-    font-size: 12px !important; } }
+  .test-carousel-text {
+    font-size: 25px; } }
 @media screen and (max-width: 375px) {
   .class-img {
     width: 100px !important;
@@ -567,9 +589,6 @@ nav {
 
   .cost {
     font-size: 7.5vw !important; }
-
-  .test-carousel-text {
-    font-size: 4px !important; }
 
   .fa {
     width: 40px !important;
@@ -666,9 +685,6 @@ nav {
   .event-title-text-1 {
     font-size: 2.2vw; }
 
-  .test-carousel-text {
-    font-size: 2.4vw !important; }
-
   .find-out-more {
     font-size: 2vw !important;
     width: 90%; }
@@ -688,19 +704,11 @@ nav {
   .event-title-text-1 {
     font-size: 4vw; }
 
-  .test-carousel-text {
-    font-size: 2.75vw !important;
-    padding-left: 5vw;
-    padding-right: 5vw; }
-
   .class-page-title {
     font-size: 40px !important; }
 
   .class-img-taught {
     height: 12vw !important; }
-
-  div {
-    font-size: 15px !important; }
 
   .class-card-title {
     font-size: 4.8vw !important; }
@@ -733,11 +741,6 @@ nav {
   .event-title-text-1 {
     font-size: 6vw; }
 
-  .test-carousel-text {
-    font-size: 3.4vw !important;
-    padding-left: 0;
-    padding-right: 0; }
-
   .card-text {
     font-size: 3.75vw !important; }
 
@@ -755,9 +758,6 @@ nav {
 
   .find-out-more {
     font-size: 6vw !important; } }
-@media screen and (max-width: 450px) {
-  .test-carousel-text {
-    font-size: 3.6vw !important; } }
 @media screen and (max-width: 713px) {
   #show-hamburger {
     display: block; } }
