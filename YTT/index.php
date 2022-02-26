@@ -593,7 +593,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                                 "As an adult dancer it is hard to find classes so I was excited when YTT offered a variety
                                 of adults dance options. Such a welcoming studio for dances of all abilities. Have found
                                 all the teachers to be patient and take their time to explain steps etc. I look forward
-                                to dance classes each week - such a greate stress reliever after a busy day. Would recommend
+                                to dance classes each week - such a great stress reliever after a busy day. Would recommend
                                 this studio to anyone looking for an inclusive and welcoming place to dance."
                                 <p>-Cathy Lucas</p>
                             </div>
@@ -608,12 +608,13 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="visual" viewBox="0 0 1400 300" width="100%" style="z-index:1;position:absolute;display:block;bottom:0px;" version="1.1">
+                    <path d="M0 261L33.3 262.2C66.7 263.3 133.3 265.7 200 264.8C266.7 264 333.3 260 400 257.8C466.7 255.7 533.3 255.3 600 256.5C666.7 257.7 733.3 260.3 800 260.8C866.7 261.3 933.3 259.7 1000 260.2C1066.7 260.7 1133.3 263.3 1200 262.5C1266.7 261.7 1333.3 257.3 1366.7 255.2L1400 253L1400 301L1366.7 301C1333.3 301 1266.7 301 1200 301C1133.3 301 1066.7 301 1000 301C933.3 301 866.7 301 800 301C733.3 301 666.7 301 600 301C533.3 301 466.7 301 400 301C333.3 301 266.7 301 200 301C133.3 301 66.7 301 33.3 301L0 301Z" fill="#ffffffbf"></path>
+                    <path d="M0 278L33.3 278.2C66.7 278.3 133.3 278.7 200 277.7C266.7 276.7 333.3 274.3 400 275.3C466.7 276.3 533.3 280.7 600 283C666.7 285.3 733.3 285.7 800 283.8C866.7 282 933.3 278 1000 276.8C1066.7 275.7 1133.3 277.3 1200 277C1266.7 276.7 1333.3 274.3 1366.7 273.2L1400 272L1400 301L1366.7 301C1333.3 301 1266.7 301 1200 301C1133.3 301 1066.7 301 1000 301C933.3 301 866.7 301 800 301C733.3 301 666.7 301 600 301C533.3 301 466.7 301 400 301C333.3 301 266.7 301 200 301C133.3 301 66.7 301 33.3 301L0 301Z" fill="#ffffff"></path>
+                </svg>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="visual" viewBox="0 0 1400 300" width="100%" style="z-index:2;position:absolute;bottom: -5px;" version="1.1">
-                <path d="M0 261L33.3 262.2C66.7 263.3 133.3 265.7 200 264.8C266.7 264 333.3 260 400 257.8C466.7 255.7 533.3 255.3 600 256.5C666.7 257.7 733.3 260.3 800 260.8C866.7 261.3 933.3 259.7 1000 260.2C1066.7 260.7 1133.3 263.3 1200 262.5C1266.7 261.7 1333.3 257.3 1366.7 255.2L1400 253L1400 301L1366.7 301C1333.3 301 1266.7 301 1200 301C1133.3 301 1066.7 301 1000 301C933.3 301 866.7 301 800 301C733.3 301 666.7 301 600 301C533.3 301 466.7 301 400 301C333.3 301 266.7 301 200 301C133.3 301 66.7 301 33.3 301L0 301Z" fill="#ffffffbf"></path>
-                <path d="M0 278L33.3 278.2C66.7 278.3 133.3 278.7 200 277.7C266.7 276.7 333.3 274.3 400 275.3C466.7 276.3 533.3 280.7 600 283C666.7 285.3 733.3 285.7 800 283.8C866.7 282 933.3 278 1000 276.8C1066.7 275.7 1133.3 277.3 1200 277C1266.7 276.7 1333.3 274.3 1366.7 273.2L1400 272L1400 301L1366.7 301C1333.3 301 1266.7 301 1200 301C1133.3 301 1066.7 301 1000 301C933.3 301 866.7 301 800 301C733.3 301 666.7 301 600 301C533.3 301 466.7 301 400 301C333.3 301 266.7 301 200 301C133.3 301 66.7 301 33.3 301L0 301Z" fill="#ffffff"></path>
-            </svg>
         </div>
+
     </section>
     <section>
         <br /><br />
@@ -721,7 +722,7 @@ if (isset($_POST['name']) && $_POST['name'] != '') {
             <br />
         </div>
         <div id="footer" class="justify-content-center d-flex">
-            <p>© 2021 YourSite.com - All Rights Reserved.</p>
+            <p>© 2022 YourTalentTeam.com - All Rights Reserved.</p>
         </div>
     </section>
 </body>
